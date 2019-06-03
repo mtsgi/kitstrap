@@ -13,7 +13,7 @@ kitstrap.cssを読み込めば、すぐに使うことができます。
 
 使用例や要素の見た目を確認できます。
 
-- [kitstrapサンプル](https://mtsgi.github.io/kitstrap/docs/sample.html)
+- [kitstrapサンプル](https://mtsgi.github.io/kitstrap/sample.html)
 
 ## Documentation
 
