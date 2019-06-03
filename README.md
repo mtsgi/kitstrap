@@ -1,6 +1,6 @@
 ## kitstrap
 
-![kitstrap](banner.png "kitstrap")
+![](docs/banner.png "kitstrap")
 
 ## Usage
 
