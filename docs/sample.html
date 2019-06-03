@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../d/kitstrap.css">
+    <link rel="stylesheet" href="../d/kitstrap-cursor.css">
+    <link rel="stylesheet" href="../d/kitstrap-font.css">
     <title>Sample - kitstrap</title>
     <style>
-    header img{
-            float: right;
-            height: 65px;
+        h2 {
+            background: #ffffff;
+            position: sticky;
+            top: 70px;
+            padding: 10px 4px;
         }
-        h2 .kit-badge{
+
+        header img {
+            position: absolute;
+            height: 65px;
+            right: 4px;
+        }
+
+        h2 kit-badge {
             font-size: 18px;
             margin: 0 3px 0 0;
             position: relative;
             top: -3px;
         }
-        header{
+
+        header {
             text-align: center;
             font-size: 30px;
             padding: 20px;
             font-weight: 100;
+            z-index: 9;
         }
-        main{
-            font-weight: 100;
+
+        main {
+            font-weight: 400;
             padding: 10px;
         }
     </style>
 </head>
+
 <body>
     <header class="kit-header">
         <a href="https://github.com/mtsgi/kitstrap"><img src="../icon.png" alt="kitstrap"></a>サンプル
@@ -39,57 +55,72 @@
 
         <h2>これは何？</h2>
         kitstrapのサンプルです。実際にkitstrapによって生成される要素の見た目を確認できます。
-        <kit-space></kit-space><kit-space></kit-space>
+        <kit-space></kit-space>
+        <kit-space></kit-space>
 
         <h2>
-            <span class="kit-badge orange">class</span>
+            <kit-badge class="orange">class</kit-badge>
+            <kit-badge class="limegreen">tag</kit-badge>
             kit-button
         </h2>
-        kitstrapでは、<code>class="kit-button"</code>を付与することで、簡単にボタン要素を作成できます。
-        <div class="kit-box">
+        kitstrapでは、<code>class="kit-button"</code>を付与または<code>&lt;kit-button&gt;&lt;/kit-button&gt;</code>タグを使用することで、簡単にボタン要素を作成できます。
+        <kit-box>
             <a class="kit-button">ボタン1</a>
-            <a class="kit-button">ボタン2</a>
+            <kit-button>ボタン2</kit-button>
             <a class="kit-button">ボタン3</a>
-        </div>
+            <kit-button>ボタン4</kit-button>
+        </kit-box>
         <blockquote>デフォルトのカラーはdodgerblueです</blockquote>
-        <kit-space></kit-space><kit-space></kit-space>
+        <kit-space></kit-space>
+        <kit-space></kit-space>
 
         <h2>
-            <span class="kit-badge orange">class</span>
+            <kit-badge class="orange">class</kit-badge>
+            <kit-badge class="limegreen">tag</kit-badge>
             kit-hyperlink
         </h2>
-        a要素やその他の要素に対して、<code>class="kit-hyperlink"</code>を付与することで、ハイパーリンクのスタイルを設定できます。
-        <div class="kit-box">
-            リンクは<a href="#" class="kit-hyperlink">こちら</a>をクリック
-        </div>
+        a要素やその他の要素に対して、<code>class="kit-hyperlink"</code>を付与または<code>&lt;kit-hl&gt;&lt;/kit-hl&gt;</code>タグを使用することで、ハイパーリンクのスタイルを設定できます。
+        <kit-box>
+            リンクは<a href="#" class="kit-hyperlink">こちら</a>をクリック！<kit-hl class="kit-hyperlink">更新</kit-hl>
+        </kit-box>
         <blockquote>指のカーソルになります</blockquote>
-        <kit-space></kit-space><kit-space></kit-space>
-        
+        <kit-space></kit-space>
+        <kit-space></kit-space>
+
         <h2>
-            <span class="kit-badge orange">class</span>
+            <kit-badge class="orange">class</kit-badge>
+            <kit-badge class="limegreen">tag</kit-badge>
             kit-badge
         </h2>
         インライン要素に、<code>class="kit-badge"</code>を付与すれば、バッジ要素を生成することができます。
-        <div class="kit-box">
+        <kit-box>
             <span class="kit-badge limegreen">NEW!</span>kitstrapへようこそ
-        </div>
+        </kit-box>
         <blockquote>デフォルトのカラーはorangeです</blockquote>
-        <kit-space></kit-space><kit-space></kit-space>
+        <kit-space></kit-space>
+        <kit-space></kit-space>
 
         <h2>
-            <span class="kit-badge orange">class</span>
+            <kit-badge class="orange">class</kit-badge>
             カラークラス
         </h2>
         <strong>kit-button</strong>や<strong>kit-badge</strong>などのクラスは<code>class="kit-badge deeppink"</code>のように、スペースを空けて色の名前を指定することで、簡単に色を変えることができます。
-        <div class="kit-box">
-                <strong class="kit-left">orange</strong><a class="kit-badge orange">バッジ</a>・<a class="kit-button orange">ボタン</a><br>
-                <strong class="kit-left">dodgerblue</strong><a class="kit-badge dodgerblue">バッジ</a>・<a class="kit-button dodgerblue">ボタン</a><br>
-                <strong class="kit-left">deeppink</strong><a class="kit-badge deeppink">バッジ</a>・<a class="kit-button deeppink">ボタン</a><br>
-                <strong class="kit-left">limegreen</strong><a class="kit-badge limegreen">バッジ</a>・<a class="kit-button limegreen">ボタン</a><br>
-                <strong class="kit-left">crimson</strong><a class="kit-badge crimson">バッジ</a>・<a class="kit-button crimson">ボタン</a><br>
-        </div>
-        <kit-space></kit-space><kit-space></kit-space>
+        <kit-box>
+            <strong class="kit-left">orange</strong><a class="kit-badge orange">バッジ</a>・<a
+                class="kit-button orange">ボタン</a><br>
+            <strong class="kit-left">dodgerblue</strong><a class="kit-badge dodgerblue">バッジ</a>・<a
+                class="kit-button dodgerblue">ボタン</a><br>
+            <strong class="kit-left">deeppink</strong><a class="kit-badge deeppink">バッジ</a>・<a
+                class="kit-button deeppink">ボタン</a><br>
+            <strong class="kit-left">limegreen</strong><a class="kit-badge limegreen">バッジ</a>・<a
+                class="kit-button limegreen">ボタン</a><br>
+            <strong class="kit-left">crimson</strong><a class="kit-badge crimson">バッジ</a>・<a
+                class="kit-button crimson">ボタン</a><br>
+        </kit-box>
+        <kit-space></kit-space>
+        <kit-space></kit-space>
 
     </main>
 </body>
+
 </html>

@@ -3,18 +3,17 @@
 ![](docs/banner.png "kitstrap")
 
 ## Usage
-
-kitstrap.cssを読み込みます。
-
 ```
 <link rel="stylesheet" href="./d/kitstrap.css">
 ```
+
+kitstrap.cssを読み込めば、すぐに使うことができます。
 
 ## Sample
 
 使用例や要素の見た目を確認できます。
 
-- https://mtsgi.github.io/kitstrap/sample.html
+- [kitstrapサンプル](https://mtsgi.github.io/kitstrap/docs/sample.html)
 
 ## Documentation
 
