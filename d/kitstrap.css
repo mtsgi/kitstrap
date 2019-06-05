@@ -31,7 +31,6 @@ kit-header, .kit-header {
     padding: 3px;
     color: #000000;
     box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, .3);
-    position: sticky;
 }
 
 #kit-wallpaper {
