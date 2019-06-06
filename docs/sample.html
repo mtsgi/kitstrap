@@ -41,6 +41,11 @@
         main {
             font-weight: 400;
             padding: 10px;
+            line-height: 200%;
+        }
+
+        .textbox {
+            max-width: 90%;
         }
     </style>
 </head>
@@ -54,7 +59,8 @@
         <img src="./banner.png" style="max-width: 100%">
 
         <h2>これは何？</h2>
-        kitstrapのサンプルです。実際にkitstrapによって生成される要素の見た目を確認できます。
+        kitstrapのサンプルです。実際にkitstrapによって生成される要素の見た目を確認できます。<br>
+        kitstrapの導入方法については<a href="https://github.com/mtsgi/kitstrap/wiki" class="kit-hyperlink">ドキュメント</a>をご覧ください。
         <kit-space></kit-space>
         <kit-space></kit-space>
 
@@ -63,14 +69,22 @@
             <kit-badge class="limegreen">tag</kit-badge>
             kit-button
         </h2>
-        kitstrapでは、<code>class="kit-button"</code>を付与または<code>&lt;kit-button&gt;&lt;/kit-button&gt;</code>タグを使用することで、簡単にボタン要素を作成できます。
-        <kit-box>
-            <a class="kit-button">ボタン1</a>
-            <kit-button>ボタン2</kit-button>
-            <a class="kit-button">ボタン3</a>
-            <kit-button>ボタン4</kit-button>
-        </kit-box>
-        <blockquote>デフォルトのカラーはdodgerblueです</blockquote>
+        kitstrapでは、<code>class="kit-button"</code>を付与または<code>&lt;kit-button&gt;&lt;/kit-button&gt;</code>タグを使用することで、簡単にボタン要素を作成できます。<br>
+        <code>class="kit-button-alt"</code>または<code>&lt;kit-button&gt;&lt;/kit-button-alt&gt;</code>タグを使用すると、スタイルの異なるボタンを作成できます。
+        <kit-container>
+            <kit-box>
+                <a class="kit-button">ボタン1</a>
+                <kit-button>ボタン2</kit-button>
+                <a class="kit-button-alt">ボタン3</a>
+                <kit-button-alt>ボタン4</kit-button>
+            </kit-box>
+            <pre class="kit-box silver">
+&lt;a class="kit-button"&gt;ボタン1&lt;/a&gt;
+&lt;kit-button&gt;ボタン2&lt;/kit-button&gt;
+&lt;a class="kit-button-alt"&gt;ボタン3&lt;/a&gt;
+&lt;kit-button-alt&gt;ボタン4&lt;/kit-button-alt&gt;</pre>
+            <blockquote class="kit-box">デフォルトのカラーはdodgerblueです</blockquote>
+        </kit-container>
         <kit-space></kit-space>
         <kit-space></kit-space>
 
@@ -80,9 +94,12 @@
             kit-hyperlink
         </h2>
         a要素やその他の要素に対して、<code>class="kit-hyperlink"</code>を付与または<code>&lt;kit-hl&gt;&lt;/kit-hl&gt;</code>タグを使用することで、ハイパーリンクのスタイルを設定できます。
-        <kit-box>
-            リンクは<a href="#" class="kit-hyperlink">こちら</a>をクリック！<kit-hl>更新</kit-hl>
-        </kit-box>
+        <kit-container>
+            <kit-box>
+                リンクは<a href="#" class="kit-hyperlink">こちら</a>をクリック！<kit-hl>更新</kit-hl>
+            </kit-box>
+            <pre class="kit-box silver">リンクは<a href="#" class="kit-hyperlink">こちら</a>をクリック！<kit-hl>更新</kit-hl></pre>
+        </kit-container>
         <blockquote>指のカーソルになります</blockquote>
         <kit-space></kit-space>
         <kit-space></kit-space>
@@ -93,10 +110,12 @@
             kit-badge
         </h2>
         インライン要素に、<code>class="kit-badge"</code>を付与または<code>&lt;kit-badge&gt;&lt;/kit-badge&gt;</code>タグを使用することで、バッジ要素を生成することができます。
-        <kit-box>
-            <span class="kit-badge limegreen">NEW!</span>kitstrapへようこそ
-        </kit-box>
-        <blockquote>デフォルトのカラーはorangeです</blockquote>
+        <kit-container>
+            <kit-box>
+                <span class="kit-badge limegreen">NEW!</span>kitstrapへようこそ
+            </kit-box>
+            <blockquote class="kit-box">デフォルトのカラーはorangeです</blockquote>
+        </kit-container>
         <kit-space></kit-space>
         <kit-space></kit-space>
 
@@ -104,19 +123,27 @@
             <kit-badge class="orange">class</kit-badge>
             カラークラス
         </h2>
-        <strong>kit-button</strong>や<strong>kit-badge</strong>などのクラスは<code>class="kit-badge deeppink"</code>のように、スペースを空けて色の名前を指定することで、簡単に色を変えることができます。
-        <kit-box>
-            <strong class="kit-left">orange</strong><a class="kit-badge orange">バッジ</a>・<a
-                class="kit-button orange">ボタン</a><br>
-            <strong class="kit-left">dodgerblue</strong><a class="kit-badge dodgerblue">バッジ</a>・<a
-                class="kit-button dodgerblue">ボタン</a><br>
-            <strong class="kit-left">deeppink</strong><a class="kit-badge deeppink">バッジ</a>・<a
-                class="kit-button deeppink">ボタン</a><br>
-            <strong class="kit-left">limegreen</strong><a class="kit-badge limegreen">バッジ</a>・<a
-                class="kit-button limegreen">ボタン</a><br>
-            <strong class="kit-left">crimson</strong><a class="kit-badge crimson">バッジ</a>・<a
-                class="kit-button crimson">ボタン</a><br>
-        </kit-box>
+        <strong>kit-button</strong>や<strong>kit-badge</strong>などのクラスは<code>class="kit-badge deeppink"</code>のように、スペースを空けて色の名前を指定することで、簡単に色を変えることができます。<br>
+        <code>-alt</code>系の要素には、<code>色名-alt</code>クラスを使用します。
+        <kit-container>
+            <kit-box>
+                <strong class="kit-left">orange</strong><a class="kit-badge orange">バッジ</a>・<a
+                class="kit-button orange">ボタン</a>・<a
+                class="kit-button-alt orange-alt">ボタン</a><br>
+                <strong class="kit-left">dodgerblue</strong><a class="kit-badge dodgerblue">バッジ</a>・<a
+                class="kit-button dodgerblue">ボタン</a>・<a
+                class="kit-button-alt dodgerblue-alt">ボタン</a><br>
+                <strong class="kit-left">deeppink</strong><a class="kit-badge deeppink">バッジ</a>・<a
+                class="kit-button deeppink">ボタン</a>・<a
+                    class="kit-button-alt deeppink-alt">ボタン</a><br>
+                <strong class="kit-left">limegreen</strong><a class="kit-badge limegreen">バッジ</a>・<a
+                class="kit-button limegreen">ボタン</a>・<a
+                    class="kit-button-alt limegreen-alt">ボタン</a><br>
+                <strong class="kit-left">crimson</strong><a class="kit-badge crimson">バッジ</a>・<a
+                class="kit-button crimson">ボタン</a>・<a
+                    class="kit-button-alt crimson-alt">ボタン</a><br>
+            </kit-box>
+        </kit-container>
         <kit-space></kit-space>
         <kit-space></kit-space>
         <h2>
@@ -124,11 +151,16 @@
             textbox
         </h2>
         input要素やtextarea要素に<code>class="textbox"</code>を付与すると以下のような見た目になります。
-        <kit-box>
-            入力してください<br>
-            <input type="text" class="textbox" placeholder="いまどうしてる？">
-        </kit-box>
+        <kit-container>
+            <kit-box>
+                入力してください<br>
+                <input type="text" class="textbox" placeholder="いまどうしてる？">
+            </kit-box>
+        </kit-container>
     </main>
+    <kit-footer>
+        kitstrap
+    </kit-footer>
 </body>
 
 </html>

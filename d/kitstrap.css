@@ -22,6 +22,7 @@ kit-header, .kit-header {
     top: 0px;
     left: 0px;
     width: 100%;
+    display: block;
     background: -moz-linear-gradient(45deg, rgba(204, 255, 216, 1) 0%, rgba(212, 246, 255, 1) 38%, rgba(255, 219, 238, 1) 100%);
     background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(204, 255, 216, 1)), color-stop(38%, rgba(212, 246, 255, 1)), color-stop(100%, rgba(255, 219, 238, 1)));
     background: -webkit-linear-gradient(45deg, rgba(204, 255, 216, 1) 0%, rgba(212, 246, 255, 1) 38%, rgba(255, 219, 238, 1) 100%);
@@ -31,6 +32,15 @@ kit-header, .kit-header {
     padding: 3px;
     color: #000000;
     box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, .3);
+}
+
+kit-footer, .kit-footer{
+    display: block;
+    color: #505050;
+    background: #f0f0f0;
+    padding: 8px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 #kit-wallpaper {
@@ -209,18 +219,36 @@ kit-button:hover, .kit-button:hover {
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .5), inset 0px 0px 2px 0px rgba(0, 0, 0, .2), inset 0px 1em 1px 3px rgba(255, 255, 255, .2), inset 0px 9999px 0px 0px rgba(0, 0, 0, .2);
 }
 
-kit-button:active ,.kit-button:active {
+kit-button:active, .kit-button:active {
     box-shadow: inset 0px 9999px 0px 0px rgba(0, 0, 0, .2);
     position: relative;
     top: 2px;
 }
 
-kit-box, .kit-box {
-    display: block;
-    padding: 8px;
-    margin: 4px 2px;
-    border: 1px solid #c0c0c0;
-    border-radius: 4px;
+kit-button-alt, .kit-button-alt {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 400;
+    display: inline-block;
+    cursor: default;
+    border-radius: 5px;
+    line-height: 200%;
+    background: white;
+    color: dodgerblue;
+    padding: 0px 8px;
+    border: 2px solid dodgerblue;
+    margin: 1px 2px;
+    text-decoration: none;
+    transition: .2s all ease;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+kit-button-alt:hover, .kit-button-alt:hover {
+    background: dodgerblue;
+    color: white;
 }
 
 kit-block, .kit-block {
@@ -274,28 +302,138 @@ kit-left, .kit-left {
     width: 100px;
 }
 
+kit-container {
+    display: block;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+    border-radius: 6px;
+}
+
+kit-container kit-box, kit-container .kit-box {
+    display: block;
+    padding: 8px;
+    margin: 0;
+    border: 1px solid #c0c0c0;
+}
+
+kit-container kit-box, kit-container .kit-box {
+    border-top-width: 0;
+}
+
+kit-container kit-box:first-child, kit-container .kit-box:first-child {
+    border-radius: 6px 6px 0 0;
+    border-top-width: 1px;
+}
+
+kit-container kit-box:last-child, kit-container .kit-box:last-child {
+    border-radius: 0 0 6px 6px;
+}
+
+kit-container kit-box:only-child, kit-container .kit-box:only-child {
+    border-radius: 6px;
+}
+
 /* colors */
 
 .orange {
-    background: orange;
+    background: #ffa500;
+}
+
+.orange-alt {
+    color: #ffa500;
+    border-color: #ffa500;
+}
+
+.orange-alt:hover {
+    background: #ffa500;
 }
 
 .dodgerblue {
-    background: dodgerblue;
+    background: #1e90ff;
+}
+
+.dodgerblue-alt {
+    color: #1e90ff;
+    border-color: #1e90ff;
+}
+
+.dodgerblue-alt:hover {
+    background: #1e90ff;
 }
 
 .deeppink {
-    background: deeppink;
+    background: #ff1493;
+}
+
+.deeppink-alt {
+    color: #ff1493;
+    border-color: #ff1493;
+}
+
+.deeppink-alt:hover {
+    background: #ff1493;
 }
 
 .limegreen {
-    background: limegreen;
+    background: #32cd32;
+}
+
+.limegreen-alt {
+    color: #32cd32;
+    border-color: #32cd32;
+}
+
+.limegreen-alt:hover {
+    background: #32cd32;
 }
 
 .crimson {
-    background: crimson;
+    background: #dc143c;
+}
+
+.crimson-alt {
+    color: #dc143c;
+    border-color: #dc143c;
+}
+
+.crimson-alt:hover {
+    background: #dc143c;
 }
 
 .green {
-    background: limegreen;
+    background: #008000;
+}
+
+.green-alt {
+    color: #008000;
+    border-color: #008000;
+}
+
+.green-alt:hover {
+    background: #008000;
+}
+
+.silver {
+    background: #ebebeb;
+}
+
+.silver-alt {
+    color: #ebebeb;
+    border-color: #ebebeb;
+}
+
+.silver-alt:hover {
+    background: #ebebeb;
+}
+
+.black {
+    background: #353535;
+}
+
+.black-alt {
+    color: #353535;
+    border-color: #353535;
+}
+
+.black-alt:hover {
+    background: #353535;
 }

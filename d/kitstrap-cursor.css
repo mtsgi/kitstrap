@@ -10,7 +10,7 @@ kit-button, .kit-button {
     cursor: url(./cursor-1.png), default;
 }
 
-.kit-toggle input+label, kit-btn, .btn, kit-hl, .kit-hyperlink {
+.kit-toggle input+label, kit-btn, .btn, kit-hl, .kit-hyperlink, .kit-button-alt, kit-button-alt {
     cursor: url(./cursor-2.png), pointer;
 }
 
