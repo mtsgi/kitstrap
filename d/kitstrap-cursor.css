@@ -6,14 +6,17 @@ body {
     cursor: url(../cursor-3.png), text;
 }
 
+/* Default style */
 kit-button, .kit-button {
     cursor: url(./cursor-1.png), default;
 }
 
-.kit-toggle input+label, kit-btn, .btn, kit-hl, .kit-hyperlink, .kit-button-alt, kit-button-alt {
+/* Pointer style */
+.kit-toggle input+label, kit-btn, .btn, kit-hl, .kit-hyperlink, kit-hl-alt, .kit-hl-alt, .kit-button-alt, kit-button-alt {
     cursor: url(./cursor-2.png), pointer;
 }
 
+/* Text style */
 .textbox {
     cursor: url(./cursor-3.png), text;
 }

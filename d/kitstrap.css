@@ -195,6 +195,16 @@ kit-hl, .kit-hyperlink {
     cursor: pointer;
 }
 
+kit-hl-alt, .kit-hl-alt{
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+kit-hl-alt:hover, .kit-hl-alt:hover{
+    text-decoration: underline;
+}
+
 kit-button, .kit-button {
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -338,12 +348,17 @@ kit-container kit-box:only-child, kit-container .kit-box:only-child {
     background: #ffa500;
 }
 
-.orange-alt {
+.kit-button-alt.orange,
+kit-button-alt.orange
+{
+    background: #ffffff;
     color: #ffa500;
     border-color: #ffa500;
 }
 
-.orange-alt:hover {
+.kit-button-alt.orange:hover,
+kit-button-alt.orange:hover {
+    color: #ffffff;
     background: #ffa500;
 }
 
@@ -351,12 +366,17 @@ kit-container kit-box:only-child, kit-container .kit-box:only-child {
     background: #1e90ff;
 }
 
-.dodgerblue-alt {
+.kit-button-alt.dodgerblue,
+kit-button-alt.dodgerblue
+{
+    background: #ffffff;
     color: #1e90ff;
     border-color: #1e90ff;
 }
 
-.dodgerblue-alt:hover {
+.kit-button-alt.dodgerblue:hover,
+kit-button-alt.dodgerblue:hover {
+    color: #ffffff;
     background: #1e90ff;
 }
 
@@ -364,12 +384,17 @@ kit-container kit-box:only-child, kit-container .kit-box:only-child {
     background: #ff1493;
 }
 
-.deeppink-alt {
+.kit-button-alt.deeppink,
+kit-button-alt.deeppink
+{
+    background: #ffffff;
     color: #ff1493;
     border-color: #ff1493;
 }
 
-.deeppink-alt:hover {
+.kit-button-alt.deeppink:hover,
+kit-button-alt.deeppink:hover {
+    color: #ffffff;
     background: #ff1493;
 }
 
@@ -377,12 +402,17 @@ kit-container kit-box:only-child, kit-container .kit-box:only-child {
     background: #32cd32;
 }
 
-.limegreen-alt {
+.kit-button-alt.limegreen,
+kit-button-alt.limegreen
+{
+    background: #ffffff;
     color: #32cd32;
     border-color: #32cd32;
 }
 
-.limegreen-alt:hover {
+.kit-button-alt.limegreen:hover,
+kit-button-alt.limegreen:hover {
+    color: #ffffff;
     background: #32cd32;
 }
 
@@ -390,12 +420,17 @@ kit-container kit-box:only-child, kit-container .kit-box:only-child {
     background: #dc143c;
 }
 
-.crimson-alt {
+.kit-button-alt.crimson,
+kit-button-alt.crimson
+{
+    background: #ffffff;
     color: #dc143c;
     border-color: #dc143c;
 }
 
-.crimson-alt:hover {
+.kit-button-alt.crimson:hover,
+kit-button-alt.crimson:hover {
+    color: #ffffff;
     background: #dc143c;
 }
 
@@ -403,25 +438,37 @@ kit-container kit-box:only-child, kit-container .kit-box:only-child {
     background: #008000;
 }
 
-.green-alt {
+.kit-button-alt.green,
+kit-button-alt.green
+{
+    background: #ffffff;
     color: #008000;
     border-color: #008000;
 }
 
-.green-alt:hover {
+.kit-button-alt.green:hover,
+kit-button-alt.green:hover {
+    color: #ffffff;
     background: #008000;
 }
 
 .silver {
+    color: #303030;
+    text-shadow: none;
     background: #ebebeb;
 }
 
-.silver-alt {
+.kit-button-alt.silver,
+kit-button-alt.silver
+{
+    background: rgba(0,0,0,.8);
     color: #ebebeb;
     border-color: #ebebeb;
 }
 
-.silver-alt:hover {
+.kit-button-alt.silver:hover,
+kit-button-alt.silver:hover {
+    color: #000000;
     background: #ebebeb;
 }
 
@@ -429,11 +476,16 @@ kit-container kit-box:only-child, kit-container .kit-box:only-child {
     background: #353535;
 }
 
-.black-alt {
+.kit-button-alt.black,
+kit-button-alt.black
+{
+    background: #ffffff;
     color: #353535;
     border-color: #353535;
 }
 
-.black-alt:hover {
+.kit-button-alt.black:hover,
+kit-button-alt.black:hover {
+    color: #ffffff;
     background: #353535;
 }
