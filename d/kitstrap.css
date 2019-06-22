@@ -12,7 +12,7 @@ body::selection {
     color: white;
 }
 
-.kit-flex {
+.kit-flex, kit-flex {
     display: flex;
     flex-wrap: wrap;
 }
@@ -279,6 +279,18 @@ kit-badge, .kit-badge {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
 }
 
+kit-flash, .kit-flash{
+    position: fixed;
+    top: 0px;
+    left: 100px;
+    width: calc(100% - 200px);
+    padding: 4px 10px;
+    box-sizing: border-box;
+    background: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+    border-radius: 0 0 10px 10px;
+}
+
 h2 {
     margin: 10px 0;
     padding: 2px;
@@ -310,6 +322,10 @@ kit-left, .kit-left {
     display: inline-block;
     padding: 10px;
     width: 100px;
+}
+
+kit-right, .kit-right{
+    float: right;
 }
 
 kit-container {

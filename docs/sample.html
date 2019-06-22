@@ -47,6 +47,14 @@
         .textbox {
             max-width: 90%;
         }
+
+        #kit-flash-sample{
+            display: none;
+        }
+
+        kit-space{
+            height: 40px;
+        }
     </style>
 </head>
 
@@ -61,7 +69,7 @@
         <h2>これは何？</h2>
         kitstrapのサンプルです。実際にkitstrapによって生成される要素の見た目を確認できます。<br>
         kitstrapの導入方法については<a href="https://github.com/mtsgi/kitstrap/wiki" class="kit-hyperlink">ドキュメント</a>をご覧ください。
-        <kit-space></kit-space>
+
         <kit-space></kit-space>
 
         <h2>
@@ -70,7 +78,7 @@
             kit-button
         </h2>
         kitstrapでは、<code>class="kit-button"</code>を付与または<code>&lt;kit-button&gt;&lt;/kit-button&gt;</code>タグを使用することで、簡単にボタン要素を作成できます。<br>
-        <code>class="kit-button-alt"</code>または<code>&lt;kit-button&gt;&lt;/kit-button-alt&gt;</code>タグを使用すると、スタイルの異なるボタンを作成できます。
+        <code>class="kit-button-alt"</code>または<code>&lt;kit-button-alt&gt;&lt;/kit-button-alt&gt;</code>タグを使用すると、スタイルの異なるボタンを作成できます。
         <kit-container>
             <kit-box>
                 <a class="kit-button">ボタン1</a>
@@ -85,7 +93,7 @@
 &lt;kit-button-alt&gt;ボタン4&lt;/kit-button-alt&gt;</pre>
             <blockquote class="kit-box">デフォルトのカラーはdodgerblueです</blockquote>
         </kit-container>
-        <kit-space></kit-space>
+        
         <kit-space></kit-space>
 
         <h2>
@@ -93,15 +101,16 @@
             <kit-badge class="limegreen">tag</kit-badge>
             kit-hyperlink
         </h2>
-        a要素やその他の要素に対して、<code>class="kit-hyperlink"</code>を付与または<code>&lt;kit-hl&gt;&lt;/kit-hl&gt;</code>タグを使用することで、ハイパーリンクのスタイルを設定できます。
+        a要素やその他の要素に対して、<code>class="kit-hyperlink"</code>を付与または<code>&lt;kit-hl&gt;&lt;/kit-hl&gt;</code>タグを使用することで、ハイパーリンクのスタイルを設定できます。<code>class="kit-hl-alt"</code>または<code>&lt;kit-hl-alt&gt;&lt;/kit-hl-alt&gt;</code>は、親要素の前景色を継承します。
         <kit-container>
             <kit-box>
-                リンクは<a href="#" class="kit-hyperlink">こちら</a>をクリック！<kit-hl>更新</kit-hl>
+                リンクは<a href="#" class="kit-hyperlink">こちら</a>をクリック！<kit-hl>更新</kit-hl><br>
+                <kit-hl-alt>こちらはシンプルなkit-hl-alt</kit-hl-alt>タグを使用したリンクです
             </kit-box>
             <pre class="kit-box silver">リンクは<a href="#" class="kit-hyperlink">こちら</a>をクリック！<kit-hl>更新</kit-hl></pre>
         </kit-container>
         <blockquote>指のカーソルになります</blockquote>
-        <kit-space></kit-space>
+        
         <kit-space></kit-space>
 
         <h2>
@@ -116,7 +125,7 @@
             </kit-box>
             <blockquote class="kit-box">デフォルトのカラーはorangeです</blockquote>
         </kit-container>
-        <kit-space></kit-space>
+
         <kit-space></kit-space>
 
         <h2>
@@ -167,8 +176,9 @@
                 <a class="kit-button-alt black">ボタン</a>
             </kit-box>
         </kit-container>
+
         <kit-space></kit-space>
-        <kit-space></kit-space>
+        
         <h2>
             <kit-badge class="orange">class</kit-badge>
             textbox
@@ -180,6 +190,32 @@
                 <input type="text" class="textbox" placeholder="いまどうしてる？">
             </kit-box>
         </kit-container>
+
+        <kit-space></kit-space>
+
+        <h2>
+            <kit-badge class="orange">class</kit-badge>
+            <kit-badge class="limegreen">tag</kit-badge>
+            kit-flash
+        </h2>
+        <code>class="kit-flash"</code>を付与するか、<code>&lt;kit-flash&gt;&lt;/kit-flash&gt;</code>を使用して、ユーザーにメッセージを通知するためのフラッシュを生成することができます。
+        <kit-container>
+            <kit-box>
+                <kit-button onclick="document.getElementById('kit-flash-sample').style.display = 'flex'">flashを表示</kit-button>
+                <kit-flash class="kit-flex" id="kit-flash-sample">
+                    <div style="flex-grow: 1">これはフラッシュのサンプルです。</div>
+                    <kit-button-alt onclick="document.getElementById('kit-flash-sample').style.display = 'none'">OK</kit-button-alt>
+                </kit-flash>
+            </kit-box>
+            <pre class="kit-box">上のkit-button要素をクリックするとflashが表示されます。</pre>
+            <pre class="kit-box silver">&lt;kit-flash class="kit-flex"&gt;
+  &lt;div&gt;これはフラッシュのサンプルです。&lt;/div&gt;
+  &lt;kit-button-alt&gt;OK&lt;/kit-button-alt&gt;
+&lt;/kit-flash&gt;</pre>
+        </kit-container>
+
+        <kit-space></kit-space>
+
     </main>
     <kit-footer>
         <a href="" class="kit-hl-alt">mtsgi/kitstrap</a>
