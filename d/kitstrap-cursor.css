@@ -7,16 +7,19 @@ body {
 }
 
 /* Default style */
+
 kit-button, .kit-button {
     cursor: url(./cursor-1.png), default;
 }
 
 /* Pointer style */
-.kit-toggle input+label, kit-btn, .btn, kit-hl, .kit-hyperlink, kit-hl-alt, .kit-hl-alt, .kit-button-alt, kit-button-alt {
+
+.kit-toggle input+label, kit-btn, .btn, kit-hl, .kit-hyperlink, kit-hl-alt, .kit-hl-alt, .kit-button-alt, kit-button-alt, kit-navbar-alt kit-navitem, kit-navbar-alt .kit-navitem, .kit-navbar-alt kit-navitem, .kit-navbar-alt .kit-navitem {
     cursor: url(./cursor-2.png), pointer;
 }
 
 /* Text style */
+
 .textbox {
     cursor: url(./cursor-3.png), text;
 }
