@@ -78,6 +78,7 @@ kit-navbar-alt .kit-navitem,
     color: #909090;
     padding: 8px 12px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 kit-navbar-alt kit-navitem:hover,
@@ -320,6 +321,11 @@ kit-small, .kit-small {
     font-size: 14px;
 }
 
+kit-large, .kit-large {
+    color: #222;
+    font-size: 20px;
+}
+
 kit-badge, .kit-badge {
     background: orange;
     color: #ffffff;
@@ -349,7 +355,8 @@ h2 {
 }
 
 h5 {
-    color: #505050;
+    font-size: 15px;
+    color: #909090;
     margin: 4px 0;
 }
 

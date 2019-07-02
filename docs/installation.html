@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../d/kitstrap.css">
+    <link rel="stylesheet" href="../d/kitstrap-cursor.css">
+    <link rel="stylesheet" href="../d/kitstrap-font.css">
+    <link rel="stylesheet" href="./custom.css">
+    <title>導入方法 - kitstrapドキュメント/サンプル</title>
+</head>
+
+<body>
+    <header class="kit-header">
+        <a href="https://github.com/mtsgi/kitstrap"><img src="../icon.png" alt="kitstrap"></a>
+        <a href="./" class="kit-hl-alt">ドキュメント</a>
+        <div class="kit-small">kitstrap v0.2</div>
+    </header>
+    <main class="p-l">
+        <p class="m-l">　kitstrapを導入しましょう。</p>
+        <h2 class="m-l">ダウンロードして使う</h2>
+        <p class="m-l">
+            　kitstrapの本体をダウンロードして使用を開始する場合、下のボタンからダウンロードできます。zipファイルをプロジェクトのディレクトリに展開してください。<code>/d</code>以下にkitstrapの本体が入っています。不要であれば<code>docs</code>ディレクトリは削除しても問題ありません。
+            <a href="https://github.com/mtsgi/kitstrap/archive/master.zip" class="kit-large kit-button-alt kit-block m-l limegreen">ダウンロード</a>
+            　CSSファイルが設置できたら、次のように<code>link</code>タグを挿入します。これだけでkitstrapを使用する準備は完了です。正しくCSSを読み込めているか開発者ツールなどで確認するとよいでしょう。
+        </p>
+        <pre class="silver m-l p">&lt;link rel=&quot;stylesheet&quot; href=&quot;./d/kitstrap.css&quot;&gt;</pre>
+        <h2 class="m-l">CDNから読み込む</h2>
+        <p class="m-l">
+            　kitstrapのGitHubリポジトリを参照する形で読み込むこともできます。<br>
+            　この方法では、ディレクトリ内へのバンドルが不要になりますが、github.ioへのアクセス環境がないとロードできません。<br>
+            　また、次の方法では最新のkitstrapへ自動でアップデートされます。更新の変更内容によってウェブページの見た目が変化する場合があります。
+        </p>
+        <pre class="silver m-l p">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://mtsgi.github.io/kitstrap/d/kitstrap.css&quot;&gt;</pre>
+        <a href="./" class="kit-hl-alt kit-small m-l">トップへ戻る</a>
+    </main>
+    <kit-footer>
+        <a href="" class="kit-hl-alt">mtsgi/kitstrap</a>
+    </kit-footer>
+</body>
+
+</html>

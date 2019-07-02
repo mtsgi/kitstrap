@@ -1,0 +1,44 @@
+h2 {
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    padding: 10px 4px;
+}
+
+header img {
+    position: absolute;
+    height: 65px;
+    right: 4px;
+}
+
+h2 kit-badge {
+    font-size: 18px;
+    margin: 0 3px 0 0;
+    position: relative;
+    top: -3px;
+}
+
+header {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    font-weight: 100;
+}
+
+main {
+    font-weight: 400;
+    padding: 10px;
+    line-height: 200%;
+}
+
+.textbox {
+    max-width: 90%;
+}
+
+#kit-flash-sample{
+    display: none;
+}
+
+kit-space{
+    height: 20px;
+}
