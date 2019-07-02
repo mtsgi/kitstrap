@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../d/kitstrap.css">
+    <link rel="stylesheet" href="../d/kitstrap-cursor.css">
+    <link rel="stylesheet" href="../d/kitstrap-font.css">
+    <link rel="stylesheet" href="./custom.css">
+    <title>レイアウト - kitstrapドキュメント/サンプル</title>
+</head>
+
+<body>
+    <header class="kit-header">
+        <a href="https://github.com/mtsgi/kitstrap"><img src="../icon.png" alt="kitstrap"></a>
+        <a href="./" class="kit-hl-alt">ドキュメント</a>
+        <div class="kit-small">kitstrap v0.2</div>
+    </header>
+    <main class="p-l">
+
+        <p class="m-l">
+            　kitstrapを使用して、簡単にWebページのレイアウトを構成することができます。</p>
+        <h2>
+            <kit-badge class="orange">class</kit-badge>
+            <kit-badge class="limegreen">tag</kit-badge>
+            kit-block
+        </h2>
+        <p class="m-l">
+            <code>kit-block</code>を使用すると、要素をブロック要素にすることができます。例えば、<code>kit-button</code>にこれを適用すると、以下のようになります。
+        </p>
+        <kit-container class="m-l">
+            <kit-box>
+                <h5>プレビュー</h5>
+                <kit-button class="kit-block">ブロックレベルボタン</kit-button>
+            </kit-box>
+            <kit-box class="kit-box silver">
+                <h5>マークアップ</h5>
+                <pre>&lt;kit-button class=&quot;kit-block&quot;&gt;ブロックレベルボタン&lt;/kit-button&gt;</pre>
+            </kit-box>
+        </kit-container>
+
+        <h2>
+            <kit-badge class="orange">class</kit-badge>
+            <kit-badge class="limegreen">tag</kit-badge>
+            kit-inblock
+        </h2>
+        <p class="m-l">
+            <code>kit-inblock</code>を使用すると、要素をインラインブロック要素にすることができます。例えば、<code>kit-button</code>にこれを適用すると、以下のようになります。
+        </p>
+        <kit-container class="m-l">
+            <kit-box>
+                <h5>プレビュー</h5>
+                <kit-button class="kit-inblock">インラインブロックレベルボタン</kit-button>
+            </kit-box>
+            <kit-box class="kit-box silver">
+                <h5>マークアップ</h5>
+                <pre>&lt;kit-button class=&quot;kit-inblock&quot;&gt;インラインブロックレベルボタン&lt;/kit-button&gt;</pre>
+            </kit-box>
+        </kit-container>
+
+        <a href="./" class="kit-hl-alt kit-small m-l">トップへ戻る</a>
+    </main>
+    <kit-footer>
+        <a href="" class="kit-hl-alt">mtsgi/kitstrap</a>
+    </kit-footer>
+</body>
+
+</html>
