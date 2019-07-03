@@ -308,6 +308,30 @@ kit-button-alt:hover, .kit-button-alt:hover {
     color: white;
 }
 
+.kit-button.small,
+kit-button.small,
+.kit-button-alt.small,
+.kit-button-alt.small{
+    font-size: 13px;
+    padding: 0px 5px;
+}
+
+.kit-button.medium,
+kit-button.medium,
+.kit-button-alt.medium,
+.kit-button-alt.medium{
+    font-size: 16px;
+    padding: 1px 8px;
+}
+
+.kit-button.large,
+kit-button.large,
+.kit-button-alt.large,
+.kit-button-alt.large{
+    font-size: 20px;
+    padding: 3px 14px;
+}
+
 kit-block, .kit-block {
     display: block;
 }
@@ -316,12 +340,16 @@ kit-inblock, .kit-inblock {
     display: inline-block;
 }
 
-kit-small, .kit-small {
+kit-inline, .kit-inline {
+    display: inline;
+}
+
+kit-sub, .kit-sub {
     color: #999;
     font-size: 14px;
 }
 
-kit-large, .kit-large {
+kit-title, .kit-title {
     color: #222;
     font-size: 20px;
 }
@@ -332,6 +360,7 @@ kit-badge, .kit-badge {
     padding: 0 5px;
     margin: 0 4px;
     border-radius: 5px;
+    font-weight: 400;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
 }
 
@@ -350,7 +379,7 @@ kit-flash, .kit-flash{
 h2 {
     margin: 10px 0;
     padding: 2px;
-    font-weight: 100;
+    font-weight: 900;
     border-bottom: 1px solid #c0c0c0;
 }
 
