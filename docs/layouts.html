@@ -56,15 +56,15 @@
         <kit-container class="m-l">
             <kit-box>
                 <h5>プレビュー</h5>
-                <kit-button class="kit-inblock m">インラインブロックレベルボタン</kit-button>
-                <kit-button class="kit-inblock m">インラインブロックレベルボタン</kit-button>
-                <kit-button class="kit-inblock m">インラインブロックレベルボタン</kit-button>
+                <kit-button class="kit-inblock">インラインブロックレベルボタン</kit-button>
+                <kit-button class="kit-inblock">インラインブロックレベルボタン</kit-button>
+                <kit-button class="kit-inblock">インラインブロックレベルボタン</kit-button>
             </kit-box>
             <kit-box class="kit-box silver">
                 <h5>マークアップ</h5>
-                <pre>&lt;kit-button class=&quot;kit-inblock m&quot;&gt;インラインブロックレベルボタン&lt;/kit-button&gt;
-&lt;kit-button class=&quot;kit-inblock m&quot;&gt;インラインブロックレベルボタン&lt;/kit-button&gt;
-&lt;kit-button class=&quot;kit-inblock m&quot;&gt;インラインブロックレベルボタン&lt;/kit-button&gt;</pre>
+                <pre>&lt;kit-button class=&quot;kit-inblock&quot;&gt;インラインブロックレベルボタン&lt;/kit-button&gt;
+&lt;kit-button class=&quot;kit-inblock&quot;&gt;インラインブロックレベルボタン&lt;/kit-button&gt;
+&lt;kit-button class=&quot;kit-inblock&quot;&gt;インラインブロックレベルボタン&lt;/kit-button&gt;</pre>
             </kit-box>
         </kit-container>
 
@@ -88,6 +88,54 @@
                 <pre>&lt;kit-button class=&quot;kit-inline&quot;&gt;インラインレベルボタン&lt;/kit-button&gt;
 &lt;kit-button class=&quot;kit-inline&quot;&gt;インラインレベルボタン&lt;/kit-button&gt;
 &lt;kit-button class=&quot;kit-inline&quot;&gt;インラインレベルボタン&lt;/kit-button&gt;</pre>
+            </kit-box>
+        </kit-container>
+
+        <h2>
+            <kit-badge class="orange">class</kit-badge>
+            paddingとmargin
+        </h2>
+        <p class="m-l">
+            <code>.p</code>クラス、<code>.m</code>クラスとその派生クラスを使用すると、paddingとmarginを設定できます。
+        </p>
+        <kit-container class="m-l">
+            <kit-box>
+                <h5>プレビュー</h5>
+                padding
+                <kit-container class="m">
+                        <kit-box class="p-0">p-0 (0px)</kit-box>
+                        <kit-box class="p-s">p-s (4px)</kit-box>
+                        <kit-box class="p">p (8px)</kit-box>
+                        <kit-box class="p-m">p-m (10px)</kit-box>
+                        <kit-box class="p-l">p-l (16px)</kit-box>
+                        <kit-box class="p-xl">p-xl (24px)</kit-box>
+                </kit-container>
+                margin
+                <blockquote class="m-0">m-0 (0px)</blockquote>
+                <blockquote class="m-s">m-s (4px)</blockquote>
+                <blockquote class="m">m (8px)</blockquote>
+                <blockquote class="m-m">m-m (10px)</blockquote>
+                <blockquote class="m-l">m-l (16px)</blockquote>
+                <blockquote class="m-xl">m-xl (24px)</blockquote>
+            </kit-box>
+            <kit-box class="kit-box silver">
+                <h5>マークアップ</h5>
+                <pre>padding
+&lt;kit-container class=&quot;m&quot;&gt;
+        &lt;kit-box class=&quot;p-0&quot;&gt;p-0 (0px)&lt;/kit-box&gt;
+        &lt;kit-box class=&quot;p-s&quot;&gt;p-s (4px)&lt;/kit-box&gt;
+        &lt;kit-box class=&quot;p&quot;&gt;p (8px)&lt;/kit-box&gt;
+        &lt;kit-box class=&quot;p-m&quot;&gt;p-m (10px)&lt;/kit-box&gt;
+        &lt;kit-box class=&quot;p-l&quot;&gt;p-l (16px)&lt;/kit-box&gt;
+        &lt;kit-box class=&quot;p-xl&quot;&gt;p-xl (24px)&lt;/kit-box&gt;
+&lt;/kit-container&gt;
+margin
+&lt;blockquote class=&quot;m-0&quot;&gt;m-0 (0px)&lt;/blockquote&gt;
+&lt;blockquote class=&quot;m-s&quot;&gt;m-s (4px)&lt;/blockquote&gt;
+&lt;blockquote class=&quot;m&quot;&gt;m (8px)&lt;/blockquote&gt;
+&lt;blockquote class=&quot;m-m&quot;&gt;m-m (10px)&lt;/blockquote&gt;
+&lt;blockquote class=&quot;m-l&quot;&gt;m-l (16px)&lt;/blockquote&gt;
+&lt;blockquote class=&quot;m-xl&quot;&gt;m-xl (24px)&lt;/blockquote&gt;</pre>
             </kit-box>
         </kit-container>
 
