@@ -273,7 +273,7 @@ kit-button, .kit-button {
 }
 
 kit-button:hover, .kit-button:hover {
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .5), inset 0px 0px 2px 0px rgba(0, 0, 0, .2), inset 0px 1em 1px 3px rgba(255, 255, 255, .2), inset 0px 9999px 0px 0px rgba(0, 0, 0, .2);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .5), inset 0px 0px 2px 0px rgba(0, 0, 0, .2), inset 0px 1em 1px 3px rgba(255, 255, 255, .2), inset 0px 9999px 0px 0px rgba(0, 0, 0, .15);
 }
 
 kit-button:active, .kit-button:active {
@@ -306,6 +306,70 @@ kit-button-alt, .kit-button-alt {
 kit-button-alt:hover, .kit-button-alt:hover {
     background: dodgerblue;
     color: white;
+}
+
+.kit-button.small,
+kit-button.small,
+.kit-button-alt.small,
+.kit-button-alt.small{
+    font-size: 13px;
+    padding: 0px 5px;
+}
+
+.kit-button.medium,
+kit-button.medium,
+.kit-button-alt.medium,
+.kit-button-alt.medium{
+    font-size: 16px;
+    padding: 1px 8px;
+}
+
+.kit-button.large,
+kit-button.large,
+.kit-button-alt.large,
+.kit-button-alt.large{
+    font-size: 20px;
+    padding: 3px 14px;
+}
+
+kit-buttongroup{
+    display: flex;
+}
+
+kit-buttongroup kit-button,
+kit-buttongroup .kit-button,
+.kit-buttongroup kit-button,
+.kit-buttongroup .kit-button,
+kit-buttongroup kit-button-alt,
+kit-buttongroup .kit-button-alt,
+.kit-buttongroup kit-button-alt,
+.kit-buttongroup .kit-button-alt{
+    border-radius: 0;
+    margin: 0px;
+    border-left-width: 0;
+}
+
+kit-buttongroup kit-button:first-child,
+kit-buttongroup .kit-button:first-child,
+.kit-buttongroup kit-button:first-child,
+.kit-buttongroup .kit-button:first-child,
+kit-buttongroup kit-button-alt:first-child,
+kit-buttongroup .kit-button-alt:first-child,
+.kit-buttongroup kit-button-alt:first-child,
+.kit-buttongroup .kit-button-alt:first-child{
+    border-radius: 6px 0 0 6px;
+    border-left-width: 2px;
+}
+
+kit-buttongroup kit-button:last-child,
+kit-buttongroup .kit-button:last-child,
+.kit-buttongroup kit-button:last-child,
+.kit-buttongroup .kit-button:last-child,
+kit-buttongroup kit-button-alt:last-child,
+kit-buttongroup .kit-button-alt:last-child,
+.kit-buttongroup kit-button-alt:last-child,
+.kit-buttongroup .kit-button-alt:last-child{
+    border-radius: 0 6px 6px 0;
 }
 
 kit-block, .kit-block {
