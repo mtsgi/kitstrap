@@ -444,7 +444,7 @@ blockquote {
 
 /* layout */
 
-kit-space {
+kit-space, .kit-space {
     display: block;
     height: 10px;
 }
@@ -459,33 +459,38 @@ kit-right, .kit-right{
     float: right;
 }
 
-kit-container {
+kit-container, .kit-container {
     display: block;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
     border-radius: 6px;
 }
 
-kit-container kit-box, kit-container .kit-box {
+kit-container kit-box, kit-container .kit-box,
+.kit-container .kit-box, .kit-container .kit-box{
     display: block;
     padding: 8px;
     margin: 0;
     border: 1px solid #c0c0c0;
 }
 
-kit-container kit-box, kit-container .kit-box {
+kit-container kit-box, kit-container .kit-box,
+.kit-container kit-box, .kit-container .kit-box{
     border-top-width: 0;
 }
 
-kit-container kit-box:first-child, kit-container .kit-box:first-child {
+kit-container kit-box:first-child, kit-container .kit-box:first-child,
+.kit-container kit-box:first-child, .kit-container .kit-box:first-child{
     border-radius: 6px 6px 0 0;
     border-top-width: 1px;
 }
 
-kit-container kit-box:last-child, kit-container .kit-box:last-child {
+kit-container kit-box:last-child, kit-container .kit-box:last-child,
+.kit-container kit-box:last-child, .kit-container .kit-box:last-child{
     border-radius: 0 0 6px 6px;
 }
 
-kit-container kit-box:only-child, kit-container .kit-box:only-child {
+kit-container kit-box:only-child, kit-container .kit-box:only-child,
+.kit-container kit-box:only-child, .kit-container .kit-block:only-child{
     border-radius: 6px;
 }
 
