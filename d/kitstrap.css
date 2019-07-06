@@ -202,13 +202,13 @@ kit-btn, .btn {
     box-shadow: inset 0 1px 1px 0px #fff, inset 0 -1px 1px 0px #fff;
 }
 
-btn:hover, .btn:hover {
+kit-btn:hover, .btn:hover {
     position: relative;
     box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, .3);
     background: #fcfcfc;
 }
 
-btn:active, .btn:active {
+kit-btn:active, .btn:active {
     transition: none;
     top: 1px;
 }
@@ -504,6 +504,32 @@ kit-container kit-box:only-child, kit-container .kit-box:only-child {
 .m-l{ margin: 16px }
 .m-xl{ margin: 24px }
 .m-0{ margin: 0 }
+
+/* fonts */
+
+.kit-font-large{
+    font-size: 20px;
+}
+
+.kit-font-medium{
+    font-size: 16px;
+}
+
+.kit-font-small{
+    font-size: 14px;
+}
+
+.kit-font-bold{
+    font-weight: bold;
+}
+
+.kit-font-normal{
+    font-weight: normal;
+}
+
+.kit-font-thin{
+    font-weight: lighter;
+}
 
 /* colors */
 
