@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../d/kitstrap.css">
+    <link rel="stylesheet" href="../d/kitstrap-cursor.css">
+    <link rel="stylesheet" href="../d/kitstrap-font.css">
+    <link rel="stylesheet" href="./custom.css">
+    <title>テキスト・フォント - kitstrapドキュメント/サンプル</title>
+</head>
+
+<body>
+    <header class="kit-header">
+        <a href="https://github.com/mtsgi/kitstrap"><img src="../icon.png" alt="kitstrap"></a>
+        <a href="./" class="kit-hl-alt">ドキュメント</a>
+        <div class="kit-sub">kitstrap v0.2</div>
+    </header>
+    <main class="p-l">
+
+        <p class="m-l">
+            　<code>kit-text</code>や<code>kit-font</code>から始まるクラスを使用して、簡単にテキストの配置を適用することができます。</p>
+        <h2>
+            <kit-badge class="orange">class</kit-badge>
+            フォント関連
+        </h2>
+        <p class="m-l">
+            　<code>.kit-font-large</code>(または、別名<code>.kit-font-l</code>)は、大きなフォントを使用します。<br>
+            　<code>.kit-font-medium</code>(または、別名<code>.kit-font-m</code>)は、普通サイズのフォントを使用します。<br>
+            　<code>.kit-font-small</code>(または、別名<code>.kit-font-s</code>)は、小さなフォントを使用します。<br>
+            　<code>.kit-font-bold</code>は、太字フォントを使用します。<br>
+            　<code>.kit-font-normal</code>は、普通の太さのフォントを使用します。<br>
+            　<code>.kit-font-thin</code>は、細字フォントを使用します。
+        </p>
+        <kit-container class="m-l">
+            <kit-box>
+                <h5>プレビュー</h5>
+                <span class="kit-font-large m">Large</span>
+                <span class="kit-font-medium m">Medium</span>
+                <span class="kit-font-small m">Small</span>
+                <hr>
+                <span class="kit-font-bold m">Bold</span>
+                <span class="kit-font-normal m">Normal</span>
+                <span class="kit-font-thin m">Thin</span>
+            </kit-box>
+            <kit-box class="kit-box silver">
+                <h5>マークアップ</h5>
+                <pre>&lt;span class=&quot;kit-font-large m&quot;&gt;Large&lt;/span&gt;
+&lt;span class=&quot;kit-font-medium m&quot;&gt;Medium&lt;/span&gt;
+&lt;span class=&quot;kit-font-small m&quot;&gt;Small&lt;/span&gt;
+&lt;hr&gt;
+&lt;span class=&quot;kit-font-bold m&quot;&gt;Bold&lt;/span&gt;
+&lt;span class=&quot;kit-font-normal m&quot;&gt;Normal&lt;/span&gt;
+&lt;span class=&quot;kit-font-thin m&quot;&gt;Thin&lt;/span&gt;</pre>
+            </kit-box>
+        </kit-container>
+
+        <h2>
+            <kit-badge class="orange">class</kit-badge>
+            テキストの位置と整形
+        </h2>
+        <p class="m-l">
+            　<code>.kit-text-l</code>は、テキストを左寄せにします。<br>
+            　<code>.kit-text-c</code>は、テキストを中央寄せにします。<br>
+            　<code>.kit-text-r</code>は、テキストを右寄せにします。<br>
+            　<code>.kit-text-upper</code>は、テキストを大文字にします。<br>
+            　<code>.kit-text-lower</code>は、テキストを小文字にします。<br>
+            　<code>.kit-text-capitalize</code>は、テキストを先頭大文字にします。<br>
+            　<code>.kit-text-zenkaku</code>は、テキストを全角文字にします。
+        </p>
+        <kit-container class="m-l">
+            <kit-box>
+                <h5>プレビュー</h5>
+                <kit-button-alt class="kit-block kit-text-l m">kit-text-l</kit-button-alt>
+                <kit-button-alt class="kit-block kit-text-c m">kit-text-c</kit-button-alt>
+                <kit-button-alt class="kit-block kit-text-r m">kit-text-r</kit-button-alt>
+                <kit-pane>Hello, world!</kit-pane>
+                <kit-pane class="kit-text-upper">Hello, world!</kit-pane>
+                <kit-pane class="kit-text-lower">Hello, world!</kit-pane>
+                <kit-pane class="kit-text-capitalize">Hello, world!</kit-pane>
+                <kit-pane class="kit-text-zenkaku">Hello, world!</kit-pane>
+            </kit-box>
+            <kit-box class="kit-box silver">
+                <h5>マークアップ</h5>
+                <pre>&lt;kit-button-alt class=&quot;kit-block kit-text-l m&quot;&gt;kit-text-l&lt;/kit-button-alt&gt;
+&lt;kit-button-alt class=&quot;kit-block kit-text-c m&quot;&gt;kit-text-c&lt;/kit-button-alt&gt;
+&lt;kit-button-alt class=&quot;kit-block kit-text-r m&quot;&gt;kit-text-r&lt;/kit-button-alt&gt;
+&lt;kit-pane&gt;Hello, world!&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;kit-text-upper&quot;&gt;Hello, world!&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;kit-text-lower&quot;&gt;Hello, world!&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;kit-text-capitalize&quot;&gt;Hello, world!&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;kit-text-zenkaku&quot;&gt;Hello, world!&lt;/kit-pane&gt;</pre>
+            </kit-box>
+        </kit-container>
+
+        <h2>
+            <kit-badge class="orange">class</kit-badge>
+            行間
+        </h2>
+        <p class="m-l">
+            　<code>.kit-line-xl</code>は、行間を倍率2.75にします。<br>
+            　<code>.kit-line-l</code>は、行間を倍率2にします。<br>
+            　<code>.kit-line-m</code>は、行間を倍率1.5にします。<br>
+            　<code>.kit-line-s</code>は、行間を倍率1にします。
+        </p>
+        <kit-container class="m-l">
+            <kit-box>
+                <h5>プレビュー</h5>
+                <kit-badge class="black">行間：XL</kit-badge>
+                <blockquote class="kit-line-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+                <kit-badge class="black">行間：L</kit-badge>
+                <blockquote class="kit-line-l">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+                <kit-badge class="black">行間：M</kit-badge>
+                <blockquote class="kit-line-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+                <kit-badge class="black">行間：S</kit-badge>
+                <blockquote class="kit-line-s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+            </kit-box>
+            <kit-box class="kit-box silver">
+                <h5>マークアップ</h5>
+                <pre>&lt;kit-badge class=&quot;black&quot;&gt;行間：XL&lt;/kit-badge&gt;
+&lt;blockquote class=&quot;kit-line-xl&quot;&gt;...&lt;/blockquote&gt;
+&lt;kit-badge class=&quot;black&quot;&gt;行間：L&lt;/kit-badge&gt;
+&lt;blockquote class=&quot;kit-line-l&quot;&gt;...&lt;/blockquote&gt;
+&lt;kit-badge class=&quot;black&quot;&gt;行間：M&lt;/kit-badge&gt;
+&lt;blockquote class=&quot;kit-line-m&quot;&gt;...&lt;/blockquote&gt;
+&lt;kit-badge class=&quot;black&quot;&gt;行間：S&lt;/kit-badge&gt;
+&lt;blockquote class=&quot;kit-line-s&quot;&gt;...&lt;/blockquote&gt;</pre>
+            </kit-box>
+        </kit-container>
+
+        <a href="./" class="kit-hl-alt kit-sub m-l">トップへ戻る</a>
+    </main>
+    <kit-footer>
+        <a href="" class="kit-hl-alt">mtsgi/kitstrap</a>
+    </kit-footer>
+</body>
+
+</html>

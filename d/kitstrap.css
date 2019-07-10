@@ -235,8 +235,13 @@ kit-btn:active,
 }
 
 .textbox:focus {
-    background: #ffffff;
     box-shadow: 0 0 0 3px rgba(180, 200, 255, .8);
+}
+
+.textbox.dark{
+    border-color: rgba(255, 255, 255, .5);
+    background: #303030;
+    color: #f0f0f0;
 }
 
 .textbox::selection {
@@ -389,6 +394,17 @@ kit-buttongroup .kit-button-alt:last-child,
     border-radius: 0 6px 6px 0;
 }
 
+kit-buttongroup kit-button:only-child,
+kit-buttongroup .kit-button:only-child,
+.kit-buttongroup kit-button:only-child,
+.kit-buttongroup .kit-button:only-child,
+kit-buttongroup kit-button-alt:only-child,
+kit-buttongroup .kit-button-alt:only-child,
+.kit-buttongroup kit-button-alt:only-child,
+.kit-buttongroup .kit-button-alt:only-child {
+    border-radius: 6px;
+}
+
 kit-block,
 .kit-block {
     display: block;
@@ -501,6 +517,7 @@ kit-container .kit-box,
     padding: 8px;
     margin: 0;
     border: 1px solid #c0c0c0;
+    overflow: scroll;
 }
 
 kit-container kit-box,
@@ -532,6 +549,30 @@ kit-container .kit-box:only-child,
     border-radius: 6px;
 }
 
+kit-pane,
+.kit-pane {
+    display: block;
+    padding: 6px;
+    background: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+kit-pane.dark,
+.kit-pane.dark {
+    background: #303030;
+    color: #f0f0f0;
+}
+
+kit-pane.hover:hover,
+.kit-pane.hover:hover {
+    background: #f0f0f0;
+}
+
+kit-pane.dark.hover:hover,
+.kit-pane.dark.hover:hover {
+    background: #707070;
+}
+
 /* padding and margin */
 
 .p{ padding: 8px }
@@ -550,16 +591,19 @@ kit-container .kit-box:only-child,
 
 /* fonts */
 
-.kit-font-large {
+.kit-font-large,
+.kit-font-l {
     font-size: 20px;
 }
 
-.kit-font-medium {
+.kit-font-medium,
+.kit-font-m {
     font-size: 16px;
 }
 
-.kit-font-small {
-    font-size: 14px;
+.kit-font-small,
+.kit-font-s {
+    font-size: 13px;
 }
 
 .kit-font-bold {
@@ -572,6 +616,52 @@ kit-container .kit-box:only-child,
 
 .kit-font-thin {
     font-weight: lighter;
+}
+
+/* text */
+
+.kit-text-l {
+    text-align: left;
+}
+
+.kit-text-c {
+    text-align: center;
+}
+
+.kit-text-r {
+    text-align: right;
+}
+
+.kit-text-upper {
+    text-transform: uppercase;
+}
+
+.kit-text-lower {
+    text-transform: lowercase;
+}
+
+.kit-text-capitalize {
+    text-transform: capitalize;
+}
+
+.kit-text-zenkaku {
+    text-transform: full-width;
+}
+
+.kit-line-xl {
+    line-height: 2.75;
+}
+
+.kit-line-l {
+    line-height: 2;
+}
+
+.kit-line-m {
+    line-height: 1.5;
+}
+
+.kit-line-s {
+    line-height: 1;
 }
 
 /* colors */
