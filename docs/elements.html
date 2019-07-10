@@ -194,12 +194,17 @@
             textbox
         </h2>
         <p class="m-l">
-            　input要素やtextarea要素に<code>class="textbox"</code>を付与すると以下のような見た目になります。</p>
+            　input要素やtextarea要素に<code>class="textbox"</code>を付与すると以下のような見た目になります。子クラスの<code>.dark</code>を使うと暗いテーマを適用できます。</p>
         <kit-container class="m-l">
             <kit-box>
                 <h5>プレビュー</h5>
-                入力してください<br>
-                <input type="text" class="textbox" placeholder="いまどうしてる？">
+                入力してください
+                <kit-pane>
+                    <input type="text" class="textbox" placeholder="いまどうしてる？">
+                </kit-pane>
+                <kit-pane class="dark">
+                    <input type="text" class="textbox dark" placeholder="いまどうしてる？">
+                </kit-pane>
             </kit-box>
         </kit-container>
 
@@ -275,6 +280,46 @@
         &lt;a class=&quot;kit-navitem&quot;&gt;項目4&lt;/a&gt;
     &lt;/kit-navbar-alt&gt;
 &lt;/kit-box&gt;</pre>
+        </kit-container>
+
+        <kit-space></kit-space>
+
+        <h2>
+            <kit-badge class="orange">class</kit-badge>
+            <kit-badge class="limegreen">tag</kit-badge>
+            kit-pane
+        </h2>
+        <p class="m-l">
+            　<code>class="kit-pane"</code>を付与するか、<code>&lt;kit-pane&gt;&lt;/kit-pane&gt;</code>を使用して、操作や表示のための領域を作成します。子クラスの<code>.dark</code>を使用して、暗いテーマを使用可能です。子クラス<code>.hover</code>で、ホバー時の効果を付与できます。
+        </p>
+        <kit-container class="m-l">
+            <kit-box>
+                <h5>プレビュー</h5>
+                <kit-pane>kit-pane</kit-pane>
+                <kit-pane>kit-pane</kit-pane>
+                <kit-pane>kit-pane</kit-pane>
+                <kit-pane class="dark">kit-pane.dark</kit-pane>
+                <kit-pane class="dark">kit-pane.dark</kit-pane>
+                <kit-pane class="dark">kit-pane.dark</kit-pane>
+                <kit-pane class="hover">kit-pane.hover</kit-pane>
+                <kit-pane class="hover">kit-pane.hover</kit-pane>
+                <kit-pane class="hover">kit-pane.hover</kit-pane>
+                <kit-pane class="dark hover">kit-pane.dark.hover</kit-pane>
+                <kit-pane class="dark hover">kit-pane.dark.hover</kit-pane>
+                <kit-pane class="dark hover">kit-pane.dark.hover</kit-pane>
+            </kit-box>
+            <pre class="kit-box silver"><h5>マークアップ</h5>&lt;kit-pane&gt;kit-pane&lt;/kit-pane&gt;
+&lt;kit-pane&gt;kit-pane&lt;/kit-pane&gt;
+&lt;kit-pane&gt;kit-pane&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;dark&quot;&gt;kit-pane.dark&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;dark&quot;&gt;kit-pane.dark&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;dark&quot;&gt;kit-pane.dark&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;hover&quot;&gt;kit-pane.hover&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;hover&quot;&gt;kit-pane.hover&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;hover&quot;&gt;kit-pane.hover&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;dark hover&quot;&gt;kit-pane.dark.hover&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;dark hover&quot;&gt;kit-pane.dark.hover&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;dark hover&quot;&gt;kit-pane.dark.hover&lt;/kit-pane&gt;</pre>
         </kit-container>
 
         <kit-space></kit-space>
