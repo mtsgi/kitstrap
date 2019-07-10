@@ -603,7 +603,7 @@ kit-pane.dark.hover:hover,
 
 .kit-font-small,
 .kit-font-s {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .kit-font-bold {
@@ -616,6 +616,52 @@ kit-pane.dark.hover:hover,
 
 .kit-font-thin {
     font-weight: lighter;
+}
+
+/* text */
+
+.kit-text-l {
+    text-align: left;
+}
+
+.kit-text-c {
+    text-align: center;
+}
+
+.kit-text-r {
+    text-align: right;
+}
+
+.kit-text-upper {
+    text-transform: uppercase;
+}
+
+.kit-text-lower {
+    text-transform: lowercase;
+}
+
+.kit-text-capitalize {
+    text-transform: capitalize;
+}
+
+.kit-text-zenkaku {
+    text-transform: full-width;
+}
+
+.kit-line-xl {
+    line-height: 2.75;
+}
+
+.kit-line-l {
+    line-height: 2;
+}
+
+.kit-line-m {
+    line-height: 1.5;
+}
+
+.kit-line-s {
+    line-height: 1;
 }
 
 /* colors */
