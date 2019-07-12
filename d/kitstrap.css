@@ -545,7 +545,7 @@ kit-container .kit-box:last-child,
 kit-container kit-box:only-child,
 kit-container .kit-box:only-child,
 .kit-container kit-box:only-child,
-.kit-container .kit-block:only-child {
+.kit-container .kit-box:only-child {
     border-radius: 6px;
 }
 
