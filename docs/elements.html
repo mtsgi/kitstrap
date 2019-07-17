@@ -43,13 +43,21 @@
 &lt;kit-button-alt&gt;ボタン4&lt;/kit-button-alt&gt;</pre>
             <blockquote class="kit-box">デフォルトのカラーはdodgerblueです</blockquote>
         </kit-container>
-        <p class="m-l">kit-buttonの子クラス<code>.large</code>、<code>.medium</code>と<code>.small</code>でボタンのサイズを変更することもできます。</p>
+        <p class="m-l">kit-buttonの子クラス<code>.large</code>、<code>.medium</code>と<code>.small</code>でボタンのサイズを変更することもできます。<code>.disabled</code>で、無効化されたボタンのスタイルを設定することができます(kit-button-altでは一部利用不可)。</p>
         <kit-container class="m-l">
             <kit-box>
                 <h5>プレビュー</h5>
                 <kit-button class="small kit-inblock">small</kit-button>
                 <kit-button class="medium kit-inblock">medium</kit-button>
                 <kit-button class="large kit-inblock">large</kit-button>
+                <kit-button-alt class="small kit-inblock">small</kit-button-alt>
+                <kit-button-alt class="medium kit-inblock">medium</kit-button-alt>
+                <kit-button-alt class="large kit-inblock">large</kit-button-alt>
+            </kit-box>
+            <kit-box>
+                <h5>プレビュー</h5>
+                <kit-button class="disabled">無効</kit-button>
+                <button class="kit-button crimson kit-font-m disabled">無効</button>
             </kit-box>
         </kit-container>
         
@@ -199,13 +207,21 @@
             <kit-box>
                 <h5>プレビュー</h5>
                 入力してください
-                <kit-pane>
+                <kit-pane class="p-l hover">
                     <input type="text" class="textbox" placeholder="いまどうしてる？">
                 </kit-pane>
-                <kit-pane class="dark">
+                <kit-pane class="p-l dark hover">
                     <input type="text" class="textbox dark" placeholder="いまどうしてる？">
                 </kit-pane>
             </kit-box>
+        </kit-container>
+        <p class="m-l">kit-textboxの子クラス<code>.disabled</code>を使用して、入力不能フィールドのスタイルを設定します。普通は<code>disabled</code>属性と併用します。</p>
+        <kit-container class="m-l">
+            <kit-box>
+                <h5>プレビュー</h5>
+                <input type="text" class="textbox disabled" placeholder="入力不能フィールド" disabled>
+            </kit-box>
+            <pre class="kit-box silver"><h5>マークアップ</h5>&lt;input type=&quot;text&quot; class=&quot;textbox disabled&quot; placeholder=&quot;入力不能フィールド&quot; disabled&gt;</pre>
         </kit-container>
 
         <kit-space></kit-space>
@@ -297,27 +313,19 @@
                 <h5>プレビュー</h5>
                 <kit-pane>kit-pane</kit-pane>
                 <kit-pane>kit-pane</kit-pane>
-                <kit-pane>kit-pane</kit-pane>
-                <kit-pane class="dark">kit-pane.dark</kit-pane>
                 <kit-pane class="dark">kit-pane.dark</kit-pane>
                 <kit-pane class="dark">kit-pane.dark</kit-pane>
                 <kit-pane class="hover">kit-pane.hover</kit-pane>
                 <kit-pane class="hover">kit-pane.hover</kit-pane>
-                <kit-pane class="hover">kit-pane.hover</kit-pane>
-                <kit-pane class="dark hover">kit-pane.dark.hover</kit-pane>
                 <kit-pane class="dark hover">kit-pane.dark.hover</kit-pane>
                 <kit-pane class="dark hover">kit-pane.dark.hover</kit-pane>
             </kit-box>
             <pre class="kit-box silver"><h5>マークアップ</h5>&lt;kit-pane&gt;kit-pane&lt;/kit-pane&gt;
 &lt;kit-pane&gt;kit-pane&lt;/kit-pane&gt;
-&lt;kit-pane&gt;kit-pane&lt;/kit-pane&gt;
-&lt;kit-pane class=&quot;dark&quot;&gt;kit-pane.dark&lt;/kit-pane&gt;
 &lt;kit-pane class=&quot;dark&quot;&gt;kit-pane.dark&lt;/kit-pane&gt;
 &lt;kit-pane class=&quot;dark&quot;&gt;kit-pane.dark&lt;/kit-pane&gt;
 &lt;kit-pane class=&quot;hover&quot;&gt;kit-pane.hover&lt;/kit-pane&gt;
 &lt;kit-pane class=&quot;hover&quot;&gt;kit-pane.hover&lt;/kit-pane&gt;
-&lt;kit-pane class=&quot;hover&quot;&gt;kit-pane.hover&lt;/kit-pane&gt;
-&lt;kit-pane class=&quot;dark hover&quot;&gt;kit-pane.dark.hover&lt;/kit-pane&gt;
 &lt;kit-pane class=&quot;dark hover&quot;&gt;kit-pane.dark.hover&lt;/kit-pane&gt;
 &lt;kit-pane class=&quot;dark hover&quot;&gt;kit-pane.dark.hover&lt;/kit-pane&gt;</pre>
         </kit-container>
