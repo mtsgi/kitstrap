@@ -360,6 +360,14 @@ kit-button-alt.large {
     padding: 3px 14px;
 }
 
+.kit-button.xlarge,
+kit-button.xlarge,
+.kit-button-alt.xlarge,
+kit-button-alt.xlarge {
+    font-size: 27px;
+    padding: 5px 20px;
+}
+
 .kit-button.disabled,
 kit-button.disabled {
     background: #a5a5a5;
@@ -617,6 +625,11 @@ kit-pane.dark.hover:hover,
 .m-0{ margin: 0 }
 
 /* fonts */
+
+.kit-font-xlarge,
+.kit-font-xl {
+    font-size: 27px;
+}
 
 .kit-font-large,
 .kit-font-l {
