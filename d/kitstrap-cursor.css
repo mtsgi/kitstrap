@@ -8,7 +8,7 @@ body {
 
 /* Default style */
 
-kit-button, .kit-button {
+kit-button, .kit-button, .kit-toggle {
     cursor: url(./cursor-1.png), default;
 }
 
