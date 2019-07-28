@@ -131,8 +131,9 @@ kit-navbar-alt .kit-navitem:hover,
 }
 
 .kit-toggle {
-    padding: 10px;
-    border-bottom: 1px solid #909090;
+    display: block;
+    padding: 8px;
+    border-bottom: 1px solid #a0a0a0;
 }
 
 .kit-toggle:hover {
@@ -140,12 +141,11 @@ kit-navbar-alt .kit-navitem:hover,
 }
 
 .kit-toggle input {
-    position: absolute;
-    margin-left: -9999px;
-    visibility: hidden;
+    display: none;
 }
 
 .kit-toggle input+label {
+    display: block;
     float: right;
     position: relative;
     cursor: pointer;
@@ -164,9 +164,10 @@ kit-navbar-alt .kit-navitem:hover,
 .kit-toggle input+label:after {
     display: block;
     position: absolute;
-    top: 0px;
+    top: 2.5px;
     left: 0px;
-    bottom: 5px;
+    right: 0px;
+    bottom: 2.5px;
     content: "";
 }
 
@@ -244,7 +245,7 @@ kit-btn:active,
     color: #f0f0f0;
 }
 
-.textbox.disabled {
+.textbox[disabled] {
     background: #eeeeee;
     color: #919191;
 }

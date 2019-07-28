@@ -60,6 +60,8 @@
                 <h5>プレビュー</h5>
                 <kit-button class="disabled">無効</kit-button>
                 <button class="kit-button crimson kit-font-m disabled">無効</button>
+                <kit-button class="large disabled">無効</kit-button>
+                <button class="kit-button large orange kit-font-m disabled">無効</button>
             </kit-box>
         </kit-container>
         
@@ -198,6 +200,39 @@
         </kit-container>
 
         <kit-space></kit-space>
+
+        <h2>
+            <kit-badge class="orange">class</kit-badge>
+            label.kit-toggle
+        </h2>
+        <p class="m-l">
+            　クラス<code>.kit-togle</code>を付与した<strong>label</strong>要素内に<code>type="checkbox"</code>を持つ<strong>input</strong>要素、説明のテキスト、<code>for</code>属性を持つ空のラベル要素を順に配置することで、チェックボックスをトグル項目として表示することができます。
+        </p>
+        <kit-container class="m-l">
+            <kit-box>
+                <h5>プレビュー</h5>
+                <label class="kit-toggle">
+                    <input type="checkbox" id="matsu">トグル(松)<label for="matsu"></label>
+                </label>
+                <label class="kit-toggle">
+                    <input type="checkbox" id="take">トグル(竹)<label for="take"></label>
+                </label>
+                <label class="kit-toggle">
+                    <input type="checkbox" id="ume">トグル(梅)<label for="ume"></label>
+                </label>
+            </kit-box>
+            <pre class="kit-box silver"><h5>マークアップ</h5>&lt;label class=&quot;kit-toggle&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;matsu&quot;&gt;松&lt;label for=&quot;matsu&quot;&gt;&lt;/label&gt;
+&lt;/label&gt;
+&lt;label class=&quot;kit-toggle&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;take&quot;&gt;竹&lt;label for=&quot;take&quot;&gt;&lt;/label&gt;
+&lt;/label&gt;
+&lt;label class=&quot;kit-toggle&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;ume&quot;&gt;梅&lt;label for=&quot;ume&quot;&gt;&lt;/label&gt;
+&lt;/label&gt;</pre>
+        </kit-container>
+
+        <kit-space></kit-space>
         
         <h2>
             <kit-badge class="orange">class</kit-badge>
@@ -217,13 +252,15 @@
                 </kit-pane>
             </kit-box>
         </kit-container>
-        <p class="m-l">kit-textboxの子クラス<code>.disabled</code>を使用して、入力不能フィールドのスタイルを設定します。普通は<code>disabled</code>属性と併用します。</p>
+        <p class="m-l">
+            <code>.textbox</code>に対して<code>disabled</code>属性を付与すると、入力不能フィールドとなり、専用のスタイルが適用されます。
+        </p>
         <kit-container class="m-l">
             <kit-box>
                 <h5>プレビュー</h5>
-                <input type="text" class="textbox disabled" placeholder="入力不能フィールド" disabled>
+                <input type="text" class="textbox" placeholder="入力不能フィールド" disabled>
             </kit-box>
-            <pre class="kit-box silver"><h5>マークアップ</h5>&lt;input type=&quot;text&quot; class=&quot;textbox disabled&quot; placeholder=&quot;入力不能フィールド&quot; disabled&gt;</pre>
+            <pre class="kit-box silver"><h5>マークアップ</h5>&lt;input type=&quot;text&quot; class=&quot;textbox&quot; placeholder=&quot;入力不能フィールド&quot; disabled&gt;</pre>
         </kit-container>
 
         <kit-space></kit-space>
