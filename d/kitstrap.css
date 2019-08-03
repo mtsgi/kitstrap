@@ -390,7 +390,10 @@ kit-button-alt.disabled:active {
     position: static;
 }
 
-kit-buttongroup {
+kit-buttongroup,
+.kit-buttongroup,
+kit-formgroup,
+.kit-formgroup {
     display: flex;
 }
 
@@ -442,28 +445,28 @@ kit-buttongroup .kit-button-alt:only-child,
 }
 
 kit-block,
-.kit-block {
+.kit-block.kit-block {
     display: block;
 }
 
 kit-inblock,
-.kit-inblock {
+.kit-inblock.kit-inblock {
     display: inline-block;
 }
 
 kit-inline,
-.kit-inline {
+.kit-inline.kit-inline {
     display: inline;
 }
 
 kit-sub,
-.kit-sub {
+.kit-sub.kit-sub {
     color: #999;
     font-size: 14px;
 }
 
 kit-title,
-.kit-title {
+.kit-title.kit-title {
     color: #222;
     font-size: 20px;
 }
