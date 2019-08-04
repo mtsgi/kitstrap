@@ -404,9 +404,43 @@ kit-buttongroup .kit-button,
 kit-buttongroup kit-button-alt,
 kit-buttongroup .kit-button-alt,
 .kit-buttongroup kit-button-alt,
-.kit-buttongroup .kit-button-alt {
+.kit-buttongroup .kit-button-alt,
+kit-formgroup kit-button,
+kit-formgroup .kit-button,
+.kit-formgroup kit-button,
+.kit-formgroup .kit-button,
+kit-formgroup kit-button-alt,
+kit-formgroup .kit-button-alt,
+.kit-formgroup kit-button-alt,
+.kit-formgroup .kit-button-alt,
+kit-formgroup .textbox,
+.kit-formgroup .textbox {
     border-radius: 0;
     margin: 0px;
+}
+
+kit-formgroup .textbox,
+.kit-formgroup .textbox {
+    border: 2px solid #909090;
+    border-left-width: 0;
+}
+
+kit-buttongroup kit-button,
+kit-buttongroup .kit-button,
+.kit-buttongroup kit-button,
+.kit-buttongroup .kit-button,
+kit-buttongroup kit-button-alt,
+kit-buttongroup .kit-button-alt,
+.kit-buttongroup kit-button-alt,
+.kit-buttongroup .kit-button-alt,
+kit-formgroup kit-button,
+kit-formgroup .kit-button,
+.kit-formgroup kit-button,
+.kit-formgroup .kit-button,
+kit-formgroup kit-button-alt,
+kit-formgroup .kit-button-alt,
+.kit-formgroup kit-button-alt,
+.kit-formgroup .kit-button-alt {
     border-left-width: 0;
 }
 
@@ -417,8 +451,37 @@ kit-buttongroup .kit-button:first-child,
 kit-buttongroup kit-button-alt:first-child,
 kit-buttongroup .kit-button-alt:first-child,
 .kit-buttongroup kit-button-alt:first-child,
-.kit-buttongroup .kit-button-alt:first-child {
+.kit-buttongroup .kit-button-alt:first-child,
+kit-formgroup kit-button:first-child,
+kit-formgroup .kit-button:first-child,
+.kit-formgroup kit-button:first-child,
+.kit-formgroup .kit-button:first-child,
+kit-formgroup kit-button-alt:first-child,
+kit-formgroup .kit-button-alt:first-child,
+.kit-formgroup kit-button-alt:first-child,
+.kit-formgroup .kit-button-alt:first-child,
+kit-formgroup .textbox:first-child,
+.kit-formgroup .textbox:first-child {
     border-radius: 6px 0 0 6px;
+    border-left-width: 2px;
+}
+
+kit-buttongroup kit-button:first-child,
+kit-buttongroup .kit-button:first-child,
+.kit-buttongroup kit-button:first-child,
+.kit-buttongroup .kit-button:first-child,
+kit-buttongroup kit-button-alt:first-child,
+kit-buttongroup .kit-button-alt:first-child,
+.kit-buttongroup kit-button-alt:first-child,
+.kit-buttongroup .kit-button-alt:first-child,
+kit-formgroup kit-button:first-child,
+kit-formgroup .kit-button:first-child,
+.kit-formgroup kit-button:first-child,
+.kit-formgroup .kit-button:first-child,
+kit-formgroup kit-button-alt:first-child,
+kit-formgroup .kit-button-alt:first-child,
+.kit-formgroup kit-button-alt:first-child,
+.kit-formgroup .kit-button-alt:first-child {
     border-left-width: 2px;
 }
 
@@ -429,7 +492,17 @@ kit-buttongroup .kit-button:last-child,
 kit-buttongroup kit-button-alt:last-child,
 kit-buttongroup .kit-button-alt:last-child,
 .kit-buttongroup kit-button-alt:last-child,
-.kit-buttongroup .kit-button-alt:last-child {
+.kit-buttongroup .kit-button-alt:last-child,
+kit-formgroup kit-button:last-child,
+kit-formgroup .kit-button:last-child,
+.kit-formgroup kit-button:last-child,
+.kit-formgroup .kit-button:last-child,
+kit-formgroup kit-button-alt:last-child,
+kit-formgroup .kit-button-alt:last-child,
+.kit-formgroup kit-button-alt:last-child,
+.kit-formgroup .kit-button-alt:last-child,
+kit-formgroup .textbox:last-child,
+.kit-formgroup .textbox:last-child {
     border-radius: 0 6px 6px 0;
 }
 
@@ -440,7 +513,17 @@ kit-buttongroup .kit-button:only-child,
 kit-buttongroup kit-button-alt:only-child,
 kit-buttongroup .kit-button-alt:only-child,
 .kit-buttongroup kit-button-alt:only-child,
-.kit-buttongroup .kit-button-alt:only-child {
+.kit-buttongroup .kit-button-alt:only-child,
+kit-formgroup kit-button:only-child,
+kit-formgroup .kit-button:only-child,
+.kit-formgroup kit-button:only-child,
+.kit-formgroup .kit-button:only-child,
+kit-formgroup kit-button-alt:only-child,
+kit-formgroup .kit-button-alt:only-child,
+.kit-formgroup kit-button-alt:only-child,
+.kit-formgroup .kit-button-alt:only-child,
+kit-formgroup .textbox:only-child,
+.kit-formgroup .textbox:only-child {
     border-radius: 6px;
 }
 
