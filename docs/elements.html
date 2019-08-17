@@ -231,7 +231,7 @@
             kit-formgroup
         </h2>
         <p class="m-l">
-            　<code>class="kit-formgroup"</code>または<code>&lt;kit-formgroup&gt;&lt;/kit-formgroup&gt;</code>要素の中に上記の<code>kit-button</code>や<code>.textbox</code>要素を内包すると、フォーム部品を連結することができます。
+            　<code>class="kit-formgroup"</code>または<code>&lt;kit-formgroup&gt;&lt;/kit-formgroup&gt;</code>要素の中に上記の<code>kit-button</code>(<code>kit-button-alt</code>、<code>kit-btn</code>も含む)や<code>.textbox</code>要素を内包すると、フォーム部品を連結することができます。
         </p>
         <kit-container class="m-l">
             <kit-box>
@@ -241,6 +241,12 @@
                         <kit-button-alt>ボタン2</kit-button-alt>
                         <kit-button-alt>ボタン3</kit-button-alt>
                         <kit-button-alt>ボタン4</kit-button-alt>
+                </kit-formgroup>
+                <kit-formgroup class="p">
+                        <kit-btn>ボタン1</kit-btn>
+                        <kit-btn>ボタン2</kit-btn>
+                        <kit-btn>ボタン3</kit-btn>
+                        <kit-btn>ボタン4</kit-btn>
                 </kit-formgroup>
                 <kit-formgroup class="p">
                         <kit-button class="crimson">ボタン1</kit-button>
@@ -253,27 +259,28 @@
                     <kit-button-alt>Search</kit-button-alt>
                 </kit-formgroup>
             </kit-box>
-            <pre class="kit-box silver"><h5>マークアップ</h5>&lt;kit-buttongroup class=&quot;p&quot;&gt;
-        &lt;kit-button-alt&gt;ボタン1&lt;/kit-button-alt&gt;
-        &lt;kit-button-alt&gt;ボタン2&lt;/kit-button-alt&gt;
-        &lt;kit-button-alt&gt;ボタン3&lt;/kit-button-alt&gt;
-        &lt;kit-button-alt&gt;ボタン4&lt;/kit-button-alt&gt;
-&lt;/kit-buttongroup&gt;
-&lt;kit-buttongroup class=&quot;p&quot;&gt;
-        &lt;kit-button class=&quot;crimson&quot;&gt;ボタン1&lt;/kit-button&gt;
-        &lt;kit-button class=&quot;limegreen&quot;&gt;ボタン2&lt;/kit-button&gt;
-        &lt;kit-button class=&quot;orange&quot;&gt;ボタン3&lt;/kit-button&gt;
-        &lt;kit-button class=&quot;deeppink&quot;&gt;ボタン4&lt;/kit-button&gt;
-&lt;/kit-buttongroup&gt;
-&lt;label class=&quot;kit-toggle&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; id=&quot;matsu&quot;&gt;松&lt;label for=&quot;matsu&quot;&gt;&lt;/label&gt;
-&lt;/label&gt;
-&lt;label class=&quot;kit-toggle&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; id=&quot;take&quot;&gt;竹&lt;label for=&quot;take&quot;&gt;&lt;/label&gt;
-&lt;/label&gt;
-&lt;label class=&quot;kit-toggle&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; id=&quot;ume&quot;&gt;梅&lt;label for=&quot;ume&quot;&gt;&lt;/label&gt;
-&lt;/label&gt;</pre>
+            <pre class="kit-box silver"><h5>マークアップ</h5>&lt;kit-formgroup class=&quot;p&quot;&gt;
+    &lt;kit-button-alt&gt;ボタン1&lt;/kit-button-alt&gt;
+    &lt;kit-button-alt&gt;ボタン2&lt;/kit-button-alt&gt;
+    &lt;kit-button-alt&gt;ボタン3&lt;/kit-button-alt&gt;
+    &lt;kit-button-alt&gt;ボタン4&lt;/kit-button-alt&gt;
+&lt;/kit-formgroup&gt;
+&lt;kit-formgroup class=&quot;p&quot;&gt;
+    &lt;kit-btn&gt;ボタン1&lt;/kit-btn&gt;
+    &lt;kit-btn&gt;ボタン2&lt;/kit-btn&gt;
+    &lt;kit-btn&gt;ボタン3&lt;/kit-btn&gt;
+    &lt;kit-btn&gt;ボタン4&lt;/kit-btn&gt;
+&lt;/kit-formgroup&gt;
+&lt;kit-formgroup class=&quot;p&quot;&gt;
+    &lt;kit-button class=&quot;crimson&quot;&gt;ボタン1&lt;/kit-button&gt;
+    &lt;kit-button class=&quot;limegreen&quot;&gt;ボタン2&lt;/kit-button&gt;
+    &lt;kit-button class=&quot;orange&quot;&gt;ボタン3&lt;/kit-button&gt;
+    &lt;kit-button class=&quot;deeppink&quot;&gt;ボタン4&lt;/kit-button&gt;
+&lt;/kit-formgroup&gt;
+&lt;kit-formgroup class=&quot;p&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;textbox&quot;&gt;
+    &lt;kit-button-alt&gt;Search&lt;/kit-button-alt&gt;
+&lt;/kit-formgroup&gt;</pre>
         </kit-container>
 
         <kit-space></kit-space>
