@@ -1,13 +1,22 @@
-/* kitstrap v0.2 */
+/* kitstrap v0.3 */
+
+:root {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    cursor: default;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    scrollbar-color: light;
+    scrollbar-width: thin;
+}
 
 body {
     margin: 0;
-    font-family: sans-serif;
-    cursor: default;
+    color: #3d3d3d;
 }
 
 body::selection {
-    background: dodgerblue;
+    background: rgba(30, 143, 255, 0.6);
     color: white;
 }
 
@@ -627,17 +636,30 @@ h5 {
     margin: 4px 0;
 }
 
-code {
-    padding: 3px;
-    color: #303030;
+pre {
+    padding: 10px;
     background: #eee;
+    overflow: auto;
+    scrollbar-color: light;
+    scrollbar-width: thin;
+}
+
+code {
+    display: inline;
+    padding: 4px 5px;
+    margin: 0 2px;
+    color: #303030;
+    background: #ddd;
     border-radius: 6px;
+    font-size: .85em;
+    font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
 }
 
 blockquote {
     margin: 10px;
     padding: 10px;
     background: #f0f0f0;
+    border-left: 3px solid #1f83e7;
 }
 
 /* layout */
@@ -968,6 +990,12 @@ kit-button-alt.black:hover {
 }
 
 /* other function */
+
+.kit-scroll.kit-scroll {
+    overflow: scroll;
+    scrollbar-color: light;
+    scrollbar-width: thin;
+}
 
 .kit-noevents {
     pointer-events: none;
