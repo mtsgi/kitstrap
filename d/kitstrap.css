@@ -642,6 +642,8 @@ pre {
     overflow: auto;
     scrollbar-color: light;
     scrollbar-width: thin;
+    font-size: .85em;
+    font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
 }
 
 code {
