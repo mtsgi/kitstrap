@@ -20,11 +20,6 @@ body::selection {
     color: white;
 }
 
-.kit-flex, kit-flex {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 kit-header,
 .kit-header {
     box-sizing: border-box;
@@ -989,6 +984,77 @@ kit-button-alt.black {
 kit-button-alt.black:hover {
     color: #ffffff;
     background: #353535;
+}
+
+/* flexbox */
+
+.kit-flex, kit-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kit-inline-flex {
+    display: inline-flex;
+}
+
+.kit-flex-row {
+    flex-direction: row;
+}
+
+.kit-flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.kit-flex-column {
+    flex-direction: column;
+}
+
+.kit-flex-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.kit-flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.kit-flex-grow {
+    flex-grow: 1;
+}
+
+.kit-flex-shrink {
+    flex-shrink: 1;
+}
+
+.kit-flex-start {
+    justify-content: flex-start;
+}
+
+.kit-flex-end {
+    justify-content: flex-end;
+}
+
+.kit-flex-center {
+    justify-content: center;
+}
+
+.kit-flex-fit {
+    justify-content: space-between;
+}
+
+.kit-flex-top {
+    align-items: flex-start;
+}
+
+.kit-flex-middle {
+    align-items: center;
+}
+
+.kit-flex-bottom {
+    align-items: flex-end;
+}
+
+.kit-order-1 {
+    order: 1;
 }
 
 /* other function */
