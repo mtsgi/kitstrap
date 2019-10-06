@@ -11,11 +11,11 @@ kitstrapは軽量CSSフレームワークです。
 GitHubから最新のkitstrapをダウンロード可能です。
 - [最新版のダウンロード](https://github.com/mtsgi/kitstrap/archive/master.zip)
 
-## Sample
+## Documentation
 
-使用例や要素の見た目を確認できます。
+使用例や要素の見た目を確認しながら、コードの記述例などを見ることができます。
 
-### [kitstrapサンプル](https://mtsgi.github.io/kitstrap/docs/)
+### [kitstrapドキュメント](https://mtsgi.github.io/kitstrap/docs/)
 
 ## Usage
 ```
@@ -29,6 +29,6 @@ kitstrap.cssを読み込めば、すぐに使うことができます。
 <link rel="stylesheet" href="https://mtsgi.github.io/kitstrap/d/kitstrap.css">
 ```
 
-## Documentation
+## Wiki
 
-Wikiで[kitstrapのドキュメント](https://github.com/mtsgi/kitstrap/wiki)を見ることができます。
+[kitstrap Wiki](https://github.com/mtsgi/kitstrap/wiki)
