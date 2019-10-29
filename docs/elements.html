@@ -43,28 +43,74 @@
 &lt;kit-button-alt&gt;ボタン4&lt;/kit-button-alt&gt;</pre>
         </kit-container>
         <blockquote class="m-l">デフォルトのカラーはdodgerblueです</blockquote>
-        <p class="m-l">kit-buttonの子クラス<code>.xlarge</code>、<code>.large</code>、<code>.medium</code>と<code>.small</code>でボタンのサイズを変更することもできます。<code>.disabled</code>で、無効化されたボタンのスタイルを設定することができます(kit-button-altでは一部利用不可)。</p>
+        <p class="m-l">kit-buttonの子クラス<code>.-xlarge</code>、<code>.-large</code>、<code>.-medium</code>と<code>.-small</code>でボタンのサイズを変更することもできます。<code>.-disabled</code>で、無効化されたボタンのスタイルを設定することができます(kit-button-altでは一部利用不可)。</p>
         <kit-container class="m-l">
             <kit-box>
                 <h5>プレビュー</h5>
-                <kit-button class="small kit-inblock">small</kit-button>
-                <kit-button class="medium kit-inblock">medium</kit-button>
-                <kit-button class="large kit-inblock">large</kit-button>
-                <kit-button class="xlarge kit-inblock">xlarge</kit-button>
-                <kit-button-alt class="small kit-inblock">small</kit-button-alt>
-                <kit-button-alt class="medium kit-inblock">medium</kit-button-alt>
-                <kit-button-alt class="large kit-inblock">large</kit-button-alt>
-                <kit-button-alt class="xlarge kit-inblock">xlarge</kit-button-alt>
+                <kit-button class="-small kit-inblock">-small</kit-button>
+                <kit-button class="-medium kit-inblock">-medium</kit-button>
+                <kit-button class="-large kit-inblock">-large</kit-button>
+                <kit-button class="-xlarge kit-inblock">-xlarge</kit-button>
+                <kit-button-alt class="-small kit-inblock">-small</kit-button-alt>
+                <kit-button-alt class="-medium kit-inblock">-medium</kit-button-alt>
+                <kit-button-alt class="-large kit-inblock">-large</kit-button-alt>
+                <kit-button-alt class="-xlarge kit-inblock">-xlarge</kit-button-alt>
             </kit-box>
             <kit-box>
                 <h5>プレビュー</h5>
-                <kit-button class="disabled">無効</kit-button>
-                <button class="kit-button crimson kit-font-m disabled">無効</button>
-                <kit-button class="large disabled">無効</kit-button>
-                <button class="kit-button large orange kit-font-m disabled">無効</button>
+                <kit-button class="-disabled">無効</kit-button>
+                <button class="kit-button -crimson kit-font-m -disabled">無効</button>
+                <kit-button class="-large -disabled">無効</kit-button>
+                <button class="kit-button -large -orange kit-font-m -disabled">無効</button>
             </kit-box>
         </kit-container>
         
+        <kit-space></kit-space>
+
+        <h2>
+            <kit-badge class="orange">class</kit-badge>
+            kit-buttonの色
+        </h2>
+        <p class="m-l">
+            　<strong>kit-button</strong>と<strong>kit-button-alt</strong>の子クラスとして、<code>class="kit-button -deeppink"</code>のように色を選択するクラスが用意されています。
+        </p>
+        <kit-container class="m-l">
+            <kit-box>
+                <h5>プレビュー</h5>
+                <strong class="kit-left">-orange</strong>
+                <a class="kit-button -orange">ボタン</a>・
+                <a class="kit-button-alt -orange">ボタン</a>
+                <br>
+                <strong class="kit-left">-dodgerblue</strong>
+                <a class="kit-button -dodgerblue">ボタン</a>・
+                <a class="kit-button-alt -dodgerblue">ボタン</a>
+                <br>
+                <strong class="kit-left">-deeppink</strong>
+                <a class="kit-button -deeppink">ボタン</a>・
+                <a class="kit-button-alt -deeppink">ボタン</a>
+                <br>
+                <strong class="kit-left">-limegreen</strong>
+                <a class="kit-button -limegreen">ボタン</a>・
+                <a class="kit-button-alt -limegreen">ボタン</a>
+                <br>
+                <strong class="kit-left">-crimson</strong>
+                <a class="kit-button -crimson">ボタン</a>・
+                <a class="kit-button-alt -crimson">ボタン</a>
+                <br>
+                <strong class="kit-left">-green</strong>
+                <a class="kit-button -green">ボタン</a>・
+                <a class="kit-button-alt -green">ボタン</a>
+                <br>
+                <strong class="kit-left">-silver</strong>
+                <a class="kit-button -silver">ボタン</a>・
+                <a class="kit-button-alt -silver">ボタン</a>
+                <br>
+                <strong class="kit-left">-black</strong>
+                <a class="kit-button -black">ボタン</a>・
+                <a class="kit-button-alt -black">ボタン</a>
+            </kit-box>
+        </kit-container>
+
         <kit-space></kit-space>
 
         <h2>
@@ -109,55 +155,33 @@
 
         <h2>
             <kit-badge class="orange">class</kit-badge>
-            カラークラス
+            kit-badgeの色
         </h2>
         <p class="m-l">
-            　<strong>kit-button</strong>や<strong>kit-badge</strong>などのクラスは<code>class="kit-badge deeppink"</code>のように、スペースを空けて色の名前を指定することで、簡単に色を変えることができます。
+            　<strong>kit-badge</strong>の子クラスとして、<code>.-limegreen</code>や<code>.-deeppink</code>のような色を選択するクラスが用意されています。
         </p>
+
         <kit-container class="m-l">
             <kit-box>
                 <h5>プレビュー</h5>
-                <strong class="kit-left">orange</strong>
-                <a class="kit-badge orange">バッジ</a>・
-                <a class="kit-button orange">ボタン</a>・
-                <a class="kit-button-alt orange">ボタン</a>
-                <br>
-                <strong class="kit-left">dodgerblue</strong>
-                <a class="kit-badge dodgerblue">バッジ</a>・
-                <a class="kit-button dodgerblue">ボタン</a>・
-                <a class="kit-button-alt dodgerblue">ボタン</a>
-                <br>
-                <strong class="kit-left">deeppink</strong>
-                <a class="kit-badge deeppink">バッジ</a>・
-                <a class="kit-button deeppink">ボタン</a>・
-                <a class="kit-button-alt deeppink">ボタン</a>
-                <br>
-                <strong class="kit-left">limegreen</strong>
-                <a class="kit-badge limegreen">バッジ</a>・
-                <a class="kit-button limegreen">ボタン</a>・
-                <a class="kit-button-alt limegreen">ボタン</a>
-                <br>
-                <strong class="kit-left">crimson</strong>
-                <a class="kit-badge crimson">バッジ</a>・
-                <a class="kit-button crimson">ボタン</a>・
-                <a class="kit-button-alt crimson">ボタン</a>
-                <br>
-                <strong class="kit-left">green</strong>
-                <a class="kit-badge green">バッジ</a>・
-                <a class="kit-button green">ボタン</a>・
-                <a class="kit-button-alt green">ボタン</a>
-                <br>
-                <strong class="kit-left">silver</strong>
-                <a class="kit-badge silver">バッジ</a>・
-                <a class="kit-button silver">ボタン</a>・
-                <a class="kit-button-alt silver">ボタン</a>
-                <br>
-                <strong class="kit-left">black</strong>
-                <a class="kit-badge black">バッジ</a>・
-                <a class="kit-button black">ボタン</a>・
-                <a class="kit-button-alt black">ボタン</a>
+                    <span class="kit-badge -orange">-orange</span>
+                    <span class="kit-badge -dodgerblue">-dodgerblue</span>
+                    <span class="kit-badge -deeppink">-deeppink</span>
+                    <span class="kit-badge -limegreen">-limegreen</span>
+                    <span class="kit-badge -crimson">-crimson</span>
+                    <span class="kit-badge -green">-green</span>
+                    <span class="kit-badge -silver">-silver</span>
+                    <span class="kit-badge -black">-black</span>
             </kit-box>
-        </kit-container>
+            <pre class="kit-box kit-scroll"><h5>マークアップ</h5>&lt;span class=&quot;kit-badge -orange&quot;&gt;-orange&lt;/span&gt;
+&lt;span class=&quot;kit-badge -dodgerblue&quot;&gt;-dodgerblue&lt;/span&gt;
+&lt;span class=&quot;kit-badge -deeppink&quot;&gt;-deeppink&lt;/span&gt;
+&lt;span class=&quot;kit-badge -limegreen&quot;&gt;-limegreen&lt;/span&gt;
+&lt;span class=&quot;kit-badge -crimson&quot;&gt;-crimson&lt;/span&gt;
+&lt;span class=&quot;kit-badge -green&quot;&gt;-green&lt;/span&gt;
+&lt;span class=&quot;kit-badge -silver&quot;&gt;-silver&lt;/span&gt;
+&lt;span class=&quot;kit-badge -black&quot;&gt;-black&lt;/span&gt;</pre>
+            </kit-container>
 
         <kit-space></kit-space>
 
