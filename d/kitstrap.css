@@ -313,6 +313,50 @@ kit-button:active,
     top: 2px;
 }
 
+/* child classes of kit-button */
+
+kit-button.-orange,
+.kit-button.-orange {
+    background: #ffa500;
+}
+
+kit-button.-dodgerblue,
+.kit-button.-dodgerblue {
+    background: #1e90ff;
+}
+
+kit-button.-deeppink,
+.kit-button.-deeppink {
+    background: #ff1493;
+}
+
+kit-button.-limegreen,
+.kit-button.-limegreen {
+    background: #32cd32;
+}
+
+kit-button.-crimson,
+.kit-button.-crimson {
+    background: #dc143c;
+}
+
+kit-button.-green,
+.kit-button.-green {
+    background: #008000;
+}
+
+kit-button.-silver,
+.kit-button.-silver {
+    color: #303030;
+    text-shadow: none;
+    background: #ebebeb;
+}
+
+kit-button.-black,
+.kit-button.-black {
+    background: #353535;
+}
+
 kit-button-alt,
 .kit-button-alt {
     -moz-user-select: none;
@@ -346,10 +390,124 @@ kit-button-alt:active,
     box-shadow: 0 0 0 3px rgba(180, 200, 255, .8);
 }
 
+/* child classes of kit-button-alt */
+
+.kit-button-alt.-orange,
+kit-button-alt.-orange {
+    background: #ffffff;
+    color: #ffa500;
+    border-color: #ffa500;
+}
+
+.kit-button-alt.-orange:hover,
+kit-button-alt.-orange:hover {
+    color: #ffffff;
+    background: #ffa500;
+}
+
+.kit-button-alt.-dodgerblue,
+kit-button-alt.-dodgerblue {
+    background: #ffffff;
+    color: #1e90ff;
+    border-color: #1e90ff;
+}
+
+.kit-button-alt.-dodgerblue:hover,
+kit-button-alt.-dodgerblue:hover {
+    color: #ffffff;
+    background: #1e90ff;
+}
+
+.kit-button-alt.-deeppink,
+kit-button-alt.-deeppink {
+    background: #ffffff;
+    color: #ff1493;
+    border-color: #ff1493;
+}
+
+.kit-button-alt.-deeppink:hover,
+kit-button-alt.-deeppink:hover {
+    color: #ffffff;
+    background: #ff1493;
+}
+
+.kit-button-alt.-limegreen,
+kit-button-alt.-limegreen {
+    background: #ffffff;
+    color: #32cd32;
+    border-color: #32cd32;
+}
+
+.kit-button-alt.-limegreen:hover,
+kit-button-alt.-limegreen:hover {
+    color: #ffffff;
+    background: #32cd32;
+}
+
+.kit-button-alt.-crimson,
+kit-button-alt.-crimson {
+    background: #ffffff;
+    color: #dc143c;
+    border-color: #dc143c;
+}
+
+.kit-button-alt.-crimson:hover,
+kit-button-alt.-crimson:hover {
+    color: #ffffff;
+    background: #dc143c;
+}
+
+.kit-button-alt.-green,
+kit-button-alt.-green {
+    background: #ffffff;
+    color: #008000;
+    border-color: #008000;
+}
+
+.kit-button-alt.-green:hover,
+kit-button-alt.-green:hover {
+    color: #ffffff;
+    background: #008000;
+}
+
+.kit-button-alt.-silver,
+kit-button-alt.-silver {
+    background: transparent;
+    color: #ebebeb;
+    border-color: #ebebeb;
+}
+
+.kit-button-alt.-silver:hover,
+kit-button-alt.-silver:hover {
+    color: #000000;
+    background: #ebebeb;
+}
+
+.kit-button-alt.-black,
+kit-button-alt.-black {
+    background: #ffffff;
+    color: #353535;
+    border-color: #353535;
+}
+
+.kit-button-alt.-black:hover,
+kit-button-alt.-black:hover {
+    color: #ffffff;
+    background: #353535;
+}
+
 .kit-button.small,
 kit-button.small,
 .kit-button-alt.small,
 kit-button-alt.small {
+    font-size: 13px;
+    padding: 0px 5px;
+}
+
+.kit-button.-small,
+kit-button.-small,
+.kit-button-alt.-small,
+kit-button-alt.-small {
     font-size: 13px;
     padding: 0px 5px;
 }
@@ -362,10 +520,26 @@ kit-button-alt.medium {
     padding: 1px 8px;
 }
 
+.kit-button.-medium,
+kit-button.-medium,
+.kit-button-alt.-medium,
+kit-button-alt.-medium {
+    font-size: 16px;
+    padding: 1px 8px;
+}
+
 .kit-button.large,
 kit-button.large,
 .kit-button-alt.large,
 kit-button-alt.large {
+    font-size: 20px;
+    padding: 3px 14px;
+}
+
+.kit-button.-large,
+kit-button.-large,
+.kit-button-alt.-large,
+kit-button-alt.-large {
     font-size: 20px;
     padding: 3px 14px;
 }
@@ -378,23 +552,31 @@ kit-button-alt.xlarge {
     padding: 5px 20px;
 }
 
-.kit-button.disabled,
-kit-button.disabled {
+.kit-button.-xlarge,
+kit-button.-xlarge,
+.kit-button-alt.-xlarge,
+kit-button-alt.-xlarge {
+    font-size: 27px;
+    padding: 5px 20px;
+}
+
+.kit-button.-disabled,
+kit-button.-disabled {
     background: #a5a5a5;
     box-shadow: none;
 }
 
-.kit-button-alt.disabled,
-kit-button-alt.disabled {
+.kit-button-alt.-disabled,
+kit-button-alt.-disabled {
     background: #d8d8d8;
     color: #969696;
     box-shadow: none;
 }
 
-.kit-button.disabled:active,
-kit-button.disabled:active,
-.kit-button-alt.disabled:active,
-kit-button-alt.disabled:active {
+.kit-button.-disabled:active,
+kit-button.-disabled:active,
+.kit-button-alt.-disabled:active,
+kit-button-alt.-disabled:active {
     box-shadow: none;
     position: static;
 }
@@ -603,6 +785,50 @@ kit-badge,
     border-radius: 5px;
     font-weight: 400;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+}
+
+/* child classes of kit-badge */
+
+kit-badge.-orange,
+.kit-badge.-orange {
+    background: #ffa500;
+}
+
+kit-badge.-dodgerblue,
+.kit-badge.-dodgerblue {
+    background: #1e90ff;
+}
+
+kit-badge.-deeppink,
+.kit-badge.-deeppink {
+    background: #ff1493;
+}
+
+kit-badge.-limegreen,
+.kit-badge.-limegreen {
+    background: #32cd32;
+}
+
+kit-badge.-crimson,
+.kit-badge.-crimson {
+    background: #dc143c;
+}
+
+kit-badge.-green,
+.kit-badge.-green {
+    background: #008000;
+}
+
+kit-badge.-silver,
+.kit-badge.-silver {
+    color: #303030;
+    text-shadow: none;
+    background: #ebebeb;
+}
+
+kit-badge.-black,
+.kit-badge.-black {
+    background: #353535;
 }
 
 kit-flash,
