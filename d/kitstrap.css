@@ -20,6 +20,10 @@ body::selection {
     color: white;
 }
 
+input, textarea {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 kit-header,
 .kit-header {
     box-sizing: border-box;
@@ -237,6 +241,7 @@ kit-btn:active,
     box-shadow: inset 1px 1px 3px 0px rgba(0, 0, 0, .2);
     border-radius: 5px;
     font-family: 'Noto Sans JP', sans-serif;
+    width: auto;
 }
 
 .textbox:focus {
@@ -588,6 +593,8 @@ kit-buttongroup,
 kit-formgroup,
 .kit-formgroup {
     display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
 }
 
 kit-buttongroup kit-button,
@@ -1003,7 +1010,7 @@ kit-pane.dark.hover:hover,
 .p-b-xl{ padding-bottom: 24px }
 .p-b-0{ padding-bottom: 0 }
 
-.p-l{ padding-left: 8px }
+.p-left{ padding-left: 8px }
 .p-l-s{ padding-left: 4px }
 .p-l-m{ padding-left: 10px }
 .p-l-l{ padding-left: 16px }
@@ -1038,7 +1045,7 @@ kit-pane.dark.hover:hover,
 .m-b-xl{ margin-bottom: 24px }
 .m-b-0{ margin-bottom: 0 }
 
-.m-l{ margin-left: 8px }
+.m-left{ margin-left: 8px }
 .m-l-s{ margin-left: 4px }
 .m-l-m{ margin-left: 10px }
 .m-l-l{ margin-left: 16px }
