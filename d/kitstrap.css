@@ -289,6 +289,7 @@ kit-button,
     cursor: default;
     border: none;
     border-radius: 4px;
+    outline: none;
     line-height: 200%;
     background: dodgerblue;
     color: #ffffff;
@@ -367,6 +368,7 @@ kit-button-alt,
     display: inline-block;
     cursor: default;
     border-radius: 5px;
+    outline: none;
     line-height: 200%;
     background: white;
     color: dodgerblue;
@@ -1070,6 +1072,26 @@ kit-pane.dark.hover:hover,
 
 .kit-line-s {
     line-height: 1;
+}
+
+.kit-text-underline {
+    text-decoration: underline;
+}
+
+.kit-text-overline {
+    text-decoration: overline;
+}
+
+.kit-text-wavy {
+    text-decoration: wavy;
+}
+
+.kit-text-double {
+    text-decoration: double;
+}
+
+.kit-text-nodecoration {
+    text-decoration: none;
 }
 
 /* colors */
