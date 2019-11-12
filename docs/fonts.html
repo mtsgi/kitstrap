@@ -70,7 +70,7 @@
             　<code>.kit-text-upper</code>は、テキストを大文字にします。<br>
             　<code>.kit-text-lower</code>は、テキストを小文字にします。<br>
             　<code>.kit-text-capitalize</code>は、テキストを先頭大文字にします。<br>
-            　<code>.kit-text-zenkaku</code>は、テキストを全角文字にします。
+            　<code>.kit-text-zenkaku</code>は、テキストを全角文字にします(環境により反映されない場合があります)。
         </p>
         <kit-container class="m-l">
             <kit-box>
@@ -78,22 +78,22 @@
                 <kit-button-alt class="kit-block kit-text-l m">kit-text-l</kit-button-alt>
                 <kit-button-alt class="kit-block kit-text-c m">kit-text-c</kit-button-alt>
                 <kit-button-alt class="kit-block kit-text-r m">kit-text-r</kit-button-alt>
-                <kit-pane>Hello, world!</kit-pane>
-                <kit-pane class="kit-text-upper">Hello, world!</kit-pane>
-                <kit-pane class="kit-text-lower">Hello, world!</kit-pane>
-                <kit-pane class="kit-text-capitalize">Hello, world!</kit-pane>
-                <kit-pane class="kit-text-zenkaku">Hello, world!</kit-pane>
+                <kit-pane>Hello, world!(Default)</kit-pane>
+                <kit-pane class="kit-text-upper">Hello, world!(Upper)</kit-pane>
+                <kit-pane class="kit-text-lower">Hello, world!(Lower)</kit-pane>
+                <kit-pane class="kit-text-capitalize">Hello, world!(Capitalize)</kit-pane>
+                <kit-pane class="kit-text-zenkaku">Hello, world!(Zenkaku)</kit-pane>
             </kit-box>
             <kit-box class="kit-box kit-scroll">
                 <h5>マークアップ</h5>
                 <pre>&lt;kit-button-alt class=&quot;kit-block kit-text-l m&quot;&gt;kit-text-l&lt;/kit-button-alt&gt;
 &lt;kit-button-alt class=&quot;kit-block kit-text-c m&quot;&gt;kit-text-c&lt;/kit-button-alt&gt;
 &lt;kit-button-alt class=&quot;kit-block kit-text-r m&quot;&gt;kit-text-r&lt;/kit-button-alt&gt;
-&lt;kit-pane&gt;Hello, world!&lt;/kit-pane&gt;
-&lt;kit-pane class=&quot;kit-text-upper&quot;&gt;Hello, world!&lt;/kit-pane&gt;
-&lt;kit-pane class=&quot;kit-text-lower&quot;&gt;Hello, world!&lt;/kit-pane&gt;
-&lt;kit-pane class=&quot;kit-text-capitalize&quot;&gt;Hello, world!&lt;/kit-pane&gt;
-&lt;kit-pane class=&quot;kit-text-zenkaku&quot;&gt;Hello, world!&lt;/kit-pane&gt;</pre>
+&lt;kit-pane&gt;Hello, world!(Default)&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;kit-text-upper&quot;&gt;Hello, world!(Upper)&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;kit-text-lower&quot;&gt;Hello, world!(Lower)&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;kit-text-capitalize&quot;&gt;Hello, world!(Capitalize)&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;kit-text-zenkaku&quot;&gt;Hello, world!(Zenkaku)&lt;/kit-pane&gt;</pre>
             </kit-box>
         </kit-container>
 
@@ -102,11 +102,16 @@
             装飾
         </h2>
         <p class="m-l">
-            　<code>.kit-text-underline</code>は、テキストに下線を引きます。<br>
-            　<code>.kit-text-overline</code>は、テキストに上線を引きます。<br>
-            　<code>.kit-text-wavy</code>は、テキストに波線を引きます。<br>
-            　<code>.kit-text-double</code>は、テキストに二重線を引きます。<br>
-            　<code>.kit-text-nodecoration</code>は、テキストの装飾を解除します。<br>
+            <ul>
+                <li><code>.kit-text-underline</code>は、テキストに下線を引きます。</li>
+                <li><code>.kit-text-overline</code>は、テキストに上線を引きます。</li>
+            </ul>
+            　次に示すスタイルで、下線または上線のスタイルを変更することができます。
+            <ul>
+                <li><code>.kit-text-wavy</code>は、テキストに波線を引きます。</li>
+                <li><code>.kit-text-double</code>は、テキストに二重線を引きます。</li>
+                <li><code>.kit-text-nodecoration</code>は、テキストの装飾を解除します。/li>
+            </ul>
         </p>
 
         <h2>
