@@ -959,13 +959,15 @@ kit-pane,
     display: block;
     padding: 6px;
     background: #ffffff;
-    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .2);
+    border: 1px solid transparent;
 }
 
 kit-pane.dark,
 .kit-pane.dark {
     background: #303030;
     color: #f0f0f0;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, .4);
 }
 
 kit-pane.hover:hover,
@@ -975,7 +977,7 @@ kit-pane.hover:hover,
 
 kit-pane.dark.hover:hover,
 .kit-pane.dark.hover:hover {
-    background: #4a4a4a;
+    background: #404040;
 }
 
 /* padding and margin */
@@ -987,12 +989,68 @@ kit-pane.dark.hover:hover,
 .p-xl{ padding: 24px }
 .p-0{ padding: 0 }
 
+.p-t{ padding-top: 8px }
+.p-t-s{ padding-top: 4px }
+.p-t-m{ padding-top: 10px }
+.p-t-l{ padding-top: 16px }
+.p-t-xl{ padding-top: 24px }
+.p-t-0{ padding-top: 0 }
+
+.p-b{ padding-bottom: 8px }
+.p-b-s{ padding-bottom: 4px }
+.p-b-m{ padding-bottom: 10px }
+.p-b-l{ padding-bottom: 16px }
+.p-b-xl{ padding-bottom: 24px }
+.p-b-0{ padding-bottom: 0 }
+
+.p-l{ padding-left: 8px }
+.p-l-s{ padding-left: 4px }
+.p-l-m{ padding-left: 10px }
+.p-l-l{ padding-left: 16px }
+.p-l-xl{ padding-left: 24px }
+.p-l-0{ padding-left: 0 }
+
+.p-r{ padding-right: 8px }
+.p-r-s{ padding-right: 4px }
+.p-r-m{ padding-right: 10px }
+.p-r-l{ padding-right: 16px }
+.p-r-xl{ padding-right: 24px }
+.p-r-0{ padding-right: 0 }
+
 .m{ margin: 8px }
 .m-s{ margin: 4px }
 .m-m{ margin: 10px }
 .m-l{ margin: 16px }
 .m-xl{ margin: 24px }
 .m-0{ margin: 0 }
+
+.m-t{ margin-top: 8px }
+.m-t-s{ margin-top: 4px }
+.m-t-m{ margin-top: 10px }
+.m-t-l{ margin-top: 16px }
+.m-t-xl{ margin-top: 24px }
+.m-t-0{ margin-top: 0 }
+
+.m-b{ margin-bottom: 8px }
+.m-b-s{ margin-bottom: 4px }
+.m-b-m{ margin-bottom: 10px }
+.m-b-l{ margin-bottom: 16px }
+.m-b-xl{ margin-bottom: 24px }
+.m-b-0{ margin-bottom: 0 }
+
+.m-l{ margin-left: 8px }
+.m-l-s{ margin-left: 4px }
+.m-l-m{ margin-left: 10px }
+.m-l-l{ margin-left: 16px }
+.m-l-xl{ margin-left: 24px }
+.m-l-0{ margin-left: 0 }
+
+.m-r{ margin-right: 8px }
+.m-r-s{ margin-right: 4px }
+.m-r-m{ margin-right: 10px }
+.m-r-l{ margin-right: 16px }
+.m-r-xl{ margin-right: 24px }
+.m-r-0{ margin-right: 0 }
 
 /* fonts */
 
