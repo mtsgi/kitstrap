@@ -265,6 +265,7 @@ kit-btn:active,
 }
 
 kit-hl,
+.kit-hl,
 .kit-hyperlink {
     color: dodgerblue;
     text-decoration: underline;
@@ -1366,8 +1367,8 @@ kit-button-alt.black:hover {
     align-items: flex-end;
 }
 
-.kit-order-1 {
-    order: 1;
+.kit-flex-order-1 {
+    order: -1;
 }
 
 /* other function */

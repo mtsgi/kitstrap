@@ -141,6 +141,86 @@ margin
             </kit-box>
         </kit-container>
 
+        <h2>
+            <kit-badge class="orange">class</kit-badge>
+            flexシステム
+        </h2>
+        <p class="m-l">
+            　kitstrapのflexシステムを使用すれば、flexboxを簡単に利用することができます。まずは、flexboxコンテナーの親要素に<code>.kit-flex</code>クラスを付与(または、<code>&lt;kit-flex&gt;&lt;/kit-flex&gt;</code>要素を使用)します。
+            　または、<code>.kit-inline-flex</code>クラスを使用してインラインブロックレベルのflexboxコンテナーを作ることもできます。
+            <h4>コンテナーに指定するクラス</h4>
+            <ul>
+                <li>
+                    <code>.kit-flex-row</code>は、指定したコンテナー内の子要素の並び順を<strong>行方向</strong>にします。
+                </li>
+                <li>
+                    <code>.kit-flex-row-reverse</code>は、指定したコンテナー内の子要素の並び順を<strong>行方向・向きを逆</strong>にします。
+                </li>
+                <li>
+                    <code>.kit-flex-column</code>は、指定したコンテナー内の子要素の並び順を<strong>列方向</strong>にします。
+                </li>
+                <li>
+                    <code>.kit-flex-column-reverse</code>は、指定したコンテナー内の子要素の並び順を<strong>列方向・向きを逆</strong>にします。
+                </li>
+                <li>
+                    <code>.kit-flex-nowrap</code>は、コンテナー内での子要素の折返しを許可しません。
+                </li>
+                <li>
+                    <code>.kit-flex-start</code>は、0以外の伸長係数を持つ子要素を含まないflexboxコンテナー内で、子要素を先頭側に寄せて配置します。
+                </li>
+                <li>
+                    <code>.kit-flex-end</code>は、0以外の伸長係数を持つ子要素を含まないflexboxコンテナー内で、子要素を末尾側に寄せて配置します。
+                </li>
+                <li>
+                    <code>.kit-flex-center</code>は、0以外の伸長係数を持つ子要素を含まないflexboxコンテナー内で、子要素を中央に寄せて配置します。
+                </li>
+                <li>
+                    <code>.kit-flex-fit</code>は、0以外の伸長係数を持つ子要素を含まないflexboxコンテナー内で、最初の要素を先頭側に、最後の要素を末尾側に寄せ、残りの子要素をその中間で均等に配置します。
+                </li>
+                <li>
+                    <code>.kit-flex-top</code>は、コンテナー内で子要素を交差軸方向に対して先頭側(通常の軸の場合、<strong>上側</strong>)に寄せて配置します。
+                </li>
+                <li>
+                    <code>.kit-flex-middle</code>は、コンテナー内で子要素を交差軸方向に対して中央に寄せて配置します。
+                </li>
+                <li>
+                    <code>.kit-flex-bottom</code>は、コンテナー内で子要素を交差軸方向に対して末尾側(通常の軸の場合、<strong>下側</strong>)に寄せて配置します。
+                </li>
+            </ul>
+            <h4>子要素に指定するクラス</h4>
+            <ul>
+                <li>
+                    <code>.kit-flex-grow</code>は、指定した子要素のコンテナー内における伸長係数を<strong>1</strong>に指定します。
+                </li>
+                <li>
+                    <code>.kit-flex-shrink</code>は、指定した子要素のコンテナー内における縮小係数を<strong>1</strong>に指定します。
+                </li>
+                <li>
+                    <code>.kit-flex-order-1</code>は、指定した子要素の順序を-1(先頭)に移動します。
+                </li>
+            </ul>
+        </p>
+        <kit-container class="m-l">
+            <kit-box>
+                <h5>プレビュー</h5>
+<kit-flex class="kit-flex-row kit-flex-fit kit-flex-middle">
+    <kit-badge class="p-l">1</kit-badge>
+    <kit-badge class="kit-flex-shrink">2</kit-badge>
+    <kit-badge class="kit-flex-grow">3</kit-badge>
+    <kit-badge class="kit-flex-order-1">4</kit-badge>
+</kit-flex>
+            </kit-box>
+            <kit-box class="kit-box">
+                <h5>マークアップ</h5>
+                <pre class="kit-scroll">&lt;kit-flex class=&quot;kit-flex-row kit-flex-fit kit-flex-middle&quot;&gt;
+    &lt;kit-badge class=&quot;p-l&quot;&gt;1&lt;/kit-badge&gt;
+    &lt;kit-badge class=&quot;kit-flex-shrink&quot;&gt;2&lt;/kit-badge&gt;
+    &lt;kit-badge class=&quot;kit-flex-grow&quot;&gt;3&lt;/kit-badge&gt;
+    &lt;kit-badge class=&quot;kit-flex-order-1&quot;&gt;4&lt;/kit-badge&gt;
+&lt;/kit-flex&gt;</pre>
+            </kit-box>
+        </kit-container>
+
         <a href="./" class="kit-hl-alt kit-sub m-l">トップへ戻る</a>
     </main>
     <kit-footer>
