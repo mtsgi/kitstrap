@@ -1459,6 +1459,15 @@ kit-button-alt.black:hover {
     scrollbar-width: thin;
 }
 
+.kit-hidden {
+    visibility: hidden;
+}
+
+.kit-nodisp,
+.kit-nd {
+    display: none;
+}
+
 .kit-noevents {
     pointer-events: none;
 }
