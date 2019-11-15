@@ -26,7 +26,7 @@ kitstrap.cssを読み込めば、すぐに使うことができます。
 
 または、CDNを使用:
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mtsgi/kitstrap/d/kitstrap.css">
+<link rel="stylesheet" href="https://mtsgi.github.io/kitstrap/d/kitstrap.css">
 ```
 
 ## Wiki
