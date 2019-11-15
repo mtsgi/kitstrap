@@ -43,3 +43,8 @@ main {
 kit-space{
     height: 20px;
 }
+
+pre.prettyprint {
+    padding: 4px 10px !important;
+    border: none !important;
+}
