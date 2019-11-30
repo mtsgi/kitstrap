@@ -36,10 +36,6 @@ main {
     max-width: 100%;
 }
 
-#kit-flash-sample{
-    display: none;
-}
-
 kit-space{
     height: 20px;
 }

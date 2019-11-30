@@ -350,29 +350,31 @@
         <h2>
             <kit-badge class="orange">class</kit-badge>
             <kit-badge class="limegreen">tag</kit-badge>
-            kit-flash
+            kit-notice
         </h2>
         <p class="m-l">
-            　<code>class="kit-flash"</code>を付与するか、<code>&lt;kit-flash&gt;&lt;/kit-flash&gt;</code>を使用して、ユーザーにメッセージを通知するためのフラッシュを生成することができます。
+            　要素に<code>class="kit-notice"</code>を付与または<code>&lt;kit-notice&gt;&lt;/kit-notice&gt;</code>タグを使用することで、ユーザーへの通知を送るペインを生成できます。<br>
+            　また、子クラスの<code>.-green</code>、<code>.-yellow</code>、<code>.-red</code>、<code>.-black</code>で、色を変更することができます。
         </p>
         <kit-container class="m-l">
             <kit-box>
                 <h5>プレビュー</h5>
-                <kit-button onclick="document.getElementById('kit-flash-sample').style.display = 'flex'">flashを表示</kit-button>
-                <kit-flash class="kit-flex" id="kit-flash-sample">
-                    <div style="flex-grow: 1">これはフラッシュのサンプルです。</div>
-                    <kit-button-alt onclick="document.getElementById('kit-flash-sample').style.display = 'none'">OK</kit-button-alt>
-                </kit-flash>
+                    <div class="kit-notice">これは通知です。</div>
+                    <div class="kit-notice -green">これはメッセージです。(-green)</div>
+                    <div class="kit-notice -yellow">これは注意メッセージです。(-yellow)</div>
+                    <div class="kit-notice -red">これはエラーメッセージです。(-red)</div>
+                    <div class="kit-notice -black">これは黒色の通知です。(-black)</div>
             </kit-box>
-            <pre class="kit-box">上のkit-button要素をクリックするとflashが表示されます。</pre>
-            <kit-box>
+            <kit-box class="kit-box">
                 <h5>マークアップ</h5>
-                <pre class="kit-scroll prettyprint lang-html">&lt;kit-flash class="kit-flex"&gt;
-  &lt;div&gt;これはフラッシュのサンプルです。&lt;/div&gt;
-  &lt;kit-button-alt&gt;OK&lt;/kit-button-alt&gt;
-&lt;/kit-flash&gt;</pre>
+                <pre class="kit-scroll prettyprint lang-html">&lt;div class=&quot;kit-notice&quot;&gt;これは通知です。&lt;/div&gt;
+&lt;div class=&quot;kit-notice -green&quot;&gt;これはメッセージです。(-green)&lt;/div&gt;
+&lt;div class=&quot;kit-notice -yellow&quot;&gt;これは注意メッセージです。(-yellow)&lt;/div&gt;
+&lt;div class=&quot;kit-notice -red&quot;&gt;これはエラーメッセージです。(-red)&lt;/div&gt;
+&lt;div class=&quot;kit-notice -black&quot;&gt;これは黒色の通知です。(-black)&lt;/div&gt;</pre>
             </kit-box>
         </kit-container>
+        <blockquote class="m-l">デフォルトのカラーは<code>orange</code>です</blockquote>
 
         <kit-space></kit-space>
 
