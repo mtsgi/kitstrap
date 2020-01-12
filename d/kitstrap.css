@@ -1304,6 +1304,82 @@ kit-pane.dark.hover:hover,
 
 /* colors */
 
+.kit-clr-orange {
+    color: #ffa500;
+}
+
+.kit-clr-dodgerblue {
+    color: #1e90ff;
+}
+
+.kit-clr-deeppink {
+    color: #ff1493;
+}
+
+.kit-clr-limegreen {
+    color: #32cd32;
+}
+
+.kit-clr-crimson {
+    color: #dc143c;
+}
+
+.kit-clr-green {
+    color: #008000;
+}
+
+.kit-clr-silver {
+    color: #ebebeb;
+}
+
+.kit-clr-black {
+    color: #353535;
+}
+
+.kit-clr-white {
+    color: #ffffff;
+}
+
+/* background colors */
+
+.kit-bgclr-orange {
+    background-color: #ffa500;
+}
+
+.kit-bgclr-dodgerblue {
+    background-color: #1e90ff;
+}
+
+.kit-bgclr-deeppink {
+    background-color: #ff1493;
+}
+
+.kit-bgclr-limegreen {
+    background-color: #32cd32;
+}
+
+.kit-bgclr-crimson {
+    background-color: #dc143c;
+}
+
+.kit-bgclr-green {
+    background-color: #008000;
+}
+
+.kit-bgclr-silver {
+    background-color: #ebebeb;
+}
+
+.kit-bgclr-black {
+    background-color: #353535;
+}
+
+.kit-bgclr-white {
+    background-color: #ffffff;
+}
+
+/* legacy color classes */
+
 .orange,
 .kit-bgcolor-orange {
     background: #ffa500;
