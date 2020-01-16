@@ -1553,8 +1553,16 @@ kit-button-alt.black:hover {
     flex-direction: column-reverse;
 }
 
+.kit-flex-wrap {
+    flex-wrap: wrap;
+}
+
 .kit-flex-nowrap {
     flex-wrap: nowrap;
+}
+
+.kit-flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
 }
 
 .kit-flex-grow {
