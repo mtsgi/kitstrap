@@ -1,4 +1,4 @@
-/* kitstrap v0.4 */
+/* kitstrap v0.5 alpha */
 
 :root {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -263,6 +263,35 @@ kit-btn:active,
     width: 450px;
 }
 
+.kit-input-file {
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 2px 10px;
+    background: dodgerblue;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.kit-input-file::before {
+    content: "ファイルを選択";
+}
+
+.kit-input-file input[type="file"] {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
 kit-hl,
 .kit-hl,
 .kit-hyperlink {
@@ -281,6 +310,18 @@ kit-hl-alt,
 kit-hl-alt:hover,
 .kit-hl-alt:hover {
     text-decoration: underline;
+}
+
+input.kit-button[type="submit"]::-webkit-search-decoration,
+input.kit-button[type="button"]::-webkit-search-decoration,
+button.kit-button::-webkit-search-decoration {
+    display: none;
+}
+
+input.kit-button[type="submit"]::focus,
+input.kit-button[type="button"]::focus,
+button.kit-button::focus {
+  outline-offset: -2px;
 }
 
 kit-button,
