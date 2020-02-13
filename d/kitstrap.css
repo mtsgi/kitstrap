@@ -1,4 +1,4 @@
-/* kitstrap v0.4 */
+/* kitstrap v0.5 alpha */
 
 :root {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -281,6 +281,18 @@ kit-hl-alt,
 kit-hl-alt:hover,
 .kit-hl-alt:hover {
     text-decoration: underline;
+}
+
+input.kit-button[type="submit"]::-webkit-search-decoration,
+input.kit-button[type="button"]::-webkit-search-decoration,
+button.kit-button::-webkit-search-decoration {
+    display: none;
+}
+
+input.kit-button[type="submit"]::focus,
+input.kit-button[type="button"]::focus,
+button.kit-button::focus {
+  outline-offset: -2px;
 }
 
 kit-button,
