@@ -302,6 +302,29 @@ kit-button:active,
     top: 2px;
 }
 
+button.kit-button,
+input[type="submit"].kit-button,
+input[type="button"].kit-button {
+    -webkit-box-sizing: content-box;
+    -webkit-appearance: button;
+    appearance: button;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+button.kit-button::-webkit-search-decoration,
+input[type="submit"].kit-button::-webkit-search-decoration,
+input[type="button"].kit-button::-webkit-search-decoration {
+    display: none;
+}
+
+button,
+input[type="submit"].kit-button:focus,
+input[type="button"].kit-button:focus {
+    outline-offset: -2px;
+}
+
 kit-button-alt,
 .kit-button-alt {
     -moz-user-select: none;
@@ -328,6 +351,29 @@ kit-button-alt:hover,
 .kit-button-alt:hover {
     background: dodgerblue;
     color: white;
+}
+
+button.kit-button-alt,
+input[type="submit"].kit-button-alt,
+input[type="button"].kit-button-alt {
+    -webkit-box-sizing: content-box;
+    -webkit-appearance: button;
+    appearance: button;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+button.kit-button-alt::-webkit-search-decoration,
+input[type="submit"].kit-button-alt::-webkit-search-decoration,
+input[type="button"].kit-button-alt::-webkit-search-decoration {
+    display: none;
+}
+
+button,
+input[type="submit"].kit-button-alt:focus,
+input[type="button"].kit-button-alt:focus {
+    outline-offset: -2px;
 }
 
 .kit-button.small,
