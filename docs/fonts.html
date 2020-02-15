@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../d/kitstrap-cursor.css">
     <link rel="stylesheet" href="../d/kitstrap-font.css">
     <link rel="stylesheet" href="./custom.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
     <title>テキスト・フォント - kitstrapドキュメント/サンプル</title>
 </head>
 
@@ -16,7 +17,7 @@
     <header class="kit-header">
         <a href="https://github.com/mtsgi/kitstrap"><img src="../icon.png" alt="kitstrap"></a>
         <a href="./" class="kit-hl-alt">ドキュメント</a>
-        <div class="kit-sub">kitstrap v0.2</div>
+        <div class="kit-sub">kitstrap v0.4</div>
     </header>
     <main class="p-l">
 
@@ -27,9 +28,11 @@
             フォント関連
         </h2>
         <p class="m-l">
+            　<code>.kit-font-xlarge</code>(または、別名<code>.kit-font-xl</code>)は、特大フォントを使用します。<br>
             　<code>.kit-font-large</code>(または、別名<code>.kit-font-l</code>)は、大きなフォントを使用します。<br>
             　<code>.kit-font-medium</code>(または、別名<code>.kit-font-m</code>)は、普通サイズのフォントを使用します。<br>
             　<code>.kit-font-small</code>(または、別名<code>.kit-font-s</code>)は、小さなフォントを使用します。<br>
+            　<code>.kit-font-0</code>は、フォントサイズを0に指定します。<br>
             　<code>.kit-font-bold</code>は、太字フォントを使用します。<br>
             　<code>.kit-font-normal</code>は、普通の太さのフォントを使用します。<br>
             　<code>.kit-font-thin</code>は、細字フォントを使用します。
@@ -37,6 +40,7 @@
         <kit-container class="m-l">
             <kit-box>
                 <h5>プレビュー</h5>
+                <span class="kit-font-xlarge m">X-Large</span>
                 <span class="kit-font-large m">Large</span>
                 <span class="kit-font-medium m">Medium</span>
                 <span class="kit-font-small m">Small</span>
@@ -45,9 +49,9 @@
                 <span class="kit-font-normal m">Normal</span>
                 <span class="kit-font-thin m">Thin</span>
             </kit-box>
-            <kit-box class="kit-box silver">
+            <kit-box class="kit-box kit-scroll">
                 <h5>マークアップ</h5>
-                <pre>&lt;span class=&quot;kit-font-large m&quot;&gt;Large&lt;/span&gt;
+                <pre class="prettyprint lang-html">&lt;span class=&quot;kit-font-large m&quot;&gt;Large&lt;/span&gt;
 &lt;span class=&quot;kit-font-medium m&quot;&gt;Medium&lt;/span&gt;
 &lt;span class=&quot;kit-font-small m&quot;&gt;Small&lt;/span&gt;
 &lt;hr&gt;
@@ -68,7 +72,7 @@
             　<code>.kit-text-upper</code>は、テキストを大文字にします。<br>
             　<code>.kit-text-lower</code>は、テキストを小文字にします。<br>
             　<code>.kit-text-capitalize</code>は、テキストを先頭大文字にします。<br>
-            　<code>.kit-text-zenkaku</code>は、テキストを全角文字にします。
+            　<code>.kit-text-zenkaku</code>は、テキストを全角文字にします(環境により反映されない場合があります)。
         </p>
         <kit-container class="m-l">
             <kit-box>
@@ -76,22 +80,57 @@
                 <kit-button-alt class="kit-block kit-text-l m">kit-text-l</kit-button-alt>
                 <kit-button-alt class="kit-block kit-text-c m">kit-text-c</kit-button-alt>
                 <kit-button-alt class="kit-block kit-text-r m">kit-text-r</kit-button-alt>
-                <kit-pane>Hello, world!</kit-pane>
-                <kit-pane class="kit-text-upper">Hello, world!</kit-pane>
-                <kit-pane class="kit-text-lower">Hello, world!</kit-pane>
-                <kit-pane class="kit-text-capitalize">Hello, world!</kit-pane>
-                <kit-pane class="kit-text-zenkaku">Hello, world!</kit-pane>
+                <kit-pane>Hello, world!(Default)</kit-pane>
+                <kit-pane class="kit-text-upper">Hello, world!(Upper)</kit-pane>
+                <kit-pane class="kit-text-lower">Hello, world!(Lower)</kit-pane>
+                <kit-pane class="kit-text-capitalize">Hello, world!(Capitalize)</kit-pane>
+                <kit-pane class="kit-text-zenkaku">Hello, world!(Zenkaku)</kit-pane>
             </kit-box>
-            <kit-box class="kit-box silver">
+            <kit-box class="kit-box kit-scroll">
                 <h5>マークアップ</h5>
-                <pre>&lt;kit-button-alt class=&quot;kit-block kit-text-l m&quot;&gt;kit-text-l&lt;/kit-button-alt&gt;
+                <pre class="prettyprint lang-html">&lt;kit-button-alt class=&quot;kit-block kit-text-l m&quot;&gt;kit-text-l&lt;/kit-button-alt&gt;
 &lt;kit-button-alt class=&quot;kit-block kit-text-c m&quot;&gt;kit-text-c&lt;/kit-button-alt&gt;
 &lt;kit-button-alt class=&quot;kit-block kit-text-r m&quot;&gt;kit-text-r&lt;/kit-button-alt&gt;
-&lt;kit-pane&gt;Hello, world!&lt;/kit-pane&gt;
-&lt;kit-pane class=&quot;kit-text-upper&quot;&gt;Hello, world!&lt;/kit-pane&gt;
-&lt;kit-pane class=&quot;kit-text-lower&quot;&gt;Hello, world!&lt;/kit-pane&gt;
-&lt;kit-pane class=&quot;kit-text-capitalize&quot;&gt;Hello, world!&lt;/kit-pane&gt;
-&lt;kit-pane class=&quot;kit-text-zenkaku&quot;&gt;Hello, world!&lt;/kit-pane&gt;</pre>
+&lt;kit-pane&gt;Hello, world!(Default)&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;kit-text-upper&quot;&gt;Hello, world!(Upper)&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;kit-text-lower&quot;&gt;Hello, world!(Lower)&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;kit-text-capitalize&quot;&gt;Hello, world!(Capitalize)&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;kit-text-zenkaku&quot;&gt;Hello, world!(Zenkaku)&lt;/kit-pane&gt;</pre>
+            </kit-box>
+        </kit-container>
+
+        <h2>
+            <kit-badge class="orange">class</kit-badge>
+            装飾
+        </h2>
+        <p class="m-l">
+            <ul>
+                <li><code>.kit-text-underline</code>は、テキストに下線を引きます。</li>
+                <li><code>.kit-text-overline</code>は、テキストに上線を引きます。</li>
+            </ul>
+            　次に示すスタイルで、下線または上線のスタイルを変更することができます。
+            <ul>
+                <li><code>.kit-text-wavy</code>は、テキストに波線を引きます。</li>
+                <li><code>.kit-text-double</code>は、テキストに二重線を引きます。</li>
+                <li><code>.kit-text-nodecoration</code>は、テキストの装飾を解除します。</li>
+            </ul>
+        </p>
+
+        <h2>
+            <kit-badge class="limegreen">tag</kit-badge>
+            見出し
+        </h2>
+        <p class="m-l">
+            kitstrapは、<code>h1</code>〜<code>h5</code>までの見出しにスタイルを付与します。
+        </p>
+        <kit-container class="m-l">
+            <kit-box>
+                <h5>プレビュー</h5>
+                <h1>This is heading. (h1)</h1>
+                <h2>This is heading. (h2)</h2>
+                <h3>This is heading. (h3)</h3>
+                <h4>This is heading. (h4)</h4>
+                <h5>This is heading. (h5)</h5>
             </kit-box>
         </kit-container>
 
@@ -117,9 +156,9 @@
                 <kit-badge class="black">行間：S</kit-badge>
                 <blockquote class="kit-line-s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
             </kit-box>
-            <kit-box class="kit-box silver">
+            <kit-box class="kit-box kit-scroll">
                 <h5>マークアップ</h5>
-                <pre>&lt;kit-badge class=&quot;black&quot;&gt;行間：XL&lt;/kit-badge&gt;
+                <pre class="prettyprint lang-html">&lt;kit-badge class=&quot;black&quot;&gt;行間：XL&lt;/kit-badge&gt;
 &lt;blockquote class=&quot;kit-line-xl&quot;&gt;...&lt;/blockquote&gt;
 &lt;kit-badge class=&quot;black&quot;&gt;行間：L&lt;/kit-badge&gt;
 &lt;blockquote class=&quot;kit-line-l&quot;&gt;...&lt;/blockquote&gt;
@@ -127,6 +166,29 @@
 &lt;blockquote class=&quot;kit-line-m&quot;&gt;...&lt;/blockquote&gt;
 &lt;kit-badge class=&quot;black&quot;&gt;行間：S&lt;/kit-badge&gt;
 &lt;blockquote class=&quot;kit-line-s&quot;&gt;...&lt;/blockquote&gt;</pre>
+            </kit-box>
+        </kit-container>
+
+        <h2>
+            <kit-badge class="orange">class</kit-badge>
+            テキストの色
+        </h2>
+        <p class="m-l">
+            　<code>.kit-clr-</code>接頭辞付きのカラークラスを使用すると、テキストの色を簡単に指定することができます。同様の色名で、<code>kit-bgclr-</code>接頭辞を使用することで、背景色を変更することができます。
+        </p>
+        <kit-container class="m-l">
+            <kit-box>
+                <h5>プレビュー</h5>
+                <ul>
+                    <li class="kit-clr-orange">kit-clr-orange</li>
+                    <li class="kit-clr-dodgerblue">kit-clr-dodgerblue</li>
+                    <li class="kit-clr-deeppink">kit-clr-deeppink</li>
+                    <li class="kit-clr-limegreen">kit-clr-limegreen</li>
+                    <li class="kit-clr-crimson">kit-clr-crimson</li>
+                    <li class="kit-clr-green">kit-clr-green</li>
+                    <li class="kit-clr-black">kit-clr-black</li>
+                    <li class="kit-clr-white kit-bgclr-black">kit-clr-white</li>
+                </ul>
             </kit-box>
         </kit-container>
 

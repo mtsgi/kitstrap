@@ -1,4 +1,4 @@
-h2 {
+main > h2 {
     background: #ffffff;
     position: sticky;
     top: 0;
@@ -32,13 +32,15 @@ main {
 }
 
 .textbox {
-    max-width: 90%;
-}
-
-#kit-flash-sample{
-    display: none;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 kit-space{
     height: 20px;
+}
+
+pre.prettyprint {
+    padding: 4px 10px !important;
+    border: none !important;
 }

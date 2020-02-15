@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="../d/kitstrap-font.css">
     <link rel="stylesheet" href="./custom.css">
     <title>要素と部品 - kitstrapドキュメント/サンプル</title>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 </head>
 
 <body>
     <header class="kit-header">
         <a href="https://github.com/mtsgi/kitstrap"><img src="../icon.png" alt="kitstrap"></a>
         <a href="./" class="kit-hl-alt">ドキュメント</a>
-        <div class="kit-sub">kitstrap v0.2</div>
+        <div class="kit-sub">kitstrap v0.4</div>
     </header>
     <main class="p-l">
         <p class="m-l">
@@ -35,21 +36,48 @@
                 <a class="kit-button">ボタン1</a>
                 <kit-button>ボタン2</kit-button>
                 <a class="kit-button-alt">ボタン3</a>
-                <kit-button-alt>ボタン4</kit-button>
+                <kit-button-alt>ボタン4</kit-button-alt>
+                <button class="kit-button kit-font-m">ボタン5</button>
+                <input type="button" class="kit-button kit-font-m" value="ボタン6">
             </kit-box>
-            <pre class="kit-box silver"><h5>マークアップ</h5>&lt;a class="kit-button"&gt;ボタン1&lt;/a&gt;
+            <kit-box class="kit-box">
+                <h5>マークアップ</h5>
+                    <pre class="kit-scroll prettyprint lang-html">&lt;a class=&quot;kit-button&quot;&gt;ボタン1&lt;/a&gt;
 &lt;kit-button&gt;ボタン2&lt;/kit-button&gt;
-&lt;a class="kit-button-alt"&gt;ボタン3&lt;/a&gt;
-&lt;kit-button-alt&gt;ボタン4&lt;/kit-button-alt&gt;</pre>
-            <blockquote class="kit-box">デフォルトのカラーはdodgerblueです</blockquote>
+&lt;a class=&quot;kit-button-alt&quot;&gt;ボタン3&lt;/a&gt;
+&lt;kit-button-alt&gt;ボタン4&lt;/kit-button-alt&gt;
+&lt;button class=&quot;kit-button kit-font-m&quot;&gt;ボタン5&lt;/button&gt;
+&lt;input type=&quot;button&quot; class=&quot;kit-button kit-font-m&quot; value=&quot;ボタン6&quot;&gt;</pre>
+            </kit-box>
         </kit-container>
-        <p class="m-l">kit-buttonの子クラス<code>.large</code>、<code>.medium</code>と<code>.small</code>でボタンのサイズを変更することもできます。</p>
+        <blockquote class="m-l">デフォルトのカラーはdodgerblueです</blockquote>
+        <p class="m-l">　kit-buttonの子クラス<code>.-xlarge</code>、<code>.-large</code>、<code>.-medium</code>と<code>.-small</code>でボタンのサイズを変更することもできます。<code>.-disabled</code>で、無効化されたボタンのスタイルを設定することができます(kit-button-altでは一部利用不可)。</p>
+        <p class="m-l">　また、<code>.-flat</code>クラスを付与することで、それぞれシンプルなデザインのボタンに変更することもできます。</p>
         <kit-container class="m-l">
             <kit-box>
                 <h5>プレビュー</h5>
-                <kit-button class="small kit-inblock">small</kit-button>
-                <kit-button class="medium kit-inblock">medium</kit-button>
-                <kit-button class="large kit-inblock">large</kit-button>
+                <kit-button class="-small">-small</kit-button>
+                <kit-button class="-medium">-medium</kit-button>
+                <kit-button class="-large">-large</kit-button>
+                <kit-button class="-xlarge">-xlarge</kit-button>
+                <kit-button-alt class="-small">-small</kit-button-alt>
+                <kit-button-alt class="-medium">-medium</kit-button-alt>
+                <kit-button-alt class="-large">-large</kit-button-alt>
+                <kit-button-alt class="-xlarge">-xlarge</kit-button-alt>
+                <h5>.-flatクラスを付与</h5>
+                <kit-button class="-flat">-flat</kit-button>
+                <kit-button class="-green -flat">-green -flat</kit-button>
+                <kit-button class="-deeppink -flat">-deeppink -flat</kit-button>
+                <kit-button-alt class="-flat">-flat</kit-button-alt>
+                <kit-button-alt class="-orange -flat">-orange -flat</kit-button-alt>
+                <kit-button-alt class="-black -flat">-black -flat</kit-button-alt>
+            </kit-box>
+            <kit-box>
+                <h5>プレビュー</h5>
+                <kit-button class="-disabled">無効</kit-button>
+                <button class="kit-button -crimson kit-font-m -disabled">無効</button>
+                <kit-button class="-large -disabled">無効</kit-button>
+                <button class="kit-button -large -orange kit-font-m -disabled">無効</button>
             </kit-box>
         </kit-container>
         
@@ -57,42 +85,48 @@
 
         <h2>
             <kit-badge class="orange">class</kit-badge>
-            <kit-badge class="limegreen">tag</kit-badge>
-            kit-buttongroup
+            kit-buttonの色
         </h2>
         <p class="m-l">
-            　<code>class="kit-buttongroup"</code>または<code>&lt;kit-buttongroup&gt;&lt;/kit-buttongroup&gt;</code>要素の中に上記の<code>kit-button</code>を内包すると、連結したボタンを作ることができます。
+            　<strong>kit-button</strong>と<strong>kit-button-alt</strong>の子クラスとして、<code>class="kit-button -deeppink"</code>のように色を選択するクラスが用意されています。
         </p>
         <kit-container class="m-l">
             <kit-box>
                 <h5>プレビュー</h5>
-                <kit-buttongroup class="p">
-                        <kit-button-alt>ボタン1</kit-button-alt>
-                        <kit-button-alt>ボタン2</kit-button-alt>
-                        <kit-button-alt>ボタン3</kit-button-alt>
-                        <kit-button-alt>ボタン4</kit-button-alt>
-                </kit-buttongroup>
-                <kit-buttongroup class="p">
-                        <kit-button class="crimson">ボタン1</kit-button>
-                        <kit-button class="limegreen">ボタン2</kit-button>
-                        <kit-button class="orange">ボタン3</kit-button>
-                        <kit-button class="deeppink">ボタン4</kit-button>
-                </kit-buttongroup>
+                <strong class="kit-left">-orange</strong>
+                <a class="kit-button -orange">ボタン</a>・
+                <a class="kit-button-alt -orange">ボタン</a>
+                <br>
+                <strong class="kit-left">-dodgerblue</strong>
+                <a class="kit-button -dodgerblue">ボタン</a>・
+                <a class="kit-button-alt -dodgerblue">ボタン</a>
+                <br>
+                <strong class="kit-left">-deeppink</strong>
+                <a class="kit-button -deeppink">ボタン</a>・
+                <a class="kit-button-alt -deeppink">ボタン</a>
+                <br>
+                <strong class="kit-left">-limegreen</strong>
+                <a class="kit-button -limegreen">ボタン</a>・
+                <a class="kit-button-alt -limegreen">ボタン</a>
+                <br>
+                <strong class="kit-left">-crimson</strong>
+                <a class="kit-button -crimson">ボタン</a>・
+                <a class="kit-button-alt -crimson">ボタン</a>
+                <br>
+                <strong class="kit-left">-green</strong>
+                <a class="kit-button -green">ボタン</a>・
+                <a class="kit-button-alt -green">ボタン</a>
+                <br>
+                <strong class="kit-left">-silver</strong>
+                <a class="kit-button -silver">ボタン</a>・
+                <a class="kit-button-alt -silver">ボタン</a>
+                <br>
+                <strong class="kit-left">-black</strong>
+                <a class="kit-button -black">ボタン</a>・
+                <a class="kit-button-alt -black">ボタン</a>
             </kit-box>
-            <pre class="kit-box silver"><h5>マークアップ</h5>&lt;kit-buttongroup class=&quot;p&quot;&gt;
-        &lt;kit-button-alt&gt;ボタン1&lt;/kit-button-alt&gt;
-        &lt;kit-button-alt&gt;ボタン2&lt;/kit-button-alt&gt;
-        &lt;kit-button-alt&gt;ボタン3&lt;/kit-button-alt&gt;
-        &lt;kit-button-alt&gt;ボタン4&lt;/kit-button-alt&gt;
-&lt;/kit-buttongroup&gt;
-&lt;kit-buttongroup class=&quot;p&quot;&gt;
-        &lt;kit-button class=&quot;crimson&quot;&gt;ボタン1&lt;/kit-button&gt;
-        &lt;kit-button class=&quot;limegreen&quot;&gt;ボタン2&lt;/kit-button&gt;
-        &lt;kit-button class=&quot;orange&quot;&gt;ボタン3&lt;/kit-button&gt;
-        &lt;kit-button class=&quot;deeppink&quot;&gt;ボタン4&lt;/kit-button&gt;
-&lt;/kit-buttongroup&gt;</pre>
         </kit-container>
-        
+
         <kit-space></kit-space>
 
         <h2>
@@ -101,16 +135,19 @@
             kit-hyperlink
         </h2>
         <p class="m-l">
-            　a要素やその他の要素に対して、<code>class="kit-hyperlink"</code>を付与または<code>&lt;kit-hl&gt;&lt;/kit-hl&gt;</code>タグを使用することで、ハイパーリンクのスタイルを設定できます。<code>class="kit-hl-alt"</code>または<code>&lt;kit-hl-alt&gt;&lt;/kit-hl-alt&gt;</code>は、親要素の前景色を継承します。
+            　a要素やその他の要素に対して<code>.kit-hyperlink</code>クラス(あるいは、エイリアス<code>.kit-hl</code>)を付与、または<code>&lt;kit-hl&gt;&lt;/kit-hl&gt;</code>タグを使用することで、ハイパーリンクのスタイルを設定できます。<code>class="kit-hl-alt"</code>または<code>&lt;kit-hl-alt&gt;&lt;/kit-hl-alt&gt;</code>は、親要素の前景色を継承します。
         </p>
         <kit-container class="m-l">
             <kit-box>
                 <h5>プレビュー</h5>
-                リンクは<a href="#" class="kit-hyperlink">こちら</a>をクリック！<kit-hl>更新</kit-hl><br>
+                リンクは<a href="#" class="kit-hyperlink">こちら</a>をクリック！<br>
                 ・<kit-hl-alt>シンプルなkit-hl-alt使用したリンク</kit-hl-alt>
             </kit-box>
-            <pre class="kit-box silver"><h5>マークアップ</h5>リンクは&lt;a href=&quot;#&quot; class=&quot;kit-hyperlink&quot;&gt;こちら&lt;/a&gt;をクリック！&lt;kit-hl&gt;更新&lt;/kit-hl&gt;&lt;br&gt;
+            <kit-box class="kit-box">
+                <h5>マークアップ</h5>
+                    <pre class="kit-scroll prettyprint lang-html">リンクは&lt;a href=&quot;#&quot; class=&quot;kit-hyperlink&quot;&gt;こちら&lt;/a&gt;をクリック！&lt;br&gt;
 ・&lt;kit-hl-alt&gt;シンプルなkit-hl-alt使用したリンク&lt;/kit-hl-alt&gt;</pre>
+            </kit-box>
         </kit-container>
         <blockquote class="m-l">指のカーソルになります</blockquote>
         
@@ -129,61 +166,81 @@
                 <h5>プレビュー</h5>
                 <span class="kit-badge limegreen">NEW!</span>kitstrapへようこそ
             </kit-box>
-            <pre class="kit-box silver"><h5>マークアップ</h5>&lt;span class=&quot;kit-badge limegreen&quot;&gt;NEW!&lt;/span&gt;kitstrapへようこそ</pre>
-            <blockquote class="kit-box">デフォルトのカラーはorangeです</blockquote>
+            <kit-box class="kit-box">
+                <h5>マークアップ</h5>
+                <pre class="kit-scroll prettyprint lang-html">&lt;span class=&quot;kit-badge limegreen&quot;&gt;NEW!&lt;/span&gt;kitstrapへようこそ</pre>
+            </kit-box>
+        </kit-container>
+        <blockquote class="m-l">デフォルトのカラーは<code>orange</code>です</blockquote>
+
+        <kit-space></kit-space>
+
+        <h2>
+            <kit-badge class="orange">class</kit-badge>
+            kit-badgeの色
+        </h2>
+        <p class="m-l">
+            　<strong>kit-badge</strong>の子クラスとして、<code>.-limegreen</code>や<code>.-deeppink</code>のような色を選択するクラスが用意されています。
+        </p>
+
+        <kit-container class="m-l">
+            <kit-box>
+                <h5>プレビュー</h5>
+                    <span class="kit-badge -orange">-orange</span>
+                    <span class="kit-badge -dodgerblue">-dodgerblue</span>
+                    <span class="kit-badge -deeppink">-deeppink</span>
+                    <span class="kit-badge -limegreen">-limegreen</span>
+                    <span class="kit-badge -crimson">-crimson</span>
+                    <span class="kit-badge -green">-green</span>
+                    <span class="kit-badge -silver">-silver</span>
+                    <span class="kit-badge -black">-black</span>
+            </kit-box>
+            <kit-box class="kit-box">
+                <h5>マークアップ</h5>
+                <pre class="kit-scroll prettyprint lang-html">&lt;span class=&quot;kit-badge -orange&quot;&gt;-orange&lt;/span&gt;
+&lt;span class=&quot;kit-badge -dodgerblue&quot;&gt;-dodgerblue&lt;/span&gt;
+&lt;span class=&quot;kit-badge -deeppink&quot;&gt;-deeppink&lt;/span&gt;
+&lt;span class=&quot;kit-badge -limegreen&quot;&gt;-limegreen&lt;/span&gt;
+&lt;span class=&quot;kit-badge -crimson&quot;&gt;-crimson&lt;/span&gt;
+&lt;span class=&quot;kit-badge -green&quot;&gt;-green&lt;/span&gt;
+&lt;span class=&quot;kit-badge -silver&quot;&gt;-silver&lt;/span&gt;
+&lt;span class=&quot;kit-badge -black&quot;&gt;-black&lt;/span&gt;</pre>
+            </kit-box>
         </kit-container>
 
         <kit-space></kit-space>
 
         <h2>
             <kit-badge class="orange">class</kit-badge>
-            カラークラス
+            label.kit-toggle
         </h2>
         <p class="m-l">
-            　<strong>kit-button</strong>や<strong>kit-badge</strong>などのクラスは<code>class="kit-badge deeppink"</code>のように、スペースを空けて色の名前を指定することで、簡単に色を変えることができます。
+            　クラス<code>.kit-togle</code>を付与した<strong>label</strong>要素内に<code>type="checkbox"</code>を持つ<strong>input</strong>要素、説明のテキスト、<code>for</code>属性を持つ空のラベル要素を順に配置することで、チェックボックスをトグル項目として表示することができます。
         </p>
         <kit-container class="m-l">
             <kit-box>
                 <h5>プレビュー</h5>
-                <strong class="kit-left">orange</strong>
-                <a class="kit-badge orange">バッジ</a>・
-                <a class="kit-button orange">ボタン</a>・
-                <a class="kit-button-alt orange">ボタン</a>
-                <br>
-                <strong class="kit-left">dodgerblue</strong>
-                <a class="kit-badge dodgerblue">バッジ</a>・
-                <a class="kit-button dodgerblue">ボタン</a>・
-                <a class="kit-button-alt dodgerblue">ボタン</a>
-                <br>
-                <strong class="kit-left">deeppink</strong>
-                <a class="kit-badge deeppink">バッジ</a>・
-                <a class="kit-button deeppink">ボタン</a>・
-                <a class="kit-button-alt deeppink">ボタン</a>
-                <br>
-                <strong class="kit-left">limegreen</strong>
-                <a class="kit-badge limegreen">バッジ</a>・
-                <a class="kit-button limegreen">ボタン</a>・
-                <a class="kit-button-alt limegreen">ボタン</a>
-                <br>
-                <strong class="kit-left">crimson</strong>
-                <a class="kit-badge crimson">バッジ</a>・
-                <a class="kit-button crimson">ボタン</a>・
-                <a class="kit-button-alt crimson">ボタン</a>
-                <br>
-                <strong class="kit-left">green</strong>
-                <a class="kit-badge green">バッジ</a>・
-                <a class="kit-button green">ボタン</a>・
-                <a class="kit-button-alt green">ボタン</a>
-                <br>
-                <strong class="kit-left">silver</strong>
-                <a class="kit-badge silver">バッジ</a>・
-                <a class="kit-button silver">ボタン</a>・
-                <a class="kit-button-alt silver">ボタン</a>
-                <br>
-                <strong class="kit-left">black</strong>
-                <a class="kit-badge black">バッジ</a>・
-                <a class="kit-button black">ボタン</a>・
-                <a class="kit-button-alt black">ボタン</a>
+                <label class="kit-toggle">
+                    <input type="checkbox" id="matsu">トグル(松)<label for="matsu"></label>
+                </label>
+                <label class="kit-toggle">
+                    <input type="checkbox" id="take">トグル(竹)<label for="take"></label>
+                </label>
+                <label class="kit-toggle">
+                    <input type="checkbox" id="ume">トグル(梅)<label for="ume"></label>
+                </label>
+            </kit-box>
+            <kit-box class="kit-box">
+                <h5>マークアップ</h5>
+                <pre class="kit-scroll prettyprint lang-html">&lt;label class=&quot;kit-toggle&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;matsu&quot;&gt;松&lt;label for=&quot;matsu&quot;&gt;&lt;/label&gt;
+&lt;/label&gt;
+&lt;label class=&quot;kit-toggle&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;take&quot;&gt;竹&lt;label for=&quot;take&quot;&gt;&lt;/label&gt;
+&lt;/label&gt;
+&lt;label class=&quot;kit-toggle&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;ume&quot;&gt;梅&lt;label for=&quot;ume&quot;&gt;&lt;/label&gt;
+&lt;/label&gt;</pre>
             </kit-box>
         </kit-container>
 
@@ -194,17 +251,112 @@
             textbox
         </h2>
         <p class="m-l">
-            　input要素やtextarea要素に<code>class="textbox"</code>を付与すると以下のような見た目になります。子クラスの<code>.dark</code>を使うと暗いテーマを適用できます。</p>
+            　input要素やtextarea要素に<code>class="textbox"</code>を付与すると以下のような見た目になります。子クラスの<code>.dark</code>を使うと暗いテーマを適用できます。<br>
+            　また、<code>.-small</code>、<code>.-medium</code>、<code>.-large</code>の3つの子クラスや<code>kit-width</code>接頭辞を持つクラスを使用することでテキストボックスの幅を制御することができます。
+        </p>
         <kit-container class="m-l">
             <kit-box>
                 <h5>プレビュー</h5>
-                入力してください
-                <kit-pane>
+                <div class="kit-input-file">
+                    <input type="file">
+                </div>
+                <kit-pane class="p-l hover">
                     <input type="text" class="textbox" placeholder="いまどうしてる？">
                 </kit-pane>
-                <kit-pane class="dark">
+                <kit-pane class="p-l hover">
+                    <input type="text" class="textbox -small" placeholder=".-small (150px)">
+                </kit-pane>
+                <kit-pane class="p-l hover">
+                    <input type="text" class="textbox -medium" placeholder=".-medium (300px)">
+                </kit-pane>
+                <kit-pane class="p-l hover">
+                    <input type="text" class="textbox -large" placeholder=".-large (450px)">
+                </kit-pane>
+                <kit-pane class="p-l hover">
+                    <input type="text" class="textbox kit-width-50" placeholder=".kit-width-50 (50%)">
+                </kit-pane>
+                <kit-pane class="p-l hover">
+                    <input type="text" class="textbox kit-width-100" placeholder=".kit-width-100 (100%)">
+                </kit-pane>
+                <kit-pane class="p-l dark hover">
                     <input type="text" class="textbox dark" placeholder="いまどうしてる？">
                 </kit-pane>
+            </kit-box>
+        </kit-container>
+        <p class="m-l">
+            　また、<code>.textbox</code>に対して<code>disabled</code>属性を付与すると、入力不能フィールドとなり、専用のスタイルが適用されます。
+        </p>
+        <kit-container class="m-l">
+            <kit-box>
+                <h5>プレビュー</h5>
+                <input type="text" class="textbox" placeholder="入力不能フィールド" disabled>
+            </kit-box>
+            <kit-box>
+                <h5>マークアップ</h5>
+                <pre class="kit-scroll prettyprint lang-html">&lt;input type=&quot;text&quot; class=&quot;textbox&quot; placeholder=&quot;入力不能フィールド&quot; disabled&gt;</pre>
+            </kit-box>
+        </kit-container>
+        
+        <kit-space></kit-space>
+
+        <h2>
+            <kit-badge class="orange">class</kit-badge>
+            <kit-badge class="limegreen">tag</kit-badge>
+            kit-formgroup
+        </h2>
+        <p class="m-l">
+            　<code>class="kit-formgroup"</code>または<code>&lt;kit-formgroup&gt;&lt;/kit-formgroup&gt;</code>要素の中に上記の<code>kit-button</code>(<code>kit-button-alt</code>、<code>kit-btn</code>も含む)や<code>.textbox</code>要素を内包すると、フォーム部品を連結することができます。
+        </p>
+        <kit-container class="m-l">
+            <kit-box>
+                <h5>プレビュー</h5>
+                <kit-formgroup class="p">
+                    <kit-button-alt>ボタン1</kit-button-alt>
+                    <kit-button-alt>ボタン2</kit-button-alt>
+                    <kit-button-alt>ボタン3</kit-button-alt>
+                    <kit-button-alt>ボタン4</kit-button-alt>
+                </kit-formgroup>
+                <kit-formgroup class="p">
+                    <kit-btn>ボタン1</kit-btn>
+                    <kit-btn>ボタン2</kit-btn>
+                    <kit-btn>ボタン3</kit-btn>
+                    <kit-btn>ボタン4</kit-btn>
+                </kit-formgroup>
+                <kit-formgroup class="p">
+                    <kit-button class="crimson">ボタン1</kit-button>
+                    <kit-button class="limegreen">ボタン2</kit-button>
+                    <kit-button class="orange">ボタン3</kit-button>
+                    <kit-button class="deeppink">ボタン4</kit-button>
+                </kit-formgroup>
+                <kit-formgroup class="p kit-flex kit-flex-nowrap kit-fit">
+                    <input type="text" class="textbox kit-width-75">
+                    <kit-button-alt class="kit-text-c kit-width-25">Search</kit-button-alt>
+                </kit-formgroup>
+            </kit-box>
+            <kit-box>
+                <h5>マークアップ</h5>
+                <pre class="kit-scroll prettyprint lang-html">&lt;kit-formgroup class=&quot;p&quot;&gt;
+    &lt;kit-button-alt&gt;ボタン1&lt;/kit-button-alt&gt;
+    &lt;kit-button-alt&gt;ボタン2&lt;/kit-button-alt&gt;
+    &lt;kit-button-alt&gt;ボタン3&lt;/kit-button-alt&gt;
+    &lt;kit-button-alt&gt;ボタン4&lt;/kit-button-alt&gt;
+&lt;/kit-formgroup&gt;
+&lt;kit-formgroup class=&quot;p&quot;&gt;
+    &lt;kit-btn&gt;ボタン1&lt;/kit-btn&gt;
+    &lt;kit-btn&gt;ボタン2&lt;/kit-btn&gt;
+    &lt;kit-btn&gt;ボタン3&lt;/kit-btn&gt;
+    &lt;kit-btn&gt;ボタン4&lt;/kit-btn&gt;
+&lt;/kit-formgroup&gt;
+&lt;kit-formgroup class=&quot;p&quot;&gt;
+    &lt;kit-button class=&quot;crimson&quot;&gt;ボタン1&lt;/kit-button&gt;
+    &lt;kit-button class=&quot;limegreen&quot;&gt;ボタン2&lt;/kit-button&gt;
+    &lt;kit-button class=&quot;orange&quot;&gt;ボタン3&lt;/kit-button&gt;
+    &lt;kit-button class=&quot;deeppink&quot;&gt;ボタン4&lt;/kit-button&gt;
+&lt;/kit-formgroup&gt;
+&lt;kit-formgroup class=&quot;p kit-flex kit-flex-nowrap kit-fit&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;textbox kit-width-75&quot;&gt;
+    &lt;kit-button-alt class=&quot;kit-text-c kit-width-25&quot;&gt;Search&lt;/kit-button-alt&gt;
+&lt;/kit-formgroup&gt;</pre>
             </kit-box>
         </kit-container>
 
@@ -213,26 +365,31 @@
         <h2>
             <kit-badge class="orange">class</kit-badge>
             <kit-badge class="limegreen">tag</kit-badge>
-            kit-flash
+            kit-notice
         </h2>
         <p class="m-l">
-            　<code>class="kit-flash"</code>を付与するか、<code>&lt;kit-flash&gt;&lt;/kit-flash&gt;</code>を使用して、ユーザーにメッセージを通知するためのフラッシュを生成することができます。
+            　要素に<code>class="kit-notice"</code>を付与または<code>&lt;kit-notice&gt;&lt;/kit-notice&gt;</code>タグを使用することで、ユーザーへの通知を送るペインを生成できます。<br>
+            　また、子クラスの<code>.-green</code>、<code>.-yellow</code>、<code>.-red</code>、<code>.-black</code>で、色を変更することができます。
         </p>
         <kit-container class="m-l">
             <kit-box>
                 <h5>プレビュー</h5>
-                <kit-button onclick="document.getElementById('kit-flash-sample').style.display = 'flex'">flashを表示</kit-button>
-                <kit-flash class="kit-flex" id="kit-flash-sample">
-                    <div style="flex-grow: 1">これはフラッシュのサンプルです。</div>
-                    <kit-button-alt onclick="document.getElementById('kit-flash-sample').style.display = 'none'">OK</kit-button-alt>
-                </kit-flash>
+                    <div class="kit-notice">これは通知です。</div>
+                    <div class="kit-notice -green">これはメッセージです。(-green)</div>
+                    <div class="kit-notice -yellow">これは注意メッセージです。(-yellow)</div>
+                    <div class="kit-notice -red">これはエラーメッセージです。(-red)</div>
+                    <div class="kit-notice -black">これは黒色の通知です。(-black)</div>
             </kit-box>
-            <pre class="kit-box">上のkit-button要素をクリックするとflashが表示されます。</pre>
-            <pre class="kit-box silver"><h5>マークアップ</h5>&lt;kit-flash class="kit-flex"&gt;
-  &lt;div&gt;これはフラッシュのサンプルです。&lt;/div&gt;
-  &lt;kit-button-alt&gt;OK&lt;/kit-button-alt&gt;
-&lt;/kit-flash&gt;</pre>
+            <kit-box class="kit-box">
+                <h5>マークアップ</h5>
+                <pre class="kit-scroll prettyprint lang-html">&lt;div class=&quot;kit-notice&quot;&gt;これは通知です。&lt;/div&gt;
+&lt;div class=&quot;kit-notice -green&quot;&gt;これはメッセージです。(-green)&lt;/div&gt;
+&lt;div class=&quot;kit-notice -yellow&quot;&gt;これは注意メッセージです。(-yellow)&lt;/div&gt;
+&lt;div class=&quot;kit-notice -red&quot;&gt;これはエラーメッセージです。(-red)&lt;/div&gt;
+&lt;div class=&quot;kit-notice -black&quot;&gt;これは黒色の通知です。(-black)&lt;/div&gt;</pre>
+            </kit-box>
         </kit-container>
+        <blockquote class="m-l">デフォルトのカラーは<code>orange</code>です</blockquote>
 
         <kit-space></kit-space>
 
@@ -264,7 +421,9 @@
                     <a class="kit-navitem">項目4</a>
                 </kit-navbar-alt>
             </kit-box>
-            <pre class="kit-box silver"><h5>マークアップ</h5>&lt;kit-box&gt;
+            <kit-box>
+                <h5>マークアップ</h5>
+                <pre class="kit-scroll prettyprint lang-html">&lt;kit-box&gt;
     kit-navbar
     &lt;kit-navbar&gt;
         &lt;kit-navitem&gt;項目1&lt;/kit-navitem&gt;
@@ -280,6 +439,7 @@
         &lt;a class=&quot;kit-navitem&quot;&gt;項目4&lt;/a&gt;
     &lt;/kit-navbar-alt&gt;
 &lt;/kit-box&gt;</pre>
+            </kit-box>
         </kit-container>
 
         <kit-space></kit-space>
@@ -297,29 +457,24 @@
                 <h5>プレビュー</h5>
                 <kit-pane>kit-pane</kit-pane>
                 <kit-pane>kit-pane</kit-pane>
-                <kit-pane>kit-pane</kit-pane>
-                <kit-pane class="dark">kit-pane.dark</kit-pane>
                 <kit-pane class="dark">kit-pane.dark</kit-pane>
                 <kit-pane class="dark">kit-pane.dark</kit-pane>
                 <kit-pane class="hover">kit-pane.hover</kit-pane>
                 <kit-pane class="hover">kit-pane.hover</kit-pane>
-                <kit-pane class="hover">kit-pane.hover</kit-pane>
-                <kit-pane class="dark hover">kit-pane.dark.hover</kit-pane>
                 <kit-pane class="dark hover">kit-pane.dark.hover</kit-pane>
                 <kit-pane class="dark hover">kit-pane.dark.hover</kit-pane>
             </kit-box>
-            <pre class="kit-box silver"><h5>マークアップ</h5>&lt;kit-pane&gt;kit-pane&lt;/kit-pane&gt;
+            <kit-box>
+                <h5>マークアップ</h5>
+                <pre class="kit-scroll prettyprint lang-html">&lt;kit-pane&gt;kit-pane&lt;/kit-pane&gt;
 &lt;kit-pane&gt;kit-pane&lt;/kit-pane&gt;
-&lt;kit-pane&gt;kit-pane&lt;/kit-pane&gt;
-&lt;kit-pane class=&quot;dark&quot;&gt;kit-pane.dark&lt;/kit-pane&gt;
 &lt;kit-pane class=&quot;dark&quot;&gt;kit-pane.dark&lt;/kit-pane&gt;
 &lt;kit-pane class=&quot;dark&quot;&gt;kit-pane.dark&lt;/kit-pane&gt;
 &lt;kit-pane class=&quot;hover&quot;&gt;kit-pane.hover&lt;/kit-pane&gt;
 &lt;kit-pane class=&quot;hover&quot;&gt;kit-pane.hover&lt;/kit-pane&gt;
-&lt;kit-pane class=&quot;hover&quot;&gt;kit-pane.hover&lt;/kit-pane&gt;
-&lt;kit-pane class=&quot;dark hover&quot;&gt;kit-pane.dark.hover&lt;/kit-pane&gt;
 &lt;kit-pane class=&quot;dark hover&quot;&gt;kit-pane.dark.hover&lt;/kit-pane&gt;
 &lt;kit-pane class=&quot;dark hover&quot;&gt;kit-pane.dark.hover&lt;/kit-pane&gt;</pre>
+            </kit-box>
         </kit-container>
 
         <kit-space></kit-space>

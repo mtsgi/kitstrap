@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../d/kitstrap.css">
+    <link rel="stylesheet" href="../d/kitstrap-cursor.css">
+    <link rel="stylesheet" href="../d/kitstrap-font.css">
+    <link rel="stylesheet" href="./custom.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <title>ユーティリティ - kitstrapドキュメント/サンプル</title>
+</head>
+
+<body>
+    <header class="kit-header">
+        <a href="https://github.com/mtsgi/kitstrap"><img src="../icon.png" alt="kitstrap"></a>
+        <a href="./" class="kit-hl-alt">ドキュメント</a>
+        <div class="kit-sub">kitstrap v0.4</div>
+    </header>
+    <main class="p-l">
+
+        <p class="m-l">
+            　kitstrapには、kitstrap要素を生成するためのタグやクラスの他に、様々な汎用のユーティリティクラスが用意されています。
+        </p>
+        <h2>
+            <kit-badge class="orange">class</kit-badge>
+            kit-width
+        </h2>
+        <p class="m-l">
+            <code>.kit-width-auto</code>は、要素の幅を<strong>自動</strong>に設定します。<br>
+            <code>.kit-width-25</code>は、要素の幅を<strong>25%</strong>に設定します。<br>
+            <code>.kit-width-50</code>は、要素の幅を<strong>50%</strong>に設定します。<br>
+            <code>.kit-width-75</code>は、要素の幅を<strong>75%</strong>に設定します。<br>
+            <code>.kit-width-100</code>は、要素の幅を<strong>100%</strong>に設定します。<br>
+            <code>.kit-fit</code>は、要素の最大の幅を<strong>100%</strong>に設定します。<br>
+            <code>.kit-width-0</code>を指定すると、要素の幅を<strong>0%</strong>に設定します。<br>
+            ブロック要素とインラインブロック要素にそれぞれのクラスを付与した結果を比較してみます。
+        </p>
+        <kit-container class="m-l">
+            <kit-box>
+                <h5>プレビュー</h5>
+                <kit-pane class="dark kit-width-auto">自動</kit-pane>
+                <kit-pane class="dark kit-width-25">25%</kit-pane>
+                <kit-pane class="dark kit-width-50">50%</kit-pane>
+                <kit-pane class="dark kit-width-75">75%</kit-pane>
+                <kit-pane class="dark kit-width-100">100%</kit-pane>
+                <kit-pane class="dark kit-fit">fit</kit-pane>
+                <kit-button class="m-t kit-width-auto">自動</kit-button><br>
+                <kit-button class="m-t kit-width-25">25%</kit-button><br>
+                <kit-button class="m-t kit-width-50">50%</kit-button><br>
+                <kit-button class="m-t kit-width-75">75%</kit-button><br>
+                <kit-button class="m-t kit-width-100">100%</kit-button><br>
+                <kit-button class="m-t kit-fit">fit</kit-button>
+            </kit-box>
+            <kit-box class="kit-box kit-scroll">
+                <h5>マークアップ</h5>
+                <pre class="prettyprint lang-html">&lt;kit-pane class=&quot;dark kit-width-auto&quot;&gt;自動&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;dark kit-width-25&quot;&gt;25%&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;dark kit-width-50&quot;&gt;50%&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;dark kit-width-75&quot;&gt;75%&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;dark kit-width-100&quot;&gt;100%&lt;/kit-pane&gt;
+&lt;kit-pane class=&quot;dark kit-fit&quot;&gt;fit&lt;/kit-pane&gt;
+&lt;kit-button class=&quot;m-t kit-width-auto&quot;&gt;自動&lt;/kit-button&gt;&lt;br&gt;
+&lt;kit-button class=&quot;m-t kit-width-25&quot;&gt;25%&lt;/kit-button&gt;&lt;br&gt;
+&lt;kit-button class=&quot;m-t kit-width-50&quot;&gt;50%&lt;/kit-button&gt;&lt;br&gt;
+&lt;kit-button class=&quot;m-t kit-width-75&quot;&gt;75%&lt;/kit-button&gt;&lt;br&gt;
+&lt;kit-button class=&quot;m-t kit-width-100&quot;&gt;100%&lt;/kit-button&gt;&lt;br&gt;
+&lt;kit-button class=&quot;m-t kit-fit&quot;&gt;fit&lt;/kit-button&gt;</pre>
+            </kit-box>
+        </kit-container>
+
+        <h2>
+            <kit-badge class="orange">class</kit-badge>
+            要素の非表示
+        </h2>
+        <p class="m-l">
+            　<code>.kit-hidden</code>は、ドキュメントのレイアウトに影響を及ぼさずに要素を不可視にします。<br>
+            　<code>.kit-nodisp</code>(または、別名<code>.kit-nd</code>)は、要素を非表示にし、レイアウト上から除去します。
+        </p>
+        <kit-container class="m-l">
+            <kit-box>
+                <h5>プレビュー</h5>
+                <kit-formgroup class="kit-flex m">
+                    <kit-button-alt class="kit-flex-grow orange">可視</kit-button-alt>
+                    <kit-button-alt class="kit-flex-grow orange kit-hidden">不可視</kit-button-alt>
+                    <kit-button-alt class="kit-flex-grow orange">可視</kit-button-alt>
+                </kit-formgroup>
+                <kit-formgroup class="kit-flex m">
+                    <kit-button-alt class="kit-flex-grow orange">表示</kit-button-alt>
+                    <kit-button-alt class="kit-flex-grow orange kit-nodisp">非表示</kit-button-alt>
+                    <kit-button-alt class="kit-flex-grow orange">表示</kit-button-alt>
+                </kit-formgroup>
+            </kit-box>
+            <kit-box class="kit-box kit-scroll">
+                <h5>マークアップ</h5>
+                <pre class="prettyprint lang-html">&lt;kit-box&gt;
+    &lt;h5&gt;プレビュー&lt;/h5&gt;
+    &lt;kit-formgroup class=&quot;kit-flex m&quot;&gt;
+        &lt;kit-button-alt class=&quot;kit-flex-grow orange&quot;&gt;可視&lt;/kit-button-alt&gt;
+        &lt;kit-button-alt class=&quot;kit-flex-grow orange kit-hidden&quot;&gt;不可視&lt;/kit-button-alt&gt;
+        &lt;kit-button-alt class=&quot;kit-flex-grow orange&quot;&gt;可視&lt;/kit-button-alt&gt;
+    &lt;/kit-formgroup&gt;
+    &lt;kit-formgroup class=&quot;kit-flex m&quot;&gt;
+        &lt;kit-button-alt class=&quot;kit-flex-grow orange&quot;&gt;表示&lt;/kit-button-alt&gt;
+        &lt;kit-button-alt class=&quot;kit-flex-grow orange kit-nodisp&quot;&gt;非表示&lt;/kit-button-alt&gt;
+        &lt;kit-button-alt class=&quot;kit-flex-grow orange&quot;&gt;表示&lt;/kit-button-alt&gt;
+    &lt;/kit-formgroup&gt;
+&lt;/kit-box&gt;</pre>
+            </kit-box>
+        </kit-container>
+
+        <h2>
+            <kit-badge class="orange">class</kit-badge>
+            全プロパティの初期化
+        </h2>
+        <p class="m-l">
+            　要素に<code>.kit-init</code>クラスを付与することで、ブラウザ標準のスタイルを含めたすべてのCSSプロパティのスタイルを初期化します。
+        </p>
+        <kit-container class="m-l silver">
+            <kit-box>
+                <h5>プレビュー(.kit-init指定)</h5>
+                <input type="text" class="kit-init" placeholder="inputタグ"><br>
+                <button class="kit-init">buttonタグ</button><br>
+                <a href="#" class="kit-init">aタグ</a><br>
+                <progress class="kit-init" max="100" value="50">progress</progress>
+            </kit-box>
+        </kit-container>
+        <kit-container class="m-l silver">
+            <kit-box>
+                <h5>プレビュー(クラス未指定)</h5>
+                <input type="text" placeholder="inputタグ"><br>
+                <button>buttonタグ</button><br>
+                <a href="#">aタグ</a><br>
+                <progress max="100" value="50">progress</progress>
+            </kit-box>
+        </kit-container>
+
+        <a href="./" class="kit-hl-alt kit-sub m-l">トップへ戻る</a>
+    </main>
+    <kit-footer>
+        <a href="" class="kit-hl-alt">mtsgi/kitstrap</a>
+    </kit-footer>
+</body>
+
+</html>
