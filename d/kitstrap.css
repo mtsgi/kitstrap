@@ -360,7 +360,6 @@ kit-button:active,
     top: 2px;
 }
 
-<<<<<<< HEAD
 button.kit-button,
 input[type="submit"].kit-button,
 input[type="button"].kit-button {
@@ -382,7 +381,8 @@ button,
 input[type="submit"].kit-button:focus,
 input[type="button"].kit-button:focus {
     outline-offset: -2px;
-=======
+}
+
 /* child classes of kit-button */
 
 kit-button.-flat,
@@ -436,7 +436,6 @@ kit-button.-silver,
 kit-button.-black,
 .kit-button.-black {
     background: #353535;
->>>>>>> b93e0522a95ed6655f974194f94e802dd6937479
 }
 
 kit-button-alt,
@@ -468,7 +467,6 @@ kit-button-alt:hover,
     color: white;
 }
 
-<<<<<<< HEAD
 button.kit-button-alt,
 input[type="submit"].kit-button-alt,
 input[type="button"].kit-button-alt {
@@ -490,7 +488,8 @@ button,
 input[type="submit"].kit-button-alt:focus,
 input[type="button"].kit-button-alt:focus {
     outline-offset: -2px;
-=======
+}
+
 kit-button-alt:active,
 .kit-button-alt:active {
     box-shadow: 0 0 0 3px rgba(180, 200, 255, .8);
@@ -612,7 +611,6 @@ kit-button-alt.-black {
 kit-button-alt.-black:hover {
     color: #ffffff;
     background: #353535;
->>>>>>> b93e0522a95ed6655f974194f94e802dd6937479
 }
 
 .kit-button.small,
