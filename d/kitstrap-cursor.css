@@ -20,6 +20,6 @@ kit-button, .kit-button, .kit-toggle {
 
 /* Text style */
 
-.textbox {
+.textbox, .kit-textbox {
     cursor: url(./cursor-3.png), text;
 }
