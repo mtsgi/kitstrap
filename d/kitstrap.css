@@ -216,26 +216,52 @@ kit-btn:active,
     top: 1px;
 }
 
-.textbox {
+.textbox,
+.kit-textbox {
     cursor: text;
     outline: none;
-    border: 1px solid #3d3d3d;
+    border: 1px solid #666666;
     color: #3d3d3d;
     font-size: 16px;
     padding: 4px;
     background: #ffffff;
-    box-shadow: inset 1px 1px 3px 0px rgba(0, 0, 0, .2);
     border-radius: 5px;
     font-family: 'Noto Sans JP', sans-serif;
     width: auto;
     box-sizing: border-box;
+    transition: .2s all ease;
+    box-shadow: 0 0 0 1px rgba(180, 200, 255, 0);
 }
 
-.textbox:focus {
+.textbox:focus,
+.kit-textbox:focus {
     box-shadow: 0 0 0 3px rgba(180, 200, 255, .8);
 }
 
-.textbox.dark {
+.textbox.-flat,
+.kit-textbox.-flat {
+    border: none;
+    background: rgba(230, 230, 230, .8);
+    opacity: .75;
+    border-radius: 6px;
+    padding: 6px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
+}
+
+.textbox.-flat.-dark,
+.kit-textbox.-flat.-dark {
+    background: rgba(100, 100, 100, .5);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .5);
+}
+
+.textbox.-flat:focus,
+.kit-textbox.-flat:focus {
+    opacity: 1;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .2);
+}
+
+.textbox.dark,
+.kit-textbox.-dark {
     border-color: rgba(255, 255, 255, .5);
     background: #303030;
     color: #f0f0f0;
@@ -246,20 +272,28 @@ kit-btn:active,
     color: #919191;
 }
 
-.textbox::selection {
+.textbox::selection,
+.kit-textbox::selection,
+.kit-textbox-alt::selection {
     background: dodgerblue;
     color: white;
 }
 
-.textbox.-small {
+.textbox.-small,
+.kit-textbox.-small,
+.kit-textbox-alt.-small {
     width: 150px;
 }
 
-.textbox.-medium {
+.textbox.-medium,
+.kit-textbox.-medium,
+.kit-textbox-alt.-medium {
     width: 300px;
 }
 
-.textbox.-large {
+.textbox.-large,
+.kit-textbox.-large,
+.kit-textbox-alt.-large {
     width: 450px;
 }
 
