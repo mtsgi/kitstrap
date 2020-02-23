@@ -1145,6 +1145,59 @@ kit-pane.dark.hover:hover,
     background: #404040;
 }
 
+.kit-tipped,
+kit-tipped {
+    display: inline-block;
+    position: relative;
+}
+
+kit-tipped > kit-tip,
+kit-tipped > .kit-tip,
+.kit-tipped > kit-tip,
+.kit-tipped > .kit-tip {
+    position: absolute;
+    box-sizing: border-box;
+    text-align: center;
+    white-space: nowrap;
+    line-height: 1.25;
+    font-size: 12px;
+    background: rgba(0, 0, 0, .75);
+    color: #f0f0f0;
+    padding: 4px 8px;
+    bottom: calc(100% + 10px);
+    right: 0%;
+    min-height: 24px;
+    border-radius: 4px;
+    display: none;
+    opacity: 0;
+}
+
+kit-tipped > kit-tip.-bottom,
+kit-tipped > .kit-tip.-bottom,
+.kit-tipped > kit-tip.-bottom,
+.kit-tipped > .kit-tip.-bottom {
+    top: calc(100% + 10px);
+}
+
+kit-tipped:hover > kit-tip:not(.-disabled),
+kit-tipped:hover > .kit-tip:not(.-disabled),
+.kit-tipped:hover > kit-tip:not(.-disabled),
+.kit-tipped:hover > .kit-tip:not(.-disabled) {
+    display: inline;
+    animation: kit-kf-tooltip .2s;
+    opacity: 1;
+}
+
+@keyframes kit-kf-tooltip {
+    0% {
+        display: inline-block;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /* padding and margin */
 
 .p{ padding: 8px }
