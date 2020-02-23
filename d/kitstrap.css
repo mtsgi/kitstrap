@@ -1506,6 +1506,15 @@ kit-tipped:hover > .kit-tip:not(.-disabled),
     background-color: #ffffff;
 }
 
+.kit-bgclr {
+    background: -moz-linear-gradient(45deg, rgba(204, 255, 216, 1) 0%, rgba(212, 246, 255, 1) 38%, rgba(255, 219, 238, 1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(204, 255, 216, 1)), color-stop(38%, rgba(212, 246, 255, 1)), color-stop(100%, rgba(255, 219, 238, 1)));
+    background: -webkit-linear-gradient(45deg, rgba(204, 255, 216, 1) 0%, rgba(212, 246, 255, 1) 38%, rgba(255, 219, 238, 1) 100%);
+    background: -o-linear-gradient(45deg, rgba(204, 255, 216, 1) 0%, rgba(212, 246, 255, 1) 38%, rgba(255, 219, 238, 1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(204, 255, 216, 1) 0%, rgba(212, 246, 255, 1) 38%, rgba(255, 219, 238, 1) 100%);
+    background: linear-gradient(45deg, rgba(204, 255, 216, 1) 0% rgba(212, 246, 255, 1) 38%, rgba(255, 219, 238, 1) 100%);
+}
+
 /* legacy color classes */
 
 .orange,
@@ -1731,6 +1740,29 @@ kit-button-alt.black:hover {
 
 .kit-flex-order-1 {
     order: -1;
+}
+
+/* position */
+
+.kit-static {
+    position: static;
+}
+
+.kit-relative {
+    position: relative;
+}
+
+.kit-absolute {
+    position: absolute;
+}
+
+.kit-fixed {
+    position: fixed;
+}
+
+.kit-sticky {
+    position: sticky;
+    top: 0;
 }
 
 /* other function */
