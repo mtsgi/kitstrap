@@ -244,7 +244,7 @@
         <h2>
             <kit-badge class="orange">class</kit-badge>
             <kit-badge class="limegreen">tag</kit-badge>
-            kit-navbarとkit-navitem
+            kit-navbar
         </h2>
         <p class="m-l">
             　<code>class="kit-navbar"</code>または<code>&lt;kit-navbar&gt;&lt;/kit-navbar&gt;</code>の中に、<code>class="kit-navitem"</code>または<code>&lt;kit-navitem&gt;&lt;/kit-navitem&gt;</code>を並べることで、ナビゲーションバーとその項目を設置することができます。<br>
@@ -326,6 +326,63 @@
         </kit-container>
 
         <kit-space></kit-space>
+
+        <h2>
+            <kit-badge class="orange">class</kit-badge>
+            <kit-badge class="limegreen">tag</kit-badge>
+            ツールチップ
+        </h2>
+        <p class="m-l">
+            　<code>.kit-tipped</code>クラスを持つ要素または<code>&lt;kit-tipped&gt;&lt;/kit-tipped&gt;</code>要素の中に、<code>.kit-tip</code>または<code>&lt;kit-tip&gt;&lt;/kit-tip&gt;</code>要素を内包することで、親要素のツールチップを表示させることができます。この時、親要素(<code>.kit-tipped</code>)には<code>position: relative</code>が指定され、インラインブロック要素として振る舞います。
+        </p>
+        <p class="m-l">
+            　ツールチップは、デフォルトではホバー時に要素の上側に表示されます。子要素(<code>.kit-tip</code>)に子クラス「<code>.-bottom</code>」を付与することで、下側に表示することもできます。また、子クラス「<code>.-disabled</code>」を付与すると、ツールチップの表示を無効化することもできます。
+        </p>
+        <kit-container class="m-l">
+            <kit-box>
+                <h5>プレビュー</h5>
+                <kit-tipped class="kit-width-50 kit-line-0">
+                    <img src="./banner.png" class="kit-fit">
+                    <kit-tip>バナー画像</kit-tip>
+                </kit-tipped>
+                <kit-tipped class="kit-width-25 kit-line-0">
+                    <img src="./banner.png" class="kit-fit">
+                    <kit-tip class="-bottom">バナー画像</kit-tip>
+                </kit-tipped>
+                <kit-space></kit-space>
+                <kit-tipped class="kit-fit">
+                    <input type="text" class="kit-textbox kit-fit" placeholder="example@example.com">
+                    <kit-tip>メールアドレスを入力してください</kit-tip>
+                </kit-tipped>
+                <kit-tipped>
+                    <kit-button class="-disabled">送信する</kit-button>
+                    <kit-tip class="-disabled">無効です</kit-tip>
+                </kit-tipped>
+            </kit-box>
+            <kit-box class="kit-box">
+                <h5>マークアップ</h5>
+                <pre class="kit-scroll prettyprint lang-html">&lt;kit-tipped class=&quot;kit-width-50 kit-line-0&quot;&gt;
+    &lt;img src=&quot;./banner.png&quot; class=&quot;kit-fit&quot;&gt;
+    &lt;kit-tip&gt;バナー画像&lt;/kit-tip&gt;
+&lt;/kit-tipped&gt;
+&lt;kit-tipped class=&quot;kit-width-25 kit-line-0&quot;&gt;
+    &lt;img src=&quot;./banner.png&quot; class=&quot;kit-fit&quot;&gt;
+    &lt;kit-tip class=&quot;-bottom&quot;&gt;バナー画像&lt;/kit-tip&gt;
+&lt;/kit-tipped&gt;
+&lt;kit-space&gt;&lt;/kit-space&gt;
+&lt;kit-tipped class=&quot;kit-fit&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;kit-textbox kit-fit&quot; placeholder=&quot;example@example.com&quot;&gt;
+    &lt;kit-tip&gt;メールアドレスを入力してください&lt;/kit-tip&gt;
+&lt;/kit-tipped&gt;
+&lt;kit-tipped&gt;
+    &lt;kit-button class=&quot;-disabled&quot;&gt;送信する&lt;/kit-button&gt;
+    &lt;kit-tip class=&quot;-disabled&quot;&gt;無効です&lt;/kit-tip&gt;
+&lt;/kit-tipped&gt;</pre>
+            </kit-box>
+        </kit-container>
+
+        <kit-space></kit-space>
+
         <a href="./" class="kit-hl-alt kit-sub m-l">トップへ戻る</a>
     </main>
     <kit-footer>
