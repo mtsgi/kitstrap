@@ -383,6 +383,35 @@
 
         <kit-space></kit-space>
 
+        <h2>
+            <kit-badge class="orange">class</kit-badge>
+            パンくずリスト
+        </h2>
+        <p class="m-l">
+            　<code>.kit-breadcrumb</code>クラスを付与した<code>&lt;li&gt;&lt;/li&gt;</code>要素を用いて、簡単にパンくずリストを作成することができます。
+        </p>
+        <p class="m-l">
+            　パンくずのリンクとなるアイテムをアンカーとして<code>.kit-breadcrumb</code>のリストアイテムにを内包します。リンクでないアイテムは、単にテキストとして内包します。
+        </p>
+        <kit-container class="m-l">
+            <kit-box>
+                <h5>プレビュー</h5>
+                <ul class="kit-breadcrumb">
+                    <li><a href="#">トップページ</a></li>
+                    <li><a href="#">要素と部品</a></li>
+                    <li>パンくずリスト</li>
+                </ul> 
+            </kit-box>
+            <kit-box class="kit-box">
+                <h5>マークアップ</h5>
+                <pre class="kit-scroll prettyprint lang-html">&lt;ul class=&quot;kit-breadcrumb&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;トップページ&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;要素と部品&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;パンくずリスト&lt;/li&gt;
+&lt;/ul&gt; </pre>
+            </kit-box>
+        </kit-container>
+
         <a href="./" class="kit-hl-alt kit-sub m-l">トップへ戻る</a>
     </main>
     <kit-footer>
