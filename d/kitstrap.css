@@ -248,6 +248,13 @@ kit-btn:active,
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
 }
 
+.textbox.-rounded,
+.kit-textbox.-rounded {
+    border-radius: 1e9px;
+    padding-left: .8em;
+    padding-right: .8em;
+}
+
 .textbox.-flat.-dark,
 .kit-textbox.-flat.-dark {
     background: rgba(100, 100, 100, .5);
@@ -447,6 +454,15 @@ kit-button.-silver,
 kit-button.-black,
 .kit-button.-black {
     background: #353535;
+}
+
+kit-button.-rounded,
+.kit-button.-rounded,
+kit-button-alt.-rounded,
+.kit-button-alt.-rounded,
+kit-button-alt.-flat.-rounded,
+.kit-button-alt.-flat.-rounded {
+    border-radius: 1e9px;
 }
 
 kit-button-alt,
