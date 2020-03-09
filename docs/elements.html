@@ -51,8 +51,7 @@
             </kit-box>
         </kit-container>
         <blockquote class="m-l">デフォルトのカラーはdodgerblueです</blockquote>
-        <p class="m-l">　kit-buttonの子クラス<code>.-xlarge</code>、<code>.-large</code>、<code>.-medium</code>と<code>.-small</code>でボタンのサイズを変更することもできます。<code>.-disabled</code>で、無効化されたボタンのスタイルを設定することができます(kit-button-altでは一部利用不可)。</p>
-        <p class="m-l">　また、<code>.-flat</code>クラスを付与することで、それぞれシンプルなデザインのボタンに変更することもできます。</p>
+        <p class="m-l">　kit-buttonの子クラス<code>.-xlarge</code>、<code>.-large</code>、<code>.-medium</code>と<code>.-small</code>でボタンのサイズを変更することもできます。</p>
         <kit-container class="m-l">
             <kit-box>
                 <h5>プレビュー</h5>
@@ -60,24 +59,52 @@
                 <kit-button class="-medium">-medium</kit-button>
                 <kit-button class="-large">-large</kit-button>
                 <kit-button class="-xlarge">-xlarge</kit-button>
+            </kit-box>
+            <kit-box>
+                <h5>プレビュー(kit-button-alt)</h5>
                 <kit-button-alt class="-small">-small</kit-button-alt>
                 <kit-button-alt class="-medium">-medium</kit-button-alt>
                 <kit-button-alt class="-large">-large</kit-button-alt>
                 <kit-button-alt class="-xlarge">-xlarge</kit-button-alt>
+            </kit-box>
+        </kit-container>
+        <p class="m-l">　また、<code>.-flat</code>クラスを付与することで、それぞれシンプルなデザインのボタンに変更することもできます。</p>
+        <kit-container class="m-l">
+            <kit-box>
                 <h5>.-flatクラスを付与</h5>
                 <kit-button class="-flat">-flat</kit-button>
                 <kit-button class="-green -flat">-green -flat</kit-button>
                 <kit-button class="-deeppink -flat">-deeppink -flat</kit-button>
+            </kit-box>
+            <kit-box>
+                <h5>.-flat(kit-button-alt)</h5>
                 <kit-button-alt class="-flat">-flat</kit-button-alt>
                 <kit-button-alt class="-orange -flat">-orange -flat</kit-button-alt>
                 <kit-button-alt class="-black -flat">-black -flat</kit-button-alt>
             </kit-box>
+        </kit-container>
+        <p class="m-l">　<code>.-rounded</code>クラスを用いると、ボタンは丸みを帯びたデザインに変更されます。</p>
+        <kit-container class="m-l">
             <kit-box>
-                <h5>プレビュー</h5>
+                <h5>rounded</h5>
+                <kit-button class="-crimson -large -rounded">-crimson -large -rounded</kit-button>
+                <kit-button-alt class="-limegreen -rounded">-limegreen -rounded</kit-button-alt>
+            </kit-box>
+            <kit-box>
+                <h5>rounded(flat)</h5>
+                <kit-button class="-flat -large -rounded">-flat -large -rounded</kit-button>
+                <kit-button-alt class="-black -flat -rounded">-black -flat -rounded</kit-button-alt>
+            </kit-box>
+        </kit-container>
+        <p class="m-l"><code>.-disabled</code>で、無効化されたボタンのスタイルを設定することができます。</p>
+        <kit-container class="m-l">
+            <kit-box>
+                <h5>プレビュー(無効)</h5>
                 <kit-button class="-disabled">無効</kit-button>
                 <button class="kit-button -crimson kit-font-m -disabled">無効</button>
                 <kit-button class="-large -disabled">無効</kit-button>
                 <button class="kit-button -large -orange kit-font-m -disabled">無効</button>
+                <button class="kit-button -large -rounded -disabled">無効</button>
             </kit-box>
         </kit-container>
         
