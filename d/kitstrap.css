@@ -1214,6 +1214,38 @@ kit-tipped:hover > .kit-tip:not(.-disabled),
     }
 }
 
+.kit-breadcrumb {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    position: relative;
+}
+
+.kit-breadcrumb li {
+    padding-right: 30px;
+}
+
+.kit-breadcrumb li:not(:last-child):after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 8px);
+    margin-left: 10px;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left: 8px solid #c0c0c0;
+}
+
+.kit-breadcrumb li a {
+    color: dodgerblue;
+    padding: 2px 3px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.kit-breadcrumb li a:hover {
+    background: #f0f0f0;
+}
+
 /* padding and margin */
 
 .p{ padding: 8px }
