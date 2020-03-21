@@ -617,6 +617,14 @@ kit-button-alt.-black:hover {
     background: #353535;
 }
 
+.kit-button.-xsmall,
+kit-button.-xsmall,
+.kit-button-alt.-xsmall,
+kit-button-alt.-xsmall {
+    font-size: 10px;
+    padding: 0px 3px;
+}
+
 .kit-button.small,
 kit-button.small,
 .kit-button-alt.small,
@@ -679,6 +687,14 @@ kit-button.-xlarge,
 kit-button-alt.-xlarge {
     font-size: 27px;
     padding: 5px 20px;
+}
+
+.kit-button.-xxlarge,
+kit-button.-xxlarge,
+.kit-button-alt.-xxlarge,
+kit-button-alt.-xxlarge {
+    font-size: 34px;
+    padding: 12px 34px;
 }
 
 .kit-button.-disabled,
