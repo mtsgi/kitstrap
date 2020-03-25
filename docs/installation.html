@@ -17,7 +17,7 @@
     <header class="kit-header">
         <a href="https://github.com/mtsgi/kitstrap"><img src="../icon.png" alt="kitstrap"></a>
         <a href="./" class="kit-hl-alt">ドキュメント</a>
-        <div class="kit-sub">kitstrap v0.4</div>
+        <div class="kit-sub">kitstrap v0.5</div>
     </header>
     <main class="p-l">
         <p class="m-l">　kitstrapを導入しましょう。</p>
@@ -28,17 +28,13 @@
             　CSSファイルが設置できたら、次のように<code>link</code>タグを挿入します。これだけでkitstrapを使用する準備は完了です。正しくCSSを読み込めているか開発者ツールなどで確認するとよいでしょう。
         </p>
         <pre class="silver m-l p prettyprint lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;./d/kitstrap.css&quot;&gt;</pre>
-        <h2 class="m-l">CDNから読み込む</h2>
+        <h2 class="m-l">CDNからバージョンを選択</h2>
         <p class="m-l">
-            　kitstrapのGitHubリポジトリを参照する形で読み込むこともできます。<br>
-            　この方法では、ディレクトリ内へのバンドルが不要になりますが、github.ioへのアクセス環境がないとロードできません。<br>
-            　また、次の方法では最新のkitstrapへ自動でアップデートされます。更新の変更内容によってウェブページの見た目が変化する場合があります。
+            　CDNから任意のバージョンのkitstrapを選択して使用可能です(推奨)。指定バージョンのkitstrapを高速にロードすることが可能です。<br>
+            　<code>kitstrap-font.css</code>などのモジュールも利用可能です。
         </p>
-        <pre class="silver m-l p prettyprint lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://mtsgi.github.io/kitstrap/d/kitstrap.css&quot;&gt;</pre>
-        <h2 class="m-l">旧バージョンを使用</h2>
-        <p class="m-l">
-            　新しいバージョンのkitstrapで互換性の問題がある場合、CDNから任意のバージョンのkitstrapを使用可能です。
-        </p>
+        <kit-badge class="limegreen m-l">v0.5</kit-badge>
+        <pre class="silver m-l p prettyprint lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/mtsgi/kitstrap/d/0.5/kitstrap.css&quot;&gt;</pre>
         <kit-badge class="limegreen m-l">v0.4</kit-badge>
         <pre class="silver m-l p prettyprint lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/mtsgi/kitstrap/d/0.4/kitstrap.css&quot;&gt;</pre>
         <kit-badge class="limegreen m-l">v0.3</kit-badge>
@@ -48,6 +44,12 @@
         <p class="m-l">
             　または、<a href="https://github.com/mtsgi/kitstrap/releases" class="kit-hyperlink">こちら</a>からkitstrapの任意のバージョンを探してダウンロードすることもできます
         </p>
+        <h2 class="m-l">GitHubから読み込む</h2>
+        <p class="m-l">
+            　kitstrapのGitHubリポジトリを参照する形で読み込むこともできます。<br>
+            　この方法では最新のkitstrapへ自動でアップデートされます。変更内容によって挙動が変化する場合があります。
+        </p>
+        <pre class="silver m-l p prettyprint lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://mtsgi.github.io/kitstrap/d/kitstrap.css&quot;&gt;</pre>
         <a href="./" class="kit-hl-alt kit-sub m-l">トップへ戻る</a>
     </main>
     <kit-footer>
