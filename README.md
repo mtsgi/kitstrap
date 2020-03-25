@@ -1,4 +1,7 @@
-## kitstrap
+# kitstrap
+
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
+![npm](https://img.shields.io/npm/v/kitstrap?style=flat)
 
 ### v0.5
 
