@@ -21,19 +21,27 @@ kitstrapは軽量CSSフレームワークです。
 
 ## Usage
 
-```
+`kitstrap.css`を読み込むだけで、すぐに使い始めることができます。
+
+```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mtsgi/kitstrap@0.5/d/kitstrap.css">
 ```
 
-`kitstrap.css`を読み込むだけで、すぐに使い始めることができます。
+または、npmを利用することもできます。
 
+```sh
+npm i kitstrap
+# or
+yarn add kitstrap
 ```
+
+[リリース一覧](https://github.com/mtsgi/kitstrap/releases)から、任意のバージョンをダウンロードして使用可能です。
+
+```html
 <link rel="stylesheet" href="./d/kitstrap.css">
 ```
 
-[リリース一覧](https://github.com/mtsgi/kitstrap/releases)から、任意のバージョンをダウンロードして使用することも可能です。
-
-導入方法の詳細は[こちら](https://mtsgi.github.io/kitstrap/docs/installation.html)
+導入方法の詳細は[こちら](https://mtsgi.github.io/kitstrap/docs/installation.html)をご覧ください。
 
 ## Download
 
