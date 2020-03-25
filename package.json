@@ -1,0 +1,29 @@
+{
+  "name": "kitstrap",
+  "version": "0.5.0",
+  "description": "kitstrap is a lightweight CSS framework",
+  "main": "d/kitstrap.css",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mtsgi@github.com/mtsgi/kitstrap.git"
+  },
+  "keywords": [
+    "lightweight",
+    "css",
+    "framework"
+  ],
+  "author": "mtsgi <oq@live.jp> (https://mtsgi.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mtsgi/kitstrap/issues"
+  },
+  "homepage": "https://github.com/mtsgi/kitstrap#readme"
+}
