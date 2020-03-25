@@ -1,6 +1,6 @@
 ## kitstrap
 
-v0.4
+v0.5
 
 ![](docs/banner.png "kitstrap")
 
