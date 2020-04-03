@@ -523,7 +523,6 @@ input[type="button"].kit-button-alt {
     -webkit-box-sizing: content-box;
     -webkit-appearance: button;
     appearance: button;
-    border: none;
     box-sizing: border-box;
     cursor: pointer;
 }
