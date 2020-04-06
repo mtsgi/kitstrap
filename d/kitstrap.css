@@ -1552,39 +1552,93 @@ kit-tipped:hover > .kit-tip:not(.-disabled),
 
 /* colors */
 
-.kit-clr-orange {
+.kit-clr-orange,
+.kit-c-orange {
     color: #ffa500;
 }
 
-.kit-clr-dodgerblue {
+.kit-clr-dodgerblue,
+.kit-c-dodgerblue {
     color: #1e90ff;
 }
 
-.kit-clr-deeppink {
+.kit-clr-deeppink,
+.kit-c-deeppink {
     color: #ff1493;
 }
 
-.kit-clr-limegreen {
+.kit-clr-limegreen,
+.kit-c-limegreen {
     color: #32cd32;
 }
 
-.kit-clr-crimson {
+.kit-clr-crimson,
+.kit-c-crimson {
     color: #dc143c;
 }
 
-.kit-clr-green {
+.kit-clr-green,
+.kit-c-green {
     color: #008000;
 }
 
-.kit-clr-silver {
+.kit-clr-beige,
+.kit-c-beige {
+    color: #f5f5dc;
+}
+
+.kit-clr-greenyellow,
+.kit-c-greenyellow {
+    color: #adff2f;
+}
+
+.kit-clr-violet,
+.kit-c-violet {
+    color: #ee82ee;
+}
+
+.kit-clr-snow,
+.kit-c-snow {
+    color: #fffafa;
+}
+
+.kit-clr-tomato,
+.kit-c-tomato {
+    color: #ff6347;
+}
+
+.kit-clr-lightcyan,
+.kit-c-lightcyan {
+    color: #e0ffff;
+}
+
+.kit-clr-lightpink,
+.kit-c-lightpink {
+    color: #ffb6c1;
+}
+
+.kit-clr-lightblue,
+.kit-c-lightblue {
+    color: #add8e6;
+}
+
+.kit-clr-lightyellow,
+.kit-c-lightyellow {
+    color: #ffffe0;
+}
+
+.kit-clr-silver,
+.kit-c-silver {
     color: #ebebeb;
 }
 
-.kit-clr-black {
+.kit-clr-black,
+.kit-c-black {
     color: #353535;
 }
 
-.kit-clr-white {
+.kit-clr-white,
+.kit-c-white {
     color: #ffffff;
 }
 
@@ -1612,6 +1666,42 @@ kit-tipped:hover > .kit-tip:not(.-disabled),
 
 .kit-bgclr-green {
     background-color: #008000;
+}
+
+.kit-bgclr-beige {
+    background-color: #f5f5dc;
+}
+
+.kit-bgclr-greenyellow {
+    background-color: #adff2f;
+}
+
+.kit-bgclr-violet {
+    background-color: #ee82ee;
+}
+
+.kit-bgclr-snow {
+    background-color: #fffafa;
+}
+
+.kit-bgclr-tomato {
+    background-color: #ff6347;
+}
+
+.kit-bgclr-lightcyan {
+    background-color: #e0ffff;
+}
+
+.kit-bgclr-lightpink {
+    background-color: #ffb6c1;
+}
+
+.kit-bgclr-lightblue {
+    background-color: #add8e6;
+}
+
+.kit-bgclr-lightyellow {
+    background-color: #ffffe0;
 }
 
 .kit-bgclr-silver {
