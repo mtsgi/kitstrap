@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../d/kitstrap-cursor.css">
     <link rel="stylesheet" href="../d/kitstrap-font.css">
     <link rel="stylesheet" href="./custom.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
     <title>導入方法 - kitstrapドキュメント/サンプル</title>
 </head>
@@ -17,13 +18,23 @@
     <header class="kit-header">
         <a href="https://github.com/mtsgi/kitstrap"><img src="../icon.png" alt="kitstrap"></a>
         <a href="./" class="kit-hl-alt">ドキュメント</a>
-        <div class="kit-sub">kitstrap v0.5</div>
+        <div class="kit-sub">kitstrap v0.6 alpha</div>
     </header>
     <main class="p-l">
-        <p class="m-l">　kitstrapを導入しましょう。</p>
+        <p class="m-l">　kitstrapは、簡単にプロジェクトに導入できます。</p>
+        <h2 class="m-l">npmを使用</h2>
+        <p class="m-l">
+            　npmパッケージ<code>kitstrap</code>をプロジェクトに追加して、kitstrapの使用を開始することができます。npm、あるいはyarnを利用することができます。
+        </p>
+        <pre class="silver m-l p">npm i kitstrap</pre>
+        <pre class="silver m-l p">yarn add kitstrap</pre>
+        <p class="m-l">
+            　例えば、Vueのプロジェクトでは、以下のようにしてkitstrapコアのCSSファイルをインポートすることが可能です。
+        </p>
+        <pre class="silver m-l p prettyprint lang-js">import &quot;kitstrap/d/kitstrap.css&quot;;</pre>
         <h2 class="m-l">ダウンロードして使う</h2>
         <p class="m-l">
-            　kitstrapの本体をダウンロードして使用を開始する場合、下のボタンからダウンロードできます。zipファイルをプロジェクトのディレクトリに展開してください。<code>/d</code>以下にkitstrapの本体が入っています。不要であれば<code>docs</code>ディレクトリは削除しても問題ありません。
+            　kitstrapの本体をダウンロードして使用を開始する場合、下のボタンからダウンロードできます。zipファイルをプロジェクトのディレクトリに展開してください。<code>/d</code>以下にkitstrapの本体が入っています。<code>docs</code>ディレクトリは削除可能です。
             <a href="https://github.com/mtsgi/kitstrap/archive/master.zip" class="kit-large kit-button-alt kit-block kit-text-c m-l limegreen">最新版をダウンロード</a>
             　CSSファイルが設置できたら、次のように<code>link</code>タグを挿入します。これだけでkitstrapを使用する準備は完了です。正しくCSSを読み込めているか開発者ツールなどで確認するとよいでしょう。
         </p>

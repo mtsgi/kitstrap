@@ -1,9 +1,14 @@
 # kitstrap
 
-[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/mtsgi/kitstrap?color=green)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 ![npm](https://img.shields.io/npm/v/kitstrap?style=flat)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/kitstrap)
+![npm](https://img.shields.io/npm/dt/kitstrap)
 
 ### v0.5
+
+[View on npmjs.com](https://www.npmjs.com/package/kitstrap)
 
 ![](docs/banner.png "kitstrap")
 
