@@ -29,7 +29,7 @@
         <pre class="silver m-l p">npm i kitstrap</pre>
         <pre class="silver m-l p">yarn add kitstrap</pre>
         <p class="m-l">
-            　例えば、Vueのプロジェクトでは、以下のようにしてkitstrapコアのCSSファイルをインポートすることが可能です。
+            　次に、kitstrapコアのCSSファイルをインポートして、kitstrapの使用を開始します。
         </p>
         <pre class="silver m-l p prettyprint lang-js">import &quot;kitstrap/d/kitstrap.css&quot;;</pre>
         <h2 class="m-l">CDNからバージョンを選択</h2>
@@ -55,12 +55,16 @@
             　CSSファイルが設置できたら、次のように<code>link</code>タグを挿入します。これだけでkitstrapを使用する準備は完了です。正しくCSSを読み込めているか開発者ツールなどで確認するとよいでしょう。
         </p>
         <pre class="silver m-l p prettyprint lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;./d/kitstrap.css&quot;&gt;</pre>
-        <h2 class="m-l">GitHubから読み込む</h2>
+        <h2 class="m-l">リポジトリ参照(非推奨)</h2>
         <p class="m-l">
             　kitstrapのGitHubリポジトリを参照する形で読み込むこともできます。<br>
-            　この方法では最新のkitstrapへ自動でアップデートされます。変更内容によって挙動が変化する場合があります。
+            　この参照方法では最新のkitstrapへ自動でアップデートされるため、推奨されません。
         </p>
         <pre class="silver m-l p prettyprint lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://mtsgi.github.io/kitstrap/d/kitstrap.css&quot;&gt;</pre>
+        <p class="m-l">
+            　GitHubリポジトリへの参照で、以下のようにバージョンを指定することもできますが、CDNのほうが読み込みがより高速です。
+        </p>
+        <pre class="silver m-l p prettyprint lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://mtsgi.github.io/kitstrap/d/0.4/kitstrap.css&quot;&gt;</pre>
         <a href="./" class="kit-hl-alt kit-sub m-l">トップへ戻る</a>
     </main>
     <kit-footer>

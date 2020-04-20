@@ -1344,6 +1344,20 @@ kit-tipped:hover > .kit-tip:not(.-disabled),
 .p-r-xl{ padding-right: 24px }
 .p-r-0{ padding-right: 0 }
 
+.p-x{ padding: 0 8px }
+.p-x-s{ padding: 0 4px }
+.p-x-m{ padding: 0 10px }
+.p-x-l{ padding: 0 16px }
+.p-x-xl{ padding: 0 24px }
+.p-x-0{ padding-left: 0; padding-right: 0 }
+
+.p-y{ padding: 8px 0 }
+.p-y-s{ padding: 4px 0 }
+.p-y-m{ padding: 10px 0 }
+.p-y-l{ padding: 16px 0 }
+.p-y-xl{ padding: 24px 0 }
+.p-y-0{ padding-top: 0; padding-bottom: 0 }
+
 .m{ margin: 8px }
 .m-s{ margin: 4px }
 .m-m{ margin: 10px }
@@ -1378,6 +1392,20 @@ kit-tipped:hover > .kit-tip:not(.-disabled),
 .m-r-l{ margin-right: 16px }
 .m-r-xl{ margin-right: 24px }
 .m-r-0{ margin-right: 0 }
+
+.m-x{ margin: 0 8px }
+.m-x-s{ margin: 0 4px }
+.m-x-m{ margin: 0 10px }
+.m-x-l{ margin: 0 16px }
+.m-x-xl{ margin: 0 24px }
+.m-x-0{ margin-left: 0; margin-right: 0 }
+
+.m-y{ margin: 8px 0 }
+.m-y-s{ margin: 4px 0 }
+.m-y-m{ margin: 10px 0 }
+.m-y-l{ margin: 16px 0 }
+.m-y-xl{ margin: 24px 0 }
+.m-y-0{ margin-top: 0; margin-bottom: 0 }
 
 /* shadow */
 
