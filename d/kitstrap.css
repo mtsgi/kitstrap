@@ -1118,8 +1118,15 @@ code {
     font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
 }
 
+pre code {
+    font-size: inherit;
+    background: inherit;
+    padding: 0;
+    margin: 0;
+}
+
 blockquote {
-    margin: 10px;
+    margin: 10px 0;
     padding: 10px;
     background: #f0f0f0;
     border-left: 3px solid #1f83e7;
