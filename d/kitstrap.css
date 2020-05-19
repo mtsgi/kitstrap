@@ -743,13 +743,17 @@ kit-button-alt.-xxlarge {
 }
 
 .kit-button.-disabled,
-kit-button.-disabled {
+kit-button.-disabled,
+.kit-button:disabled,
+kit-button:disabled {
     background: #a5a5a5;
     box-shadow: none;
 }
 
 .kit-button-alt.-disabled,
-kit-button-alt.-disabled {
+kit-button-alt.-disabled,
+.kit-button-alt:disabled,
+kit-button-alt:disabled {
     background: #d8d8d8;
     color: #969696;
     box-shadow: none;
@@ -758,7 +762,11 @@ kit-button-alt.-disabled {
 .kit-button.-disabled:active,
 kit-button.-disabled:active,
 .kit-button-alt.-disabled:active,
-kit-button-alt.-disabled:active {
+kit-button-alt.-disabled:active,
+.kit-button:disabled:active,
+kit-button:disabled:active,
+.kit-button-alt:disabled:active,
+kit-button-alt:disabled:active {
     box-shadow: none;
     position: static;
 }
