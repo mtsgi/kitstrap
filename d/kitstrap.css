@@ -1430,6 +1430,11 @@ kit-tipped:hover > .kit-tip:not(.-disabled),
 
 /* fonts */
 
+.kit-font-xxlarge,
+.kit-font-xxl {
+    font-size: 40px;
+}
+
 .kit-font-xlarge,
 .kit-font-xl {
     font-size: 27px;
@@ -1448,6 +1453,11 @@ kit-tipped:hover > .kit-tip:not(.-disabled),
 .kit-font-small,
 .kit-font-s {
     font-size: 13px;
+}
+
+.kit-font-xsmall,
+.kit-font-xs {
+    font-size: 10px;
 }
 
 .kit-font-0 {
