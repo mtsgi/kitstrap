@@ -1,6 +1,6 @@
 {
   "name": "kitstrap",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "kitstrap is a lightweight CSS framework",
   "main": "d/kitstrap.css",
   "directories": {
@@ -18,7 +18,9 @@
   "keywords": [
     "lightweight",
     "css",
-    "framework"
+    "framework",
+    "kit",
+    "kitstrap"
   ],
   "author": "mtsgi <oq@live.jp> (https://mtsgi.github.io/)",
   "license": "MIT",

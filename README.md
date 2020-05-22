@@ -1,18 +1,20 @@
 # kitstrap
 
+![](docs/banner.png "kitstrap")
+
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/mtsgi/kitstrap?color=green)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 ![npm](https://img.shields.io/npm/v/kitstrap?style=flat)
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/kitstrap)
 ![npm](https://img.shields.io/npm/dt/kitstrap)
 
-### v0.5
+### v0.6
 
 [View on npmjs.com](https://www.npmjs.com/package/kitstrap)
 
-![](docs/banner.png "kitstrap")
+[View on GitHub](https://github.com/mtsgi/kitstrap)
 
-kitstrapは軽量CSSフレームワークです。
+**kitstrapは軽量CSSフレームワークです。**
 
 - kitstrapは、kitDesktopのデザイン言語に基づいています。
 - kitstrapパッケージでは、フォントやカーソルの設定はモジュール化されています。
