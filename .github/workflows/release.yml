@@ -1,0 +1,42 @@
+name: Release
+
+on: 
+  pull_request:
+    types: [closed, edited]
+
+jobs:
+  create-release:
+    runs-on: ubuntu-18.04
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Create zip
+        run: |
+          zip -r kitstrap.zip d
+      - name: Create Release
+        uses: actions/github-script@0.3.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const pr = context.payload.pull_request;
+            // if (!pr.merged || pr.base.ref != context.payload.repository.default_branch) return;
+            github.repos.createRelease({
+              ...context.repo,
+              draft: true,
+              prerelease: false,
+              tag_name: pr.title,
+              name: `kitstrap ${pr.title}`,
+              target_commitish: process.env.GITHUB_SHA,
+              body: pr.body
+            });
+      - name: Upload Release Asset
+        id: upload-release-asset 
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: https://github.com/mtsgi/kitstrap/releases/${{ github.event.pull_request.title }}
+          asset_path: ./kitstrap.zip
+          asset_name: kitstrap.zip
+          asset_content_type: application/zip
