@@ -2,7 +2,7 @@ name: Release
 
 on: 
   pull_request:
-    types: [closed, edited]
+    types: [closed]
 
 jobs:
   create-release:
@@ -20,7 +20,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const pr = context.payload.pull_request;
-            // if (!pr.merged || pr.base.ref != context.payload.repository.default_branch) return;
+            if (!pr.merged || pr.base.ref != context.payload.repository.default_branch) return;
             github.repos.createRelease({
               ...context.repo,
               draft: true,
@@ -31,7 +31,7 @@ jobs:
               body: pr.body
             });
       - name: Upload Release Asset
-        id: upload-release-asset 
+        id: upload-release-asset
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
