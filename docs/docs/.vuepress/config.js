@@ -47,7 +47,8 @@ module.exports = {
           '/',
           '/guide',
           '/reference',
-          '/elements'
+          '/elements',
+          '/form'
         ]
       },
       '/0.6/': {
