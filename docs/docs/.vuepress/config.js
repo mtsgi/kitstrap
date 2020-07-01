@@ -48,7 +48,10 @@ module.exports = {
           '/guide',
           '/reference',
           '/elements',
-          '/form'
+          '/form',
+          '/fonts',
+          '/layouts',
+          '/util'
         ]
       },
       '/0.6/': {
@@ -58,7 +61,10 @@ module.exports = {
           '/0.6/',
           '/0.6/guide',
           '/0.6/reference',
-          '/0.6/elements'
+          '/0.6/elements',
+          '/0.6/fonts',
+          '/0.6/layouts',
+          '/0.6/util'
         ]
       },
     }
