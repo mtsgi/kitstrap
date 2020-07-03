@@ -12,27 +12,26 @@ jobs:
       - uses: actions/checkout@master
 
       - name: setup node
-        working-directory: ./docs
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
 
       - name: setup yarn
-        working-directory: ./docs
-        run: npm install -g yarn
+        run: |
+          cd docs
+          npm install -g yarn
 
       - name: Cache node modules
-        working-directory: ./docs
         uses: actions/cache@preview
         with:
-          path: node_modules
+          path: docs/node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-node-
 
       - name: install and build
-        working-directory: ./docs
         run: |
+          cd docs
           yarn install
           npx vuepress build docs
 
