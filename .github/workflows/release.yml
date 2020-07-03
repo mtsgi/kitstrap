@@ -10,6 +10,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@master
+      - working-directory: docs
 
       - name: setup node
         uses: actions/setup-node@v1
@@ -17,9 +18,7 @@ jobs:
           node-version: '12.x'
 
       - name: setup yarn
-        run: |
-          cd docs
-          npm install -g yarn
+        run: npm install -g yarn
 
       - name: Cache node modules
         uses: actions/cache@preview
@@ -56,15 +55,12 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const pr = context.payload.pull_request;
-            if (!pr.merged || pr.base.ref != context.payload.repository.default_branch) return;
             github.repos.createRelease({
               ...context.repo,
               draft: true,
               prerelease: false,
-              tag_name: pr.title,
-              name: `kitstrap ${pr.title}`,
-              target_commitish: process.env.GITHUB_SHA,
-              body: pr.body
+              name: `kitstrap (draft)`,
+              target_commitish: process.env.GITHUB_SHA
             });
       - name: Upload Release Asset
         id: upload-release-asset
