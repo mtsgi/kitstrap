@@ -10,35 +10,38 @@ jobs:
 
     steps:
       - uses: actions/checkout@master
-      - working-directory: docs
 
       - name: setup node
+        working-directory: ./docs
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
 
       - name: setup yarn
+        working-directory: ./docs
         run: npm install -g yarn
 
       - name: Cache node modules
+        working-directory: ./docs
         uses: actions/cache@preview
         with:
           path: node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - name: install
-        run: yarn install
 
-      - name: build
-        run: npx vuepress build docs
+      - name: install and build
+        working-directory: ./docs
+        run: |
+          yarn install
+          npx vuepress build docs
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: build-docs
-          publish_dir: ./docs/.vuepress/dist
+          publish_dir: ./docs/docs/.vuepress/dist
 
   create-release:
     runs-on: ubuntu-18.04
@@ -59,7 +62,7 @@ jobs:
               ...context.repo,
               draft: true,
               prerelease: false,
-              name: `kitstrap (draft)`,
+              name: github.event.head_commit.message,
               target_commitish: process.env.GITHUB_SHA
             });
       - name: Upload Release Asset
@@ -68,7 +71,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: https://github.com/mtsgi/kitstrap/releases/${{ github.event.pull_request.title }}
+          upload_url: https://github.com/mtsgi/kitstrap/releases/${{ github.event.head_commit.message }}
           asset_path: ./kitstrap.zip
           asset_name: kitstrap.zip
           asset_content_type: application/zip
