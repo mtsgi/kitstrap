@@ -1,8 +1,4 @@
-# kitstrap
-
-<p>&nbsp;</p>
-
-![](docs/banner.png "kitstrap is a lightweight CSS framework")
+![kitstrap](docs/banner.png "kitstrap is a lightweight CSS framework")
 
 <p>&nbsp;</p>
 
@@ -19,6 +15,7 @@
   <a aria-label="NPM version" href="https://www.npmjs.com/package/kitstrap">
     <img alt="" src="https://img.shields.io/npm/v/kitstrap?style=for-the-badge&labelColor=303030">
   </a>
+   
   <a aria-label="NPM bundle size" href="https://www.npmjs.com/package/kitstrap">
     <img alt="" src="https://img.shields.io/bundlephobia/minzip/kitstrap?style=for-the-badge&labelColor=303030">
   </a>
@@ -80,18 +77,18 @@
 
 ## 📦 Usage
 
-`kitstrap.css`を読み込むだけで、すぐに使い始めることができます。
-
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mtsgi/kitstrap@1.0/d/kitstrap.css">
-```
-
-または、npmを利用することもできます。
+npmを利用して導入することができます。
 
 ```sh
 npm i kitstrap
 # or
 yarn add kitstrap
+```
+
+`kitstrap.css`を読み込むことでも、使い始めることができます。
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mtsgi/kitstrap@1.0/d/kitstrap.css">
 ```
 
 [リリース一覧](https://github.com/mtsgi/kitstrap/releases)から、任意のバージョンをダウンロードして使用可能です。
