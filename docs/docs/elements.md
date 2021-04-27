@@ -265,6 +265,66 @@ kit-buttonとkit-button-altの子クラスとして、`class="kit-button -deeppi
 <div class="kit-notice -black">これは黒色の通知です。(-black)</div>
 ```
 
+## kit-table <Badge text="Class"/>
+
+`<table>`要素に対して`.kit-table`クラスおよびその子クラスを付与することで、テーブルに様々なスタイルを付与することができます。
+
+`.kit-text-`接頭辞を持つ「テキストの位置」クラスを任意のテーブル内の要素に付与して、テキスト位置を明示的に指定することもできます。
+
+**標準的なテーブル**
+
+<table class="kit-table">
+    <thead>
+      <tr>
+        <th>名前</th><th>URL</th><th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>kit</th> <td>https://kit.osdn.jp/</td> <td><a class="kit-hl">操作</a></td>
+      </tr>
+      <tr>
+        <th>kitstrap</th> <td>https://kitstrap.netlify.app/</td> <td><a class="kit-hl">操作</a></td>
+      </tr>
+      <tr>
+        <th>kafjs</th> <td>https://kafjs.netlify.app/</td> <td><a class="kit-hl">操作</a></td>
+      </tr>
+      <tr>
+        <th>kpt</th> <td>https://kpkg.herokuapp.com/</td> <td><a class="kit-hl">操作</a></td>
+      </tr>
+      <tr>
+        <th>kish</th> <td>https://mtsgi.github.io/kish/</td> <td><a class="kit-hl">操作</a></td>
+      </tr>
+    </tbody>
+</table>
+
+```html
+<table class="kit-table">
+    <thead>
+      <tr>
+        <th>名前</th><th>URL</th><th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>kit</th> <td>https://kit.osdn.jp/</td> <td><a class="kit-hl">操作</a></td>
+      </tr>
+      <tr>
+        <th>kitstrap</th> <td>https://kitstrap.netlify.app/</td> <td><a class="kit-hl">操作</a></td>
+      </tr>
+      <tr>
+        <th>kafjs</th> <td>https://kafjs.netlify.app/</td> <td><a class="kit-hl">操作</a></td>
+      </tr>
+      <tr>
+        <th>kpt</th> <td>https://kpkg.herokuapp.com/</td> <td><a class="kit-hl">操作</a></td>
+      </tr>
+      <tr>
+        <th>kish</th> <td>https://mtsgi.github.io/kish/</td> <td><a class="kit-hl">操作</a></td>
+      </tr>
+    </tbody>
+</table>
+```
+
 ## kit-navbar <Badge text="Tag"/> <Badge text="Class"/>
 
 `.kit-navbar`クラスまたは`<kit-navbar></kit-navbar>`の中に、`.kit-navitem`クラスまたは`<kit-navitem></kit-navitem>`を並べることで、ナビゲーションバーとその項目を設置することができます。
