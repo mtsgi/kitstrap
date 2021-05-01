@@ -24,22 +24,23 @@ jobs:
       - name: Cache node modules
         uses: actions/cache@preview
         with:
-          path: node_modules
+          path: docs/node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - name: install
-        run: yarn install
 
-      - name: build
-        run: npx vuepress build docs
+      - name: install and build
+        run: |
+          cd docs
+          yarn install
+          npx vuepress build docs
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: build-docs
-          publish_dir: ./docs/.vuepress/dist
+          publish_dir: ./docs/docs/.vuepress/dist
 
   create-release:
     runs-on: ubuntu-18.04
@@ -56,15 +57,12 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const pr = context.payload.pull_request;
-            if (!pr.merged || pr.base.ref != context.payload.repository.default_branch) return;
             github.repos.createRelease({
               ...context.repo,
               draft: true,
               prerelease: false,
-              tag_name: pr.title,
-              name: `kitstrap ${pr.title}`,
-              target_commitish: process.env.GITHUB_SHA,
-              body: pr.body
+              name: github.event.head_commit.message,
+              target_commitish: process.env.GITHUB_SHA
             });
       - name: Upload Release Asset
         id: upload-release-asset
@@ -72,7 +70,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: https://github.com/mtsgi/kitstrap/releases/${{ github.event.pull_request.title }}
+          upload_url: https://github.com/mtsgi/kitstrap/releases/${{ github.event.head_commit.message }}
           asset_path: ./kitstrap.zip
           asset_name: kitstrap.zip
           asset_content_type: application/zip
