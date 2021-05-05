@@ -13,15 +13,18 @@ module.exports = {
       title: 'kitstrap',
     },
     '/0.6/': {
-      title: 'kitstrap 0.6',
-    }
+      title: 'kitstrap v0.6',
+    },
+    // '/0.7/': {
+    //   title: 'kitstrap v0.7',
+    // }
   },
   head: [
     ['meta', { name: 'theme-color', content: '#e2f0d9' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/mtsgi/kitstrap/d/0.6/kitstrap.css' }],
-    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/mtsgi/kitstrap/d/0.6/kitstrap-font.css' }]
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/mtsgi/kitstrap/d/kitstrap.css' }],
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/mtsgi/kitstrap/d/kitstrap-font.css' }]
   ],
   themeConfig: {
     repo: 'mtsgi/kitstrap',
@@ -67,6 +70,19 @@ module.exports = {
           '/0.6/util'
         ]
       },
+      // '/0.7/': {
+      //   selectText: 'バージョン',
+      //   label: '0.7',
+      //   sidebar: [
+      //     '/0.7/',
+      //     '/0.7/guide',
+      //     '/0.7/reference',
+      //     '/0.7/elements',
+      //     '/0.7/fonts',
+      //     '/0.7/layouts',
+      //     '/0.7/util'
+      //   ]
+      // },
     }
   },
   plugins: [
