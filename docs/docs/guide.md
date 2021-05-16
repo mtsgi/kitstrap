@@ -25,6 +25,12 @@ CDNから任意のバージョンのkitstrapを選択して使用可能です。
 
 kitstrap-font.cssなどのモジュールも利用可能です。 
 
+<Badge text="v0.7"/>
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mtsgi/kitstrap/d/0.7/kitstrap.css">
+```
+
 <Badge text="v0.6"/>
 
 ```html
