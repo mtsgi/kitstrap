@@ -27,7 +27,7 @@ yarn add kitstrap
 `kitstrap.css`を読み込むことでも、使い始めることができます。
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mtsgi/kitstrap@1.0/d/kitstrap.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mtsgi/kitstrap@0.7/d/kitstrap.css">
 ```
 
 [リリース一覧](https://github.com/mtsgi/kitstrap/releases)から、任意のバージョンをダウンロードして使用可能です。

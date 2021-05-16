@@ -23,8 +23,8 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#e2f0d9' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/mtsgi/kitstrap/d/kitstrap.css' }],
-    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/mtsgi/kitstrap/d/kitstrap-font.css' }]
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/mtsgi/kitstrap@master/d/kitstrap.css' }],
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/mtsgi/kitstrap@master/d/kitstrap-font.css' }]
   ],
   themeConfig: {
     repo: 'mtsgi/kitstrap',

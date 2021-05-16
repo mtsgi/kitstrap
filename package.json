@@ -1,6 +1,6 @@
 {
   "name": "kitstrap",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "kitstrap is a lightweight CSS framework",
   "main": "d/kitstrap.css",
   "directories": {
